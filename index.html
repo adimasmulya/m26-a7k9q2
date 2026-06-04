@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102039">
+  <title>Melbourne & Victoria · Travel Cards</title>
+  <style>
+    :root {
+      --bg: #0c1424;
+      --bg2: #132238;
+      --card: rgba(255,255,255,0.96);
+      --muted: #657287;
+      --text: #101828;
+      --soft: #eef2f7;
+      --line: #d8dee8;
+      --accent: #2563eb;
+      --accent2: #0ea5e9;
+      --danger: #b42318;
+      --food: #b45309;
+      --hotel: #7c3aed;
+      --transit: #0369a1;
+      --rest: #475467;
+      --shadow: 0 20px 60px rgba(0,0,0,.32);
+      --radius: 24px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: #fff;
+      background:
+        radial-gradient(circle at top left, rgba(14,165,233,.35), transparent 32rem),
+        radial-gradient(circle at bottom right, rgba(124,58,237,.27), transparent 28rem),
+        linear-gradient(145deg, var(--bg), var(--bg2));
+      overflow-x: hidden;
+    }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+    a { color: inherit; }
+
+    .app {
+      min-height: 100vh;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: max(18px, env(safe-area-inset-top)) 16px calc(112px + env(safe-area-inset-bottom));
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .hamburger, .icon-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.10);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      font-size: 21px;
+    }
+
+    .titleblock {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .trip-title {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      font-size: 20px;
+      line-height: 1.15;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .trip-subtitle {
+      color: rgba(255,255,255,.72);
+      font-size: 12.5px;
+      margin-top: 3px;
+    }
+
+    .status-strip {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      scrollbar-width: none;
+      margin-bottom: 12px;
+    }
+
+    .status-strip::-webkit-scrollbar { display: none; }
+
+    .chip {
+      flex: 0 0 auto;
+      border-radius: 999px;
+      padding: 7px 10px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.10);
+      color: rgba(255,255,255,.84);
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    .chip.active {
+      background: #fff;
+      color: #122033;
+      font-weight: 700;
+    }
+
+    .card-shell {
+      perspective: 1200px;
+    }
+
+    .card {
+      background: var(--card);
+      color: var(--text);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.5);
+      min-height: 445px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      touch-action: pan-y;
+    }
+
+    .card::before {
+      content: "";
+      height: 7px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      display: block;
+    }
+
+    .card.transit::before { background: linear-gradient(90deg, #0369a1, #38bdf8); }
+    .card.food::before { background: linear-gradient(90deg, #b45309, #f59e0b); }
+    .card.hotel::before { background: linear-gradient(90deg, #6d28d9, #a78bfa); }
+    .card.rest::before { background: linear-gradient(90deg, #475467, #98a2b3); }
+
+    .card-body {
+      padding: 22px 20px 18px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .eyebrow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      align-items: center;
+      margin-bottom: 17px;
+    }
+
+    .type-pill {
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #fff;
+      background: var(--accent);
+    }
+
+    .type-pill.transit { background: var(--transit); }
+    .type-pill.food { background: var(--food); }
+    .type-pill.hotel { background: var(--hotel); }
+    .type-pill.rest { background: var(--rest); }
+
+    .small-pill {
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: #eef2f7;
+      color: #475467;
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .card-title {
+      font-size: clamp(31px, 7.8vw, 48px);
+      line-height: .98;
+      letter-spacing: -0.055em;
+      margin: 0 0 14px;
+      font-weight: 860;
+    }
+
+    .card-time {
+      color: #344054;
+      font-size: 16px;
+      font-weight: 750;
+      margin-bottom: 18px;
+    }
+
+    .summary {
+      color: #475467;
+      white-space: pre-line;
+      line-height: 1.46;
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: auto;
+      padding-top: 16px;
+    }
+
+    .btn {
+      appearance: none;
+      border: 0;
+      border-radius: 15px;
+      padding: 13px 15px;
+      font-weight: 800;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 46px;
+      font-size: 14px;
+    }
+
+    .btn.primary {
+      background: #1677ff;
+      color: #fff;
+      box-shadow: 0 10px 28px rgba(22,119,255,.25);
+    }
+
+    .btn.secondary {
+      background: #eef2f7;
+      color: #344054;
+    }
+
+    .btn.ghost {
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.16);
+      color: #fff;
+    }
+
+    .details {
+      border-top: 1px solid var(--line);
+      margin-top: 16px;
+      padding-top: 15px;
+      display: none;
+    }
+
+    .expanded .details { display: block; }
+
+    .detail-grid {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .info-box {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 12px;
+    }
+
+    .info-box b {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      color: #667085;
+      margin-bottom: 5px;
+    }
+
+    .info-box span {
+      color: #263244;
+      line-height: 1.42;
+      white-space: pre-line;
+      font-size: 14px;
+    }
+
+    .hint {
+      color: #667085;
+      font-size: 12.5px;
+      margin-top: 12px;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 13px;
+    }
+
+    .nav-row .btn {
+      flex: 1;
+    }
+
+    .anchors {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 30;
+      padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+      background: linear-gradient(180deg, transparent, rgba(12,20,36,.86) 25%, rgba(12,20,36,.96));
+      backdrop-filter: blur(12px);
+    }
+
+    .anchor-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .anchor {
+      border: 1px solid rgba(255,255,255,.17);
+      background: rgba(255,255,255,.12);
+      color: #fff;
+      border-radius: 18px;
+      padding: 10px 12px;
+      text-align: left;
+      min-height: 66px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .anchor b {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: rgba(255,255,255,.66);
+      margin-bottom: 4px;
+    }
+
+    .anchor span {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      font-size: 13.5px;
+      line-height: 1.2;
+      font-weight: 750;
+    }
+
+    .drawer {
+      position: fixed;
+      inset: 0;
+      z-index: 80;
+      display: none;
+    }
+
+    .drawer.open { display: block; }
+
+    .scrim {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,.52);
+    }
+
+    .drawer-panel {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: min(88vw, 380px);
+      background: #fff;
+      color: var(--text);
+      padding: max(20px, env(safe-area-inset-top)) 18px 24px;
+      box-shadow: 18px 0 50px rgba(0,0,0,.30);
+      overflow-y: auto;
+    }
+
+    .drawer-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .drawer-title {
+      font-size: 20px;
+      font-weight: 850;
+      letter-spacing: -.03em;
+    }
+
+    .leg-title {
+      margin: 18px 0 8px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #667085;
+      font-weight: 850;
+    }
+
+    .day-item {
+      width: 100%;
+      border: 1px solid #e5e7eb;
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 8px;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .day-item.active {
+      border-color: #2563eb;
+      background: #eff6ff;
+    }
+
+    .day-item b {
+      display: block;
+      color: #101828;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    .day-item span {
+      color: #667085;
+      font-size: 13px;
+    }
+
+    .branch-screen {
+      background: var(--card);
+      color: var(--text);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      border: 1px solid rgba(255,255,255,.5);
+      min-height: 445px;
+    }
+
+    .branch-title {
+      font-size: 30px;
+      line-height: 1.05;
+      font-weight: 860;
+      letter-spacing: -.05em;
+      margin-bottom: 8px;
+    }
+
+    .branch-sub {
+      color: #667085;
+      margin-bottom: 18px;
+      line-height: 1.35;
+    }
+
+    .branch-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .branch-card {
+      width: 100%;
+      border: 1px solid #d0d5dd;
+      background: #f8fafc;
+      border-radius: 18px;
+      padding: 15px;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .branch-card b {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .branch-card span {
+      color: #475467;
+      line-height: 1.35;
+      white-space: pre-line;
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      display: none;
+    }
+
+    .modal.open { display: block; }
+
+    .modal-panel {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: calc(10px + env(safe-area-inset-bottom));
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      color: var(--text);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      max-height: 78vh;
+      overflow-y: auto;
+    }
+
+    .modal-title {
+      font-weight: 860;
+      letter-spacing: -.03em;
+      font-size: 22px;
+      line-height: 1.08;
+      margin-bottom: 6px;
+    }
+
+    .modal-meta {
+      color: #667085;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    .empty {
+      background: rgba(255,255,255,.95);
+      color: var(--text);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      line-height: 1.45;
+    }
+
+    .error {
+      color: #b42318;
+      font-weight: 700;
+    }
+
+    @media (min-width: 680px) {
+      .app { padding-left: 24px; padding-right: 24px; }
+      .branch-grid { grid-template-columns: 1fr 1fr; }
+      .card { min-height: 520px; }
+      .card-body { padding: 30px; }
+      .summary { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="topbar">
+      <button class="hamburger" id="menuBtn" aria-label="Open day menu">☰</button>
+      <div class="titleblock">
+        <div class="trip-title" id="tripTitle">Melbourne & Victoria</div>
+        <div class="trip-subtitle" id="tripSubtitle">Loading itinerary…</div>
+      </div>
+      <button class="icon-btn" id="todayBtn" title="Jump to now" aria-label="Jump to current card">⌖</button>
+    </div>
+
+    <div class="status-strip" id="statusStrip"></div>
+
+    <main id="main"></main>
+
+    <div class="nav-row">
+      <button class="btn ghost" id="prevBtn">← Previous</button>
+      <button class="btn ghost" id="nextBtn">Next →</button>
+    </div>
+  </div>
+
+  <div class="anchors" id="anchors"></div>
+
+  <div class="drawer" id="drawer">
+    <div class="scrim" id="drawerScrim"></div>
+    <aside class="drawer-panel">
+      <div class="drawer-head">
+        <div>
+          <div class="drawer-title">Trip days</div>
+          <div class="hint" id="drawerHint">Tap a day to jump.</div>
+        </div>
+        <button class="btn secondary" id="closeDrawer">Close</button>
+      </div>
+      <div id="dayList"></div>
+      <div class="detail-grid">
+        <button class="btn secondary" id="resetBranch">Reset Day 1 branch</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="scrim" id="modalScrim"></div>
+    <div class="modal-panel" id="modalPanel"></div>
+  </div>
+
+  <script>
+    const state = {
+      data: null,
+      currentId: null,
+      expanded: false,
+      branch: localStorage.getItem('melTripDay1Branch') || null,
+      modal: null
+    };
+
+    const $ = (id) => document.getElementById(id);
+
+    function escapeHtml(value) {
+      return String(value ?? '').replace(/[&<>"']/g, ch => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
+      }[ch]));
+    }
+
+    function minutes(time) {
+      const [h, m] = String(time || '00:00').split(':').map(Number);
+      return h * 60 + m;
+    }
+
+    function localDate(card, which = 'start') {
+      const offset = state.data?.trip?.utcOffset || '+10:00';
+      return new Date(`${card.date}T${card[which] || card.start}:00${offset}`);
+    }
+
+    function typeLabel(type) {
+      return ({ transit: 'Move', food: 'Food', hotel: 'Hotel', rest: 'Rest', activity: 'Activity' })[type] || 'Plan';
+    }
+
+    function visibleCards() {
+      if (!state.data) return [];
+      return state.data.cards.filter(c => {
+        if (c.dayNumber === 1 && c.branch && state.branch) return c.branch === state.branch;
+        return true;
+      });
+    }
+
+    function currentIndex() {
+      const cards = visibleCards();
+      if (!cards.length) return -1;
+      const idx = cards.findIndex(c => c.id === state.currentId);
+      return idx >= 0 ? idx : 0;
+    }
+
+    function currentCard() {
+      const cards = visibleCards();
+      return cards[currentIndex()] || null;
+    }
+
+    function findNowCardId() {
+      const cards = visibleCards();
+      if (!cards.length) return null;
+      const now = new Date();
+      const active = cards.find(c => now >= localDate(c, 'start') && now < localDate(c, 'end'));
+      if (active) return active.id;
+      const upcoming = cards.find(c => now < localDate(c, 'start'));
+      return (upcoming || cards[cards.length - 1]).id;
+    }
+
+    function setCurrent(id) {
+      state.currentId = id;
+      state.expanded = false;
+      render();
+    }
+
+    function move(delta) {
+      const cards = visibleCards();
+      const idx = currentIndex();
+      const nextIdx = Math.min(Math.max(idx + delta, 0), cards.length - 1);
+      if (cards[nextIdx]) setCurrent(cards[nextIdx].id);
+    }
+
+    function jumpToDay(dayNumber) {
+      const cards = visibleCards();
+      const first = cards.find(c => c.dayNumber === dayNumber);
+      if (first) setCurrent(first.id);
+      closeDrawer();
+    }
+
+    function selectBranch(branch, startTime) {
+      state.branch = branch;
+      localStorage.setItem('melTripDay1Branch', branch);
+      const candidates = visibleCards().filter(c => c.dayNumber === 1 && (!startTime || c.start === startTime));
+      const chosen = candidates.find(c => c.branch === branch) || candidates[0] || visibleCards()[0];
+      state.currentId = chosen.id;
+      state.expanded = false;
+      render();
+    }
+
+    function hotelForCard(card) {
+      const day = state.data.days.find(d => d.dayNumber === card.dayNumber);
+      if (!day || !day.hotelId) return null;
+      return state.data.hotels.find(h => h.id === day.hotelId) || null;
+    }
+
+    function nextFoodForCard(card) {
+      const cards = visibleCards();
+      const start = minutes(card.start);
+      return cards.find(c => c.date === card.date && c.type === 'food' && minutes(c.start) >= start) ||
+             cards.find(c => c.date === card.date && c.type === 'food') ||
+             null;
+    }
+
+    function mapsButton(url, label = 'Open Maps') {
+      if (!url) return '';
+      return `<a class="btn primary" href="${escapeHtml(url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">📍 ${escapeHtml(label)}</a>`;
+    }
+
+    function activityDetails(card) {
+      const a = card.activityDetail;
+      if (!a) return '';
+      const rows = [
+        ['Opening', a.openingHours],
+        ['Cost', a.entryCost],
+        ['Booking', a.bookingRequired],
+        ['Time needed', a.timeNeeded],
+        ['Toddler', a.toddlerScore ? `${a.toddlerScore}/5` : ''],
+        ['Tip', a.practicalTip]
+      ].filter(([_, value]) => value);
+      return `<div class="detail-grid">${rows.map(([k, v]) =>
+        `<div class="info-box"><b>${escapeHtml(k)}</b><span>${escapeHtml(v)}</span></div>`
+      ).join('')}</div>`;
+    }
+
+    function renderNormalCard(card) {
+      const expanded = state.expanded ? ' expanded' : '';
+      const details = [
+        card.detail ? `<div class="summary">${escapeHtml(card.detail)}</div>` : '',
+        activityDetails(card),
+        `<div class="hint">Tap card to ${state.expanded ? 'collapse' : 'expand'} details. Swipe left/right for next or previous.</div>`
+      ].join('');
+
+      $('main').innerHTML = `
+        <section class="card-shell">
+          <article class="card ${escapeHtml(card.type)}${expanded}" id="activeCard">
+            <div class="card-body" id="cardBody">
+              <div class="eyebrow">
+                <span class="type-pill ${escapeHtml(card.type)}">${escapeHtml(typeLabel(card.type))}</span>
+                <span class="small-pill">${escapeHtml(card.dayLabel)} · ${escapeHtml(card.dateLabel)}</span>
+                ${card.branch ? `<span class="small-pill">${escapeHtml(card.branch.toUpperCase())}</span>` : ''}
+              </div>
+              <h1 class="card-title">${escapeHtml(card.title)}</h1>
+              <div class="card-time">${escapeHtml(card.start)}–${escapeHtml(card.end)} · ${escapeHtml(card.routeTitle)}</div>
+              ${card.detail ? `<div class="summary">${escapeHtml(card.detail)}</div>` : `<div class="summary">No extra note for this card.</div>`}
+              <div class="actions">
+                ${mapsButton(card.mapsUrl)}
+                <button class="btn secondary" id="expandBtn">${state.expanded ? 'Collapse details' : 'More details'}</button>
+              </div>
+              <div class="details">${details}</div>
+            </div>
+          </article>
+        </section>
+      `;
+
+      $('cardBody').addEventListener('click', () => {
+        state.expanded = !state.expanded;
+        render();
+      });
+      const expandBtn = $('expandBtn');
+      if (expandBtn) expandBtn.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        state.expanded = !state.expanded;
+        render();
+      });
+      attachSwipe($('activeCard'));
+    }
+
+    function renderBranchChooser(card) {
+      const options = state.data.cards
+        .filter(c => c.dayNumber === 1 && c.start === card.start && c.branch)
+        .sort((a, b) => a.branch.localeCompare(b.branch));
+
+      $('main').innerHTML = `
+        <section class="branch-screen" id="branchScreen">
+          <div class="branch-title">Which Day 1 scenario is happening?</div>
+          <div class="branch-sub">Choose once and the itinerary will hide the unused branch. You can reset this from the menu.</div>
+          <div class="branch-grid">
+            ${options.map(c => `
+              <button class="branch-card" data-branch="${escapeHtml(c.branch)}">
+                <b>${escapeHtml(c.branch === 'awake' ? 'Alyssa awake' : 'Alyssa asleep')} · ${escapeHtml(c.start)}</b>
+                <span>${escapeHtml(c.title)}${c.detail ? '\n' + escapeHtml(c.detail) : ''}</span>
+              </button>
+            `).join('')}
+          </div>
+          <div class="hint">This only affects the branched Day 1 cards.</div>
+        </section>
+      `;
+      document.querySelectorAll('.branch-card').forEach(btn => {
+        btn.addEventListener('click', () => selectBranch(btn.dataset.branch, card.start));
+      });
+    }
+
+    function renderStatus(card) {
+      const day = state.data.days.find(d => d.dayNumber === card.dayNumber);
+      const idx = currentIndex() + 1;
+      const total = visibleCards().length;
+      $('statusStrip').innerHTML = `
+        <span class="chip active">${escapeHtml(card.leg)}</span>
+        <span class="chip">${escapeHtml(day?.routeTitle || card.routeTitle)}</span>
+        <span class="chip">Card ${idx}/${total}</span>
+        ${state.branch ? `<span class="chip">Day 1: ${escapeHtml(state.branch)}</span>` : ''}
+      `;
+    }
+
+    function renderAnchors(card) {
+      const food = nextFoodForCard(card);
+      const hotel = hotelForCard(card);
+      $('anchors').innerHTML = `
+        <div class="anchor-inner">
+          <button class="anchor" id="foodAnchor">
+            <b>Next food</b>
+            <span>${food ? `${food.start} · ${escapeHtml(food.title)}` : 'No food stop listed'}</span>
+          </button>
+          <button class="anchor" id="hotelAnchor">
+            <b>Tonight</b>
+            <span>${hotel ? escapeHtml(hotel.property) : 'No hotel anchor'}</span>
+          </button>
+        </div>
+      `;
+      $('foodAnchor').addEventListener('click', () => food ? openCardModal(food) : null);
+      $('hotelAnchor').addEventListener('click', () => hotel ? openHotelModal(hotel) : null);
+    }
+
+    function renderDayMenu(card) {
+      const grouped = [];
+      let lastLeg = null;
+      state.data.days.forEach(day => {
+        if (day.leg !== lastLeg) {
+          grouped.push({ leg: day.leg, days: [] });
+          lastLeg = day.leg;
+        }
+        grouped[grouped.length - 1].days.push(day);
+      });
+
+      $('dayList').innerHTML = grouped.map(group => `
+        <div class="leg-title">${escapeHtml(group.leg)}</div>
+        ${group.days.map(day => `
+          <button class="day-item ${day.dayNumber === card.dayNumber ? 'active' : ''}" data-day="${day.dayNumber}">
+            <b>${escapeHtml(day.dayLabel)} · ${escapeHtml(day.dateLabel)}</b>
+            <span>${escapeHtml(day.routeTitle)}</span>
+          </button>
+        `).join('')}
+      `).join('');
+
+      document.querySelectorAll('.day-item').forEach(btn => {
+        btn.addEventListener('click', () => jumpToDay(Number(btn.dataset.day)));
+      });
+    }
+
+    function render() {
+      if (!state.data) return;
+      const card = currentCard();
+      if (!card) {
+        $('main').innerHTML = '<div class="empty">No itinerary card found.</div>';
+        return;
+      }
+      $('tripTitle').textContent = state.data.trip.title;
+      $('tripSubtitle').textContent = state.data.trip.subtitle;
+      renderStatus(card);
+      renderDayMenu(card);
+      if (card.dayNumber === 1 && card.branch && !state.branch) {
+        renderBranchChooser(card);
+      } else {
+        renderNormalCard(card);
+      }
+      renderAnchors(card);
+    }
+
+    function openDrawer() { $('drawer').classList.add('open'); }
+    function closeDrawer() { $('drawer').classList.remove('open'); }
+
+    function openModal(html) {
+      $('modalPanel').innerHTML = html;
+      $('modal').classList.add('open');
+    }
+
+    function closeModal() {
+      $('modal').classList.remove('open');
+      $('modalPanel').innerHTML = '';
+    }
+
+    function openCardModal(card) {
+      openModal(`
+        <div class="modal-title">${escapeHtml(card.title)}</div>
+        <div class="modal-meta">${escapeHtml(card.dayLabel)} · ${escapeHtml(card.dateLabel)} · ${escapeHtml(card.start)}–${escapeHtml(card.end)}</div>
+        ${card.detail ? `<div class="summary">${escapeHtml(card.detail)}</div>` : ''}
+        ${activityDetails(card)}
+        <div class="actions">${mapsButton(card.mapsUrl)}<button class="btn secondary" id="modalCloseBtn">Close</button></div>
+      `);
+      $('modalCloseBtn').addEventListener('click', closeModal);
+    }
+
+    function openHotelModal(hotel) {
+      const rows = [
+        ['Address', hotel.address],
+        ['Check in', hotel.checkIn],
+        ['Check out', hotel.checkOut],
+        ['Booking ref', hotel.bookingRef],
+        ['Total cost', hotel.totalCost],
+        ['Cancel by', hotel.cancelBy],
+        ['Payment', hotel.payment],
+        ['Notes', hotel.notes]
+      ].filter(([_, v]) => v);
+
+      openModal(`
+        <div class="modal-title">${escapeHtml(hotel.property)}</div>
+        <div class="modal-meta">Tonight's accommodation</div>
+        <div class="detail-grid">
+          ${rows.map(([k, v]) => `<div class="info-box"><b>${escapeHtml(k)}</b><span>${escapeHtml(v)}</span></div>`).join('')}
+        </div>
+        <div class="actions">${mapsButton(hotel.mapsUrl)}<button class="btn secondary" id="modalCloseBtn">Close</button></div>
+      `);
+      $('modalCloseBtn').addEventListener('click', closeModal);
+    }
+
+    function attachSwipe(el) {
+      let startX = 0;
+      let startY = 0;
+      el.addEventListener('touchstart', ev => {
+        startX = ev.changedTouches[0].clientX;
+        startY = ev.changedTouches[0].clientY;
+      }, { passive: true });
+
+      el.addEventListener('touchend', ev => {
+        const dx = ev.changedTouches[0].clientX - startX;
+        const dy = ev.changedTouches[0].clientY - startY;
+        if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.3) {
+          move(dx < 0 ? 1 : -1);
+        }
+      }, { passive: true });
+    }
+
+    async function init() {
+      try {
+        const res = await fetch(`itinerary.json?ts=${Date.now()}`);
+        if (!res.ok) throw new Error(`Could not load itinerary.json (${res.status})`);
+        state.data = await res.json();
+        state.currentId = findNowCardId();
+        render();
+      } catch (err) {
+        $('tripSubtitle').textContent = 'Could not load itinerary data';
+        $('main').innerHTML = `
+          <div class="empty">
+            <p class="error">The itinerary data file could not be loaded.</p>
+            <p>Make sure <b>index.html</b> and <b>itinerary.json</b> are in the same GitHub Pages folder. Opening this file directly from your computer may block the browser from reading JSON.</p>
+            <p>${escapeHtml(err.message)}</p>
+          </div>
+        `;
+        $('anchors').innerHTML = '';
+      }
+    }
+
+    $('menuBtn').addEventListener('click', openDrawer);
+    $('closeDrawer').addEventListener('click', closeDrawer);
+    $('drawerScrim').addEventListener('click', closeDrawer);
+    $('prevBtn').addEventListener('click', () => move(-1));
+    $('nextBtn').addEventListener('click', () => move(1));
+    $('todayBtn').addEventListener('click', () => { state.currentId = findNowCardId(); state.expanded = false; render(); });
+    $('resetBranch').addEventListener('click', () => {
+      localStorage.removeItem('melTripDay1Branch');
+      state.branch = null;
+      render();
+    });
+    $('modalScrim').addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', ev => {
+      if (ev.key === 'ArrowLeft') move(-1);
+      if (ev.key === 'ArrowRight') move(1);
+      if (ev.key === 'Escape') { closeDrawer(); closeModal(); }
+    });
+
+    init();
+  </script>
+</body>
+</html>
