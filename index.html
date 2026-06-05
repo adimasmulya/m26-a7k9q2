@@ -297,6 +297,16 @@
       padding: 12px;
     }
 
+    a.info-box.info-link {
+      display: block;
+      text-decoration: none;
+      cursor: pointer;
+      border-color: #c7d2e0;
+      transition: background .12s ease, border-color .12s ease;
+    }
+    a.info-box.info-link:hover { background: #eef2f7; border-color: #94a3b8; }
+    a.info-box.info-link:active { background: #e2e8f0; }
+
     .info-box b {
       display: block;
       font-size: 12px;
@@ -767,7 +777,12 @@
       const opts = Array.isArray(card.options) ? card.options : [];
       if (!opts.length) return '';
       return `<div class="detail-grid">
-        ${opts.map(o => `<div class="info-box"><b>${escapeHtml(o.label || 'Option')}</b><span>${escapeHtml(o.title || '')}${o.detail ? '\n' + escapeHtml(o.detail) : ''}</span></div>`).join('')}
+        ${opts.map(o => {
+          const inner = `<b>${escapeHtml(o.label || 'Option')}</b><span>${escapeHtml(o.title || '')}${o.detail ? '\n' + escapeHtml(o.detail) : ''}${o.mapsUrl ? '\n📍 Tap to open in Maps' : ''}</span>`;
+          return o.mapsUrl
+            ? `<a class="info-box info-link" href="${escapeHtml(o.mapsUrl)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${inner}</a>`
+            : `<div class="info-box">${inner}</div>`;
+        }).join('')}
       </div>`;
     }
 

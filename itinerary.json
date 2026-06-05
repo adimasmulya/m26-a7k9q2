@@ -523,13 +523,13 @@
           "label": "Ice cream",
           "title": "Nordenfine Ice Cream",
           "detail": "Open from 12:00; short stop if she wakes and timing allows.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nordenfine+Ice+Cream+Torquay+Victoria"
         },
         {
           "label": "Playground",
           "title": "Torquay playground",
           "detail": "Fallback toddler run-around option near Torquay.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Taylor+Park+Torquay+Victoria"
         }
       ]
     },
@@ -678,19 +678,19 @@
           "label": "Pholklore",
           "title": "Pholklore",
           "detail": "Call/check hours before committing.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pholklore+Lorne+Victoria"
         },
         {
           "label": "Umisango",
           "title": "Umisango",
           "detail": "Alternative dinner option in Lorne.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Umisango+Lorne+Victoria"
         },
         {
           "label": "Totti's",
           "title": "Totti's Lorne",
           "detail": "Alternative dinner option in Lorne.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tottis+Lorne+Victoria"
         }
       ]
     },
@@ -924,13 +924,13 @@
           "label": "Groceries",
           "title": "FoodWorks Apollo Bay",
           "detail": "Groceries/provisions for Bimbi Park dinner.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=FoodWorks+Apollo+Bay+Victoria"
         },
         {
           "label": "Takeaway",
           "title": "The Vault Chinese",
           "detail": "Takeaway option in Apollo Bay.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Vault+Chinese+Apollo+Bay+Victoria"
         }
       ]
     },
@@ -1495,19 +1495,19 @@
           "label": "Craypot",
           "title": "Craypot Bistro",
           "detail": "Monday-hours option; check before going.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Craypot+Bistro+Port+Campbell+Victoria"
         },
         {
           "label": "Pizza",
           "title": "REAL Pizza",
           "detail": "Monday-hours option; check before going.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=REAL+Pizza+Port+Campbell+Victoria"
         },
         {
           "label": "Cafe",
           "title": "Waves Cafe",
           "detail": "Monday-hours option; check before going.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Waves+Cafe+Port+Campbell+Victoria"
         }
       ]
     },
@@ -1603,7 +1603,7 @@
           "label": "Lunch search",
           "title": "Warrnambool lunch",
           "detail": "Lunch not fixed; search nearby options.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Warrnambool+Victoria"
         }
       ]
     },
@@ -1814,7 +1814,7 @@
           "label": "Dinner search",
           "title": "Warrnambool dinner",
           "detail": "Dinner not fixed; search nearby options.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Warrnambool+Victoria"
         }
       ]
     },
@@ -2038,13 +2038,13 @@
           "label": "Town dinner",
           "title": "Marysville dinner",
           "detail": "Simple town dinner option.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Marysville+Victoria"
         },
         {
           "label": "Takeaway",
           "title": "Marysville takeaway",
           "detail": "Fallback takeaway search.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=takeaway+Marysville+Victoria"
         }
       ]
     },
@@ -2269,13 +2269,13 @@
           "label": "Town dinner",
           "title": "Marysville dinner",
           "detail": "Simple town dinner option.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Marysville+Victoria"
         },
         {
           "label": "Takeaway",
           "title": "Marysville takeaway",
           "detail": "Fallback takeaway search.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=takeaway+Marysville+Victoria"
         }
       ]
     },
@@ -2884,7 +2884,7 @@
           "label": "Lunch search",
           "title": "Cowes lunch",
           "detail": "Lunch not fixed; search nearby options.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Cowes+Victoria"
         }
       ]
     },
@@ -2989,13 +2989,13 @@
           "label": "Groceries",
           "title": "Provisions nearby",
           "detail": "Dinner from provisions if everyone is tired.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Woolworths+Cowes+Victoria"
         },
         {
           "label": "Restaurant",
           "title": "Cowes restaurant",
           "detail": "Fallback: search nearby Cowes restaurants.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=restaurants+Cowes+Victoria"
         }
       ]
     },
@@ -3185,7 +3185,7 @@
           "label": "Cowes lunch",
           "title": "Cowes lunch",
           "detail": "Lunch not fixed; search nearby options.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Cowes+Victoria"
         }
       ]
     },
@@ -3533,7 +3533,7 @@
           "label": "CBD lunch",
           "title": "Melbourne CBD lunch",
           "detail": "Lunch not fixed; search near Westin / Collins Street.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+near+The+Westin+Melbourne+Collins+Street"
         }
       ]
     },
@@ -3585,7 +3585,7 @@
           "label": "CBD dinner",
           "title": "Melbourne CBD dinner",
           "detail": "Dinner not fixed; search near Westin / Collins Street.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+near+The+Westin+Melbourne+Collins+Street"
         }
       ]
     },
@@ -3637,7 +3637,7 @@
           "label": "Activity search",
           "title": "Melbourne activity",
           "detail": "Morning plan not fixed; search attractions nearby.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=family+activities+Melbourne+CBD"
         }
       ]
     },
@@ -3667,7 +3667,7 @@
           "label": "Lunch search",
           "title": "Melbourne lunch",
           "detail": "Lunch not fixed; search nearby.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Melbourne+CBD"
         }
       ]
     },
@@ -3697,7 +3697,7 @@
           "label": "Dinner search",
           "title": "Melbourne dinner",
           "detail": "Dinner not fixed; search nearby.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Melbourne+CBD"
         }
       ]
     },
@@ -3749,7 +3749,7 @@
           "label": "Activity search",
           "title": "Melbourne activity",
           "detail": "Last full day not fixed; search family-friendly options.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=family+activities+Melbourne+CBD"
         }
       ]
     },
@@ -3779,7 +3779,7 @@
           "label": "Lunch search",
           "title": "Melbourne lunch",
           "detail": "Lunch not fixed; search nearby.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Melbourne+CBD"
         }
       ]
     },
@@ -3809,7 +3809,7 @@
           "label": "Farewell dinner",
           "title": "Melbourne farewell dinner",
           "detail": "Farewell dinner not fixed; search quality options nearby.",
-          "mapsUrl": null
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=best+dinner+Melbourne+CBD"
         }
       ]
     },
