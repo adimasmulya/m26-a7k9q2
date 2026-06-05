@@ -299,7 +299,7 @@
       "type": "transit",
       "title": "Arrival MEL",
       "detail": "SQ237 lands · immigration, baggage",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Melbourne%20Airport%20Tullamarine%20Terminal%202",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -321,7 +321,7 @@
       "type": "transit",
       "title": "Baggage & customs",
       "detail": "Collect bags · customs · car rental shuttle",
-      "mapsUrl": "",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -343,7 +343,7 @@
       "type": "food",
       "title": "Lunch · Nööödles",
       "detail": "Melbourne Airport",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lunch+%C2%B7+N%C3%B6%C3%B6%C3%B6dles+Arrival+%C2%B7+Lorne+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=N%C3%B6%C3%B6%C3%B6dles+Melbourne+Airport+T2",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -365,7 +365,7 @@
       "type": "transit",
       "title": "Car rental · Audi Q5",
       "detail": "Hertz L60707933A2 · Tullamarine · confirm child seat",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Melbourne%20Airport%20Tullamarine%20Terminal%202",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -387,7 +387,7 @@
       "type": "transit",
       "title": "Depart Tullamarine",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cunningham+Pier+Geelong+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -399,13 +399,13 @@
           "label": "Geelong route",
           "title": "Go via Geelong",
           "detail": "Use this if Alyssa is awake: Cunningham Pier/playground, then Coles Westfield Geelong.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cunningham+Pier+Geelong+Victoria"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJCbHcQsMV1GoRwJwR6LFyCjI"
         },
         {
           "label": "Torquay route",
           "title": "Go via Torquay",
           "detail": "Use this if Alyssa is asleep: continue further west, then Coles Torquay / short stop.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Coles+Torquay+Victoria"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe26HAut91GoRSX12zs_wF9c"
         }
       ]
     },
@@ -423,7 +423,7 @@
       "type": "transit",
       "title": "Depart airport area",
       "detail": "Continue driving · daughter still asleep",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Coles+Torquay+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe26HAut91GoRSX12zs_wF9c",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -489,7 +489,7 @@
       "type": "food",
       "title": "Coles Westfield Geelong",
       "detail": "Groceries · ~30 min · stock up for GOR nights",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westfield+Geelong+Coles+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJCbHcQsMV1GoRwJwR6LFyCjI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -511,7 +511,7 @@
       "type": "activity",
       "title": "Nordenfine Ice Cream · 34 Bell St",
       "detail": "Open from 12:00 · or playground · ~30 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nordenfine+Ice+Cream+Torquay+Victoria",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nordenfine+Ice+Cream+34+Bell+St+Torquay",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -523,13 +523,13 @@
           "label": "Ice cream",
           "title": "Nordenfine Ice Cream",
           "detail": "Open from 12:00; short stop if she wakes and timing allows.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nordenfine+Ice+Cream+Torquay+Victoria"
+          "mapsUrl": null
         },
         {
           "label": "Playground",
           "title": "Torquay playground",
           "detail": "Fallback toddler run-around option near Torquay.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Taylor+Park+Torquay+Victoria"
+          "mapsUrl": null
         }
       ]
     },
@@ -547,7 +547,7 @@
       "type": "transit",
       "title": "Depart Geelong",
       "detail": "→ Anglesea · ~40 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fish+by+Moonlite+Anglesea+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe26HAut91GoRSX12zs_wF9c",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -569,7 +569,7 @@
       "type": "transit",
       "title": "Depart Torquay",
       "detail": "→ Anglesea · ~15 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fish+by+Moonlite+Anglesea+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe26HAut91GoRSX12zs_wF9c",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -591,7 +591,7 @@
       "type": "food",
       "title": "Fish by Moonlite · Anglesea",
       "detail": "Seafood dinner · closes 19:00 · both branches converge",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fish+by+Moonlite+Anglesea+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe26HAut91GoRSX12zs_wF9c",
       "activity": "Fish by Moonlite · Anglesea",
       "source": {
         "sheet": "Tab A — East to West",
@@ -622,7 +622,7 @@
       "type": "transit",
       "title": "Depart Anglesea",
       "detail": "→ Lorne · ~20 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mantra+Lorne+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJFWO8t79k02oRbjpHfT76zMw",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -644,7 +644,7 @@
       "type": "hotel",
       "title": "Check in · Mantra Lorne",
       "detail": "1-bed apartment · via ALL\n⚠ Free until 13 Jun · AUD 50 fee 13-18 Jun · non-refundable after 18 Jun",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mantra+Lorne+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJFWO8t79k02oRbjpHfT76zMw",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -666,7 +666,7 @@
       "type": "food",
       "title": "Dinner · Lorne",
       "detail": "If still hungry · Pholklore / Umisango / Tottis · call ahead",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pholklore+Lorne+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -678,19 +678,19 @@
           "label": "Pholklore",
           "title": "Pholklore",
           "detail": "Call/check hours before committing.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pholklore+Lorne+Victoria"
+          "mapsUrl": null
         },
         {
           "label": "Umisango",
           "title": "Umisango",
           "detail": "Alternative dinner option in Lorne.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Umisango+Lorne+Victoria"
+          "mapsUrl": null
         },
         {
           "label": "Totti's",
           "title": "Totti's Lorne",
           "detail": "Alternative dinner option in Lorne.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tottis+Lorne+Victoria"
+          "mapsUrl": null
         }
       ]
     },
@@ -708,7 +708,7 @@
       "type": "food",
       "title": "Breakfast",
       "detail": "Self-cater · Mantra Lorne 1-bed apartment",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Breakfast+GOR+%C2%B7+Bimbi+Park+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJFWO8t79k02oRbjpHfT76zMw",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -730,7 +730,7 @@
       "type": "rest",
       "title": "Morning prep",
       "detail": "Pack bags",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJFWO8t79k02oRbjpHfT76zMw",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -752,7 +752,7 @@
       "type": "food",
       "title": "Le Comptoir Pigalle",
       "detail": "Pastries & bread for the road · closes 14:30",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Le+Comptoir+Pigalle+Lorne+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJdb5zw4Vl02oRZ3pGoyNltDQ",
       "activity": "Le Comptoir Pigalle · Lorne",
       "source": {
         "sheet": "Tab A — East to West",
@@ -783,7 +783,7 @@
       "type": "activity",
       "title": "Morning activity · done by 11:00",
       "detail": "⭐ GOR Story Museum (opens 09:00) or Erskine Falls\n10:00 · Morning activity continues\n10:30 · Morning activity continues",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Great+Ocean+Road+Story+Museum+Lorne+Victoria",
+      "mapsUrl": null,
       "activity": "GOR Story Museum · Lorne",
       "source": {
         "sheet": "Tab A — East to West",
@@ -804,13 +804,13 @@
           "label": "Museum",
           "title": "GOR Story Museum",
           "detail": "Indoor/weather-safe option; opens 09:00.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Great+Ocean+Road+Story+Museum+Lorne+Victoria"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJyXbSCcdk02oR9bJURPOpMKw"
         },
         {
           "label": "Waterfall",
           "title": "Erskine Falls",
           "detail": "Outdoor option; upper lookout only if wet/slippery with toddler.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Erskine+Falls+Lorne+Victoria"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJZ8CHhFVl02oRvgdNLwyuckM"
         }
       ]
     },
@@ -828,7 +828,7 @@
       "type": "activity",
       "title": "Teddy's Lookout",
       "detail": "Panoramic views · 15-20 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Teddys+Lookout+Lorne+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJN0RfaZJk02oRLF0wPLa6JN4",
       "activity": "Teddy's Lookout · Lorne",
       "source": {
         "sheet": "Tab A — East to West",
@@ -859,7 +859,7 @@
       "type": "transit",
       "title": "Depart Lorne",
       "detail": "→ Apollo Bay · ~45 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollo+Bay+Fishermens+Co-op+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJeZ8ALzg302oR1q8vDU8lQ90",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -881,7 +881,7 @@
       "type": "food",
       "title": "Lunch · Fishermen's Co-op",
       "detail": "Apollo Bay · open 11:00-19:00\n13:30 · Lunch continues",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollo+Bay+Fishermens+Co-op+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJeZ8ALzg302oR1q8vDU8lQ90",
       "activity": "Apollo Bay Fishermen's Co-op",
       "source": {
         "sheet": "Tab A — East to West",
@@ -912,7 +912,7 @@
       "type": "food",
       "title": "Dinner provisions",
       "detail": "Foodworks groceries or The Vault Chinese takeaway · Apollo Bay",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=FoodWorks+Apollo+Bay+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -924,13 +924,13 @@
           "label": "Groceries",
           "title": "FoodWorks Apollo Bay",
           "detail": "Groceries/provisions for Bimbi Park dinner.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=FoodWorks+Apollo+Bay+Victoria"
+          "mapsUrl": null
         },
         {
           "label": "Takeaway",
           "title": "The Vault Chinese",
           "detail": "Takeaway option in Apollo Bay.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Vault+Chinese+Apollo+Bay+Victoria"
+          "mapsUrl": null
         }
       ]
     },
@@ -948,7 +948,7 @@
       "type": "transit",
       "title": "Depart Apollo Bay",
       "detail": "→ Cape Otway · ~1 hr drive",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cape+Otway+Lightstation+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqd-ZoF53gqoRP42NCDSXO9c",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -970,7 +970,7 @@
       "type": "activity",
       "title": "Cape Otway Lightstation",
       "detail": "Lighthouse · koalas on entry road · allow 1.5-2 hrs\n16:00 · Cape Otway Lightstation continues\n16:30 · Cape Otway Lightstation continues",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cape+Otway+Lightstation+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqd-ZoF53gqoRP42NCDSXO9c",
       "activity": "Cape Otway Lightstation",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1001,7 +1001,7 @@
       "type": "food",
       "title": "Check in · Bimbi Park",
       "detail": "Cape Otway · settle in, prep dinner",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bimbi+Park+Cape+Otway+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": "Bimbi Park · Cape Otway",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1032,7 +1032,7 @@
       "type": "food",
       "title": "Dinner at camp",
       "detail": "Cook or heat provisions",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1054,7 +1054,7 @@
       "type": "activity",
       "title": "Evening · Bimbi Park",
       "detail": "Stargazing, campfire if available",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bimbi+Park+Cape+Otway+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": "Bimbi Park · Cape Otway",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1085,7 +1085,7 @@
       "type": "food",
       "title": "Breakfast",
       "detail": "Bimbi Park",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Breakfast+GOR+%C2%B7+Port+Campbell+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": "Bimbi Park · Cape Otway",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1116,7 +1116,7 @@
       "type": "hotel",
       "title": "Morning prep",
       "detail": "Pack up · checkout 09:30",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Morning%20prep%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1138,7 +1138,7 @@
       "type": "activity",
       "title": "Checkout",
       "detail": "Bimbi Park",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Checkout+GOR+%C2%B7+Port+Campbell+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": "Bimbi Park · Cape Otway",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1169,7 +1169,7 @@
       "type": "transit",
       "title": "Depart Bimbi Park",
       "detail": "→ Maits Rest · ~1 hr drive",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Depart+Bimbi+Park+GOR+%C2%B7+Port+Campbell+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ9_jMQPIt02oR_oQbQHRaLGI",
       "activity": "Bimbi Park · Cape Otway",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1200,7 +1200,7 @@
       "type": "activity",
       "title": "Maits Rest Rainforest Walk",
       "detail": "~60 min · ancient rainforest boardwalk\n11:30 · Maits Rest continues",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Maits+Rest+Rainforest+Walk+GOR+%C2%B7+Port+Campbell+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ9_jMQPIt02oR_oQbQHRaLGI",
       "activity": "Maits Rest Rainforest Walk",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1231,7 +1231,7 @@
       "type": "transit",
       "title": "Depart Maits Rest",
       "detail": "→ Lavers Hill · ~30 min",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJneMU7xUp02oRqAfXPtUv5_U",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1253,7 +1253,7 @@
       "type": "food",
       "title": "Lunch · The Perch Restaurant",
       "detail": "Lavers Hill Winery · confirm opening hrs Mon\n13:00 · Lunch continues",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lunch+%C2%B7+The+Perch+Restaurant+GOR+%C2%B7+Port+Campbell+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJneMU7xUp02oRqAfXPtUv5_U",
       "activity": "The Perch · Lavers Hill Winery",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1284,7 +1284,7 @@
       "type": "transit",
       "title": "Depart Lavers Hill",
       "detail": "→ apostles cluster · ~1 hr",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Depart+Lavers+Hill+GOR+%C2%B7+Port+Campbell+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJE-KzjwuegqoRzMREy8VNnKQ",
       "activity": "Twelve Apostles Marine NP",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1315,7 +1315,7 @@
       "type": "activity",
       "title": "Gibson Steps",
       "detail": "Beach access · 30-40 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gibson+Steps+GOR+%C2%B7+Port+Campbell+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJE-KzjwuegqoRzMREy8VNnKQ",
       "activity": "Gibson Steps · Port Campbell NP",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1346,7 +1346,7 @@
       "type": "transit",
       "title": "Drive 4 min · Twelve Apostles",
       "detail": "Viewing platform · 20 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Drive+4+min+%C2%B7+Twelve+Apostles+GOR+%C2%B7+Port+Campbell+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJL362CkecgqoRlPjnF4If7Pc",
       "activity": "Twelve Apostles Marine NP",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1377,7 +1377,7 @@
       "type": "transit",
       "title": "Depart Twelve Apostles",
       "detail": "→ Loch Ard Gorge · 10 min drive\n15:40 · Loch Ard Gorge\nDramatic gorge · 30 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Depart+Twelve+Apostles+GOR+%C2%B7+Port+Campbell+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJDYxfGtCfgqoR3bzH2zNqsk0",
       "activity": "Twelve Apostles Marine NP",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1408,7 +1408,7 @@
       "type": "transit",
       "title": "Depart Loch Ard Gorge",
       "detail": "→ Port Campbell · 15 min drive",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Depart+Loch+Ard+Gorge+GOR+%C2%B7+Port+Campbell+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-0EPwmKggqoRyi6-_rCgWjY",
       "activity": "Loch Ard Gorge",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1439,7 +1439,7 @@
       "type": "transit",
       "title": "Arrive Port Campbell",
       "detail": "Children's playground · optional",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-0EPwmKggqoRyi6-_rCgWjY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1461,7 +1461,7 @@
       "type": "hotel",
       "title": "Check in · Loch Ard Motor Inn",
       "detail": "Port Campbell · confirmed\n⚠ Free cancellation until 15 Jun · non-refundable after",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Check+in+%C2%B7+Loch+Ard+Motor+Inn+GOR+%C2%B7+Port+Campbell+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-0EPwmKggqoRyi6-_rCgWjY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1483,7 +1483,7 @@
       "type": "food",
       "title": "Dinner",
       "detail": "Mon hours: ⭐ Craypot Bistro / REAL Pizza / Waves Cafe",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Craypot+Bistro+Port+Campbell+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1495,19 +1495,19 @@
           "label": "Craypot",
           "title": "Craypot Bistro",
           "detail": "Monday-hours option; check before going.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Craypot+Bistro+Port+Campbell+Victoria"
+          "mapsUrl": null
         },
         {
           "label": "Pizza",
           "title": "REAL Pizza",
           "detail": "Monday-hours option; check before going.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=REAL+Pizza+Port+Campbell+Victoria"
+          "mapsUrl": null
         },
         {
           "label": "Cafe",
           "title": "Waves Cafe",
           "detail": "Monday-hours option; check before going.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Waves+Cafe+Port+Campbell+Victoria"
+          "mapsUrl": null
         }
       ]
     },
@@ -1525,7 +1525,7 @@
       "type": "food",
       "title": "Breakfast",
       "detail": "Port Campbell · Loch Ard Motor Inn",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Breakfast+GOR+%C2%B7+Warrnambool+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-0EPwmKggqoRyi6-_rCgWjY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1547,7 +1547,7 @@
       "type": "hotel",
       "title": "Morning prep",
       "detail": "Pack up · checkout 10:00",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Morning%20prep%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-0EPwmKggqoRyi6-_rCgWjY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1569,7 +1569,7 @@
       "type": "hotel",
       "title": "Checkout · depart Port Campbell",
       "detail": "→ Warrnambool · ~50-60 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Warrnambool+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJo18vdvU1zWoRmX6GnBnbh5o",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1591,7 +1591,7 @@
       "type": "food",
       "title": "Arrive Warrnambool · Lunch",
       "detail": "TBC",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Warrnambool+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1603,7 +1603,7 @@
           "label": "Lunch search",
           "title": "Warrnambool lunch",
           "detail": "Lunch not fixed; search nearby options.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Warrnambool+Victoria"
+          "mapsUrl": null
         }
       ]
     },
@@ -1621,7 +1621,7 @@
       "type": "transit",
       "title": "Drive · Tower Hill Wildlife Reserve",
       "detail": "~20 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Drive+%C2%B7+Tower+Hill+Wildlife+Reserve+GOR+%C2%B7+Warrnambool+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJo18vdvU1zWoRmX6GnBnbh5o",
       "activity": "Tower Hill Wildlife Reserve",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1652,7 +1652,7 @@
       "type": "activity",
       "title": "Tower Hill Wildlife Reserve",
       "detail": "Emus, kangaroos, koalas · allow 1 hr\n13:00 · Tower Hill continues",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tower+Hill+Wildlife+Reserve+GOR+%C2%B7+Warrnambool+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJo18vdvU1zWoRmX6GnBnbh5o",
       "activity": "Tower Hill Wildlife Reserve",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1683,7 +1683,7 @@
       "type": "transit",
       "title": "Depart Tower Hill",
       "detail": "→ Warrnambool · ~20 min",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Logan+Beach+Whale+Watching+Platform+Warrnambool+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ39PtxnZNzWoRyiEsue5HTz8",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1705,7 +1705,7 @@
       "type": "activity",
       "title": "Logan Beach",
       "detail": "Southern right whale watching · land-based · Jun-Sep\n14:30 · Logan Beach continues",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Logan+Beach+Whale+Watching+Platform+Warrnambool+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ39PtxnZNzWoRyiEsue5HTz8",
       "activity": "Logan Beach Whale Watching",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1736,7 +1736,7 @@
       "type": "activity",
       "title": "Town walk & playground",
       "detail": "Warrnambool\n15:30 · Town walk & playground continues",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Town%20walk%20%26%20playground%20Warrnambool%0A15%3A30%20%20%20Town%20walk%20%26%20playground%20continues%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1758,7 +1758,7 @@
       "type": "hotel",
       "title": "Check in · Elm Tree Motel",
       "detail": "Warrnambool · confirmed\n⚠ Free cancellation until 23:59 on 20 Jun · non-refundable from 21 Jun",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Check+in+%C2%B7+Elm+Tree+Motel+GOR+%C2%B7+Warrnambool+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1780,7 +1780,7 @@
       "type": "hotel",
       "title": "Freshen up",
       "detail": "Elm Tree Motel · settle in",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Freshen+up+GOR+%C2%B7+Warrnambool+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1802,7 +1802,7 @@
       "type": "food",
       "title": "Dinner · Warrnambool",
       "detail": "TBC",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Warrnambool+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1814,7 +1814,7 @@
           "label": "Dinner search",
           "title": "Warrnambool dinner",
           "detail": "Dinner not fixed; search nearby options.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Warrnambool+Victoria"
+          "mapsUrl": null
         }
       ]
     },
@@ -1832,7 +1832,7 @@
       "type": "food",
       "title": "Breakfast · local café Warrnambool",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1854,7 +1854,7 @@
       "type": "transit",
       "title": "Hard departure → Colac",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Colac+Memorial+Square+Playground+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ63PgDwAP02oREI134qZeehA",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1876,7 +1876,7 @@
       "type": "transit",
       "title": "Arrive Colac · playground · toilet · coffee/snacks · ~45 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arrive+Colac+%C2%B7+playground+%C2%B7+toilet+%C2%B7+coffee%2Fsnacks+%C2%B7+~45+min+Transfer+%C2%B7+Marysville+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ63PgDwAP02oREI134qZeehA",
       "activity": "Colac Memorial Square Playground",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1907,7 +1907,7 @@
       "type": "transit",
       "title": "Depart Colac → Geelong",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westfield+Geelong+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJCbHcQsMV1GoRwJwR6LFyCjI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1929,7 +1929,7 @@
       "type": "food",
       "title": "Arrive Westfield Geelong · Marrybrown · lunch · 1 hr",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arrive+Westfield+Geelong+%C2%B7+Marrybrown+%C2%B7+lunch+%C2%B7+1+hr+Transfer+%C2%B7+Marysville+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJCbHcQsMV1GoRwJwR6LFyCjI",
       "activity": "Marrybrown · Westfield Geelong",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1960,7 +1960,7 @@
       "type": "transit",
       "title": "Depart Geelong → Marysville · 3 hrs",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1982,7 +1982,7 @@
       "type": "hotel",
       "title": "Arrive Peppers Marysville · check in",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arrive+Peppers+Marysville+%C2%B7+check+in+Transfer+%C2%B7+Marysville+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2004,7 +2004,7 @@
       "type": "rest",
       "title": "Settle · daughter decompress",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2026,7 +2026,7 @@
       "type": "food",
       "title": "Simple dinner · Marysville town or takeaway",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Marysville+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2038,13 +2038,13 @@
           "label": "Town dinner",
           "title": "Marysville dinner",
           "detail": "Simple town dinner option.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Marysville+Victoria"
+          "mapsUrl": null
         },
         {
           "label": "Takeaway",
           "title": "Marysville takeaway",
           "detail": "Fallback takeaway search.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=takeaway+Marysville+Victoria"
+          "mapsUrl": null
         }
       ]
     },
@@ -2062,7 +2062,7 @@
       "type": "food",
       "title": "Breakfast · Peppers Marysville or nearby café",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2074,13 +2074,13 @@
           "label": "Hotel",
           "title": "Peppers breakfast",
           "detail": "Breakfast at hotel.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+Victoria"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI"
         },
         {
           "label": "Cafe",
           "title": "Nearby café",
           "detail": "Search nearby café if you prefer outside breakfast.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=cafe+Marysville+Victoria"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI"
         }
       ]
     },
@@ -2098,7 +2098,7 @@
       "type": "transit",
       "title": "Hard departure → Lake Mountain · ~30 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hard+departure+%E2%86%92+Lake+Mountain+%C2%B7+~30+min+Yarra+Valley+%C2%B7+Lake+Mountain+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
       "activity": "Lake Mountain Alpine Resort",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2129,7 +2129,7 @@
       "type": "transit",
       "title": "Arrive Lake Mountain · parking · tickets · gear · toilet · ~30 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arrive+Lake+Mountain+%C2%B7+parking+%C2%B7+tickets+%C2%B7+gear+%C2%B7+toilet+%C2%B7+~30+min+Yarra+Valley+%C2%B7+Lake+Mountain+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
       "activity": "Lake Mountain Alpine Resort",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2160,7 +2160,7 @@
       "type": "activity",
       "title": "Snow play · tobogganing · ~1.5–2 hrs with toddler",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Snow%20play%20%20%20tobogganing%20%20%20~1.5%E2%80%932%20hrs%20with%20toddler%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2182,7 +2182,7 @@
       "type": "food",
       "title": "Lunch/snacks on mountain · wet clothes change · warm up · ~45 min",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2204,7 +2204,7 @@
       "type": "transit",
       "title": "Depart Lake Mountain → Marysville · ~30 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Depart+Lake+Mountain+%E2%86%92+Marysville+%C2%B7+~30+min+Yarra+Valley+%C2%B7+Lake+Mountain+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": "Lake Mountain Alpine Resort",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2235,7 +2235,7 @@
       "type": "hotel",
       "title": "Arrive Peppers Marysville · same room · dump wet gear · daughter bath · rest",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arrive+Peppers+Marysville+%C2%B7+same+room+%C2%B7+dump+wet+gear+%C2%B7+daughter+bath+%C2%B7+rest+Yarra+Valley+%C2%B7+Lake+Mountain+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2257,7 +2257,7 @@
       "type": "food",
       "title": "Simple dinner · Marysville town or takeaway · early night",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Marysville+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2269,13 +2269,13 @@
           "label": "Town dinner",
           "title": "Marysville dinner",
           "detail": "Simple town dinner option.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Marysville+Victoria"
+          "mapsUrl": null
         },
         {
           "label": "Takeaway",
           "title": "Marysville takeaway",
           "detail": "Fallback takeaway search.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=takeaway+Marysville+Victoria"
+          "mapsUrl": null
         }
       ]
     },
@@ -2293,7 +2293,7 @@
       "type": "food",
       "title": "Breakfast · Peppers Marysville · last morning",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Breakfast+%C2%B7+Peppers+Marysville+%C2%B7+last+morning+Healesville+Sanctuary+%C2%B7+Balgownie+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2315,7 +2315,7 @@
       "type": "hotel",
       "title": "Pack up · load luggage · checkout",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2337,7 +2337,7 @@
       "type": "transit",
       "title": "Hard departure → Healesville Sanctuary · ~50 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hard+departure+%E2%86%92+Healesville+Sanctuary+%C2%B7+~50+min+Healesville+Sanctuary+%C2%B7+Balgownie+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJs4tV8FUqKGsRAEIxBXZWBA8",
       "activity": "Healesville Sanctuary",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2368,7 +2368,7 @@
       "type": "transit",
       "title": "Arrive Healesville Sanctuary · tickets · begin visit",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arrive+Healesville+Sanctuary+%C2%B7+tickets+%C2%B7+begin+visit+Healesville+Sanctuary+%C2%B7+Balgownie+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJs4tV8FUqKGsRAEIxBXZWBA8",
       "activity": "Healesville Sanctuary",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2399,7 +2399,7 @@
       "type": "food",
       "title": "Lunch · Sanctuary café or packed",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Healesville+Sanctuary+cafe+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJs4tV8FUqKGsRAEIxBXZWBA8",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2411,13 +2411,13 @@
           "label": "Cafe",
           "title": "Sanctuary café",
           "detail": "Eat at Healesville Sanctuary café.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Healesville+Sanctuary+cafe+Victoria"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJs4tV8FUqKGsRAEIxBXZWBA8"
         },
         {
           "label": "Packed",
           "title": "Packed lunch",
           "detail": "No navigation needed; use packed lunch if queues/weather are poor.",
-          "mapsUrl": ""
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJs4tV8FUqKGsRAEIxBXZWBA8"
         }
       ]
     },
@@ -2435,7 +2435,7 @@
       "type": "hotel",
       "title": "Depart → Balgownie Estate · ~25 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Depart+%E2%86%92+Balgownie+Estate+%C2%B7+~25+min+Healesville+Sanctuary+%C2%B7+Balgownie+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2457,7 +2457,7 @@
       "type": "hotel",
       "title": "Arrive Balgownie · early check in if available · drop bags",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2479,7 +2479,7 @@
       "type": "rest",
       "title": "Cellar door tasting · both adults · daughter settled",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2501,7 +2501,7 @@
       "type": "hotel",
       "title": "Room · daughter bath · rest",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Room%20%20%20daughter%20bath%20%20%20rest%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2523,7 +2523,7 @@
       "type": "food",
       "title": "Dinner · Balgownie restaurant · reserve ahead · kids menu",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dinner%20%20%20Balgownie%20restaurant%20%20%20reserve%20ahead%20%20%20kids%20menu%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2545,7 +2545,7 @@
       "type": "hotel",
       "title": "Back to room · no driving · full wind down",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Back%20to%20room%20%20%20no%20driving%20%20%20full%20wind%20down%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2567,7 +2567,7 @@
       "type": "food",
       "title": "Slow breakfast · Balgownie on-site",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Slow%20breakfast%20%20%20Balgownie%20on-site%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2589,7 +2589,7 @@
       "type": "hotel",
       "title": "Pack up · load luggage · checkout",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2611,7 +2611,7 @@
       "type": "food",
       "title": "Hard departure → The Chocolateries · ~5 min",
       "detail": "10:05 · Arrive · free entry · tastings · daughter on lawns · 1 hr",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hard+departure+%E2%86%92+The+Chocolateries+%C2%B7+~5+min+Phillip+Island+%C2%B7+Arrival+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5R_CsX_T12oRN0n5x7Ahs0Q",
       "activity": "The Chocolateries · Yarra Glen",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2642,7 +2642,7 @@
       "type": "transit",
       "title": "Depart → San Remo · ~2h30 real-life · school holiday Saturday traffic",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJOcVhaK_z1WoRt3PBihuOfNA",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2664,7 +2664,7 @@
       "type": "food",
       "title": "Arrive San Remo Fisherman's Co-op · lunch · allow 1.5 hrs · queue likely",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arrive+San+Remo+Fisherman%27s+Co-op+%C2%B7+lunch+%C2%B7+allow+1.5+hrs+%C2%B7+queue+likely+Phillip+Island+%C2%B7+Arrival+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJOcVhaK_z1WoRt3PBihuOfNA",
       "activity": "San Remo Fisherman's Co-op",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2695,7 +2695,7 @@
       "type": "food",
       "title": "Depart San Remo → Woolworths · ~20 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Woolworths+Cowes+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2717,7 +2717,7 @@
       "type": "food",
       "title": "Woolworths · groceries/provisions run · ~45 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Woolworths%20%20%20groceries/provisions%20run%20%20%20~45%20min%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Woolworths+Cowes+Phillip+Island",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2739,7 +2739,7 @@
       "type": "food",
       "title": "Depart Woolworths → Ramada Wyndham · ~5–7 min",
       "detail": "16:20 · Arrive Ramada Wyndham · check in · unpack · done for the day",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2761,7 +2761,7 @@
       "type": "food",
       "title": "Dinner · from provisions · in room or hotel",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Woolworths+Cowes+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2773,13 +2773,13 @@
           "label": "Provisions",
           "title": "In-room provisions",
           "detail": "No driving option from provisions.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Woolworths+Cowes+Victoria"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
         },
         {
           "label": "Hotel",
           "title": "Hotel meal option",
           "detail": "Search hotel / nearby meal option.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Phillip+Island+restaurant"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
         }
       ]
     },
@@ -2797,7 +2797,7 @@
       "type": "food",
       "title": "Breakfast · hotel · relaxed",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2819,7 +2819,7 @@
       "type": "transit",
       "title": "Depart → Koala Conservation Reserve · ~15 min",
       "detail": "10:15 · Arrive · treetop boardwalk · koala viewing · 1 hr",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Koala+Conservation+Reserve+Phillip+Island+Victoria",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJB6p56FDs1WoRkOdCFKV5BQ8",
       "activity": "Koala Conservation Reserve",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2850,7 +2850,7 @@
       "type": "transit",
       "title": "Depart → Cowes · ~20 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cowes+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2872,7 +2872,7 @@
       "type": "food",
       "title": "Lunch · Cowes · TBC",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Cowes+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2884,7 +2884,7 @@
           "label": "Lunch search",
           "title": "Cowes lunch",
           "detail": "Lunch not fixed; search nearby options.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Cowes+Victoria"
+          "mapsUrl": null
         }
       ]
     },
@@ -2902,7 +2902,7 @@
       "type": "transit",
       "title": "Depart → Nobbies Centre · ~20 min",
       "detail": "12:50 · Nobbies · clifftop boardwalk · seal viewing · 1 hr",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Depart+%E2%86%92+Nobbies+Centre+%C2%B7+~20+min+Phillip+Island+%C2%B7+Day+2+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe8bUIzW-1WoRGxZcFXtSxlE",
       "activity": "Nobbies Centre",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2933,7 +2933,7 @@
       "type": "hotel",
       "title": "Depart → hotel · ~20 min",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2955,7 +2955,7 @@
       "type": "food",
       "title": "Back at hotel · no more agenda · rest · explore nearby if energy allows · free until dinner",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Back%20at%20hotel%20%20%20no%20more%20agenda%20%20%20rest%20%20%20explore%20nearby%20if%20energy%20allows%20%20%20free%20until%20dinner%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2977,7 +2977,7 @@
       "type": "food",
       "title": "Dinner · provisions or Cowes restaurant · TBC",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Woolworths+Cowes+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2989,13 +2989,13 @@
           "label": "Groceries",
           "title": "Provisions nearby",
           "detail": "Dinner from provisions if everyone is tired.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Woolworths+Cowes+Victoria"
+          "mapsUrl": null
         },
         {
           "label": "Restaurant",
           "title": "Cowes restaurant",
           "detail": "Fallback: search nearby Cowes restaurants.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=restaurants+Cowes+Victoria"
+          "mapsUrl": null
         }
       ]
     },
@@ -3013,7 +3013,7 @@
       "type": "food",
       "title": "Wake up · quick breakfast · hotel or provisions",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+by+Wyndham+Phillip+Island",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3025,13 +3025,13 @@
           "label": "Hotel",
           "title": "Hotel breakfast / provisions",
           "detail": "No navigation needed if eating in room/hotel.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+by+Wyndham+Phillip+Island"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
         },
         {
           "label": "Provisions",
           "title": "Nearby provisions",
           "detail": "Search grocery/provisions nearby if needed.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Woolworths+Cowes+Victoria"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
         }
       ]
     },
@@ -3049,7 +3049,7 @@
       "type": "transit",
       "title": "Depart → Rhyll Jetty · ~20 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Depart+%E2%86%92+Rhyll+Jetty+%C2%B7+~20+min+Phillip+Island+%C2%B7+Day+3+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
       "activity": "Whale Watching · Wildlife Coast Cruises",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3080,7 +3080,7 @@
       "type": "transit",
       "title": "Arrive Rhyll Jetty · board · motion sickness tablets if needed",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arrive+Rhyll+Jetty+%C2%B7+board+%C2%B7+motion+sickness+tablets+if+needed+Phillip+Island+%C2%B7+Day+3+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
       "activity": "Whale Watching · Wildlife Coast Cruises",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3111,7 +3111,7 @@
       "type": "transit",
       "title": "Whale watching cruise departs · 4 hrs",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Whale+watching+cruise+departs+%C2%B7+4+hrs+Phillip+Island+%C2%B7+Day+3+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
       "activity": "Whale Watching · Wildlife Coast Cruises",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3142,7 +3142,7 @@
       "type": "activity",
       "title": "Back at Rhyll Jetty · disembark",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Back+at+Rhyll+Jetty+%C2%B7+disembark+Phillip+Island+%C2%B7+Day+3+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
       "activity": "Whale Watching · Wildlife Coast Cruises",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3173,7 +3173,7 @@
       "type": "food",
       "title": "Late lunch · Cowes or nearby · TBC",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Cowes+Victoria",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3185,7 +3185,7 @@
           "label": "Cowes lunch",
           "title": "Cowes lunch",
           "detail": "Lunch not fixed; search nearby options.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Cowes+Victoria"
+          "mapsUrl": null
         }
       ]
     },
@@ -3203,7 +3203,7 @@
       "type": "hotel",
       "title": "Free time · rest at hotel · no agenda",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Free%20time%20%20%20rest%20at%20hotel%20%20%20no%20agenda%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3225,7 +3225,7 @@
       "type": "transit",
       "title": "⚠ Hard cutoff · depart → Penguin Parade · ~15 min",
       "detail": "17:15 · Arrive · settle into viewing area",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E2%9A%A0+Hard+cutoff+%C2%B7+depart+%E2%86%92+Penguin+Parade+%C2%B7+~15+min+Phillip+Island+%C2%B7+Day+3+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJW7bw6GeV1WoRJ-q-NvGxZZw",
       "activity": "Penguin Parade",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3256,7 +3256,7 @@
       "type": "activity",
       "title": "Penguin Parade begins · sunset",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Penguin+Parade+begins+%C2%B7+sunset+Phillip+Island+%C2%B7+Day+3+Victoria+Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJW7bw6GeV1WoRJ-q-NvGxZZw",
       "activity": "Penguin Parade",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3287,7 +3287,7 @@
       "type": "food",
       "title": "Parade ends · depart → hotel",
       "detail": "19:15 · Back at Ramada · dinner from provisions",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parade%20ends%20Victoria%20Australia",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3309,7 +3309,7 @@
       "type": "transit",
       "title": "⚠ Pack bags tonight · Day 11 departs 09:00 sharp · early night",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3331,7 +3331,7 @@
       "type": "food",
       "title": "Wake up · quick breakfast · hotel or provisions",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Westin+Melbourne",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3343,13 +3343,13 @@
           "label": "Hotel",
           "title": "Hotel breakfast / provisions",
           "detail": "No navigation needed if eating in room/hotel.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Westin+Melbourne"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
         },
         {
           "label": "Cafe",
           "title": "Nearby café",
           "detail": "Search café near Westin Melbourne.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=cafe+near+The+Westin+Melbourne+Collins+Street"
+          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
         }
       ]
     },
@@ -3367,7 +3367,7 @@
       "type": "hotel",
       "title": "Final room sweep · passports · chargers · medicine · toys",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3389,7 +3389,7 @@
       "type": "hotel",
       "title": "Load luggage into Q5 · checkout",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3411,7 +3411,7 @@
       "type": "transit",
       "title": "⚠ Hard departure · Phillip Island → Melbourne CBD · ~2h15 real-life",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Westin+Melbourne",
+      "mapsUrl": "https://maps.app.goo.gl/b19zq43S6YvbjKjN7",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3433,7 +3433,7 @@
       "type": "hotel",
       "title": "Arrive Westin · 205 Collins St · pull into driveway",
       "detail": "11:20 · Concierge takes all luggage · Dissa + daughter register at front desk",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westin%20Melbourne%20205%20Collins%20St%20Melbourne",
+      "mapsUrl": "https://maps.app.goo.gl/b19zq43S6YvbjKjN7",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3455,7 +3455,7 @@
       "type": "transit",
       "title": "Adimas departs solo → Hertz Franklin St · ~10 min drive",
       "detail": "11:35 · Arrive Hertz · return Q5 · paperwork · ⚠ hard deadline 13:00 · comfortable buffer",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hertz%20Melbourne%20Downtown%208%20Franklin%20St%20Melbourne",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hertz+8+Franklin+St+Melbourne",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3477,7 +3477,7 @@
       "type": "hotel",
       "title": "Done · Grab/tram → Westin · ~15 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westin%20Melbourne%20205%20Collins%20St%20Melbourne",
+      "mapsUrl": "https://maps.app.goo.gl/b19zq43S6YvbjKjN7",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3499,7 +3499,7 @@
       "type": "hotel",
       "title": "Reunited at Westin lobby · bags in storage",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westin%20Melbourne%20205%20Collins%20St%20Melbourne",
+      "mapsUrl": "https://maps.app.goo.gl/b19zq43S6YvbjKjN7",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3521,7 +3521,7 @@
       "type": "food",
       "title": "Lunch · CBD · TBC",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+near+The+Westin+Melbourne+Collins+Street",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3533,7 +3533,7 @@
           "label": "CBD lunch",
           "title": "Melbourne CBD lunch",
           "detail": "Lunch not fixed; search near Westin / Collins Street.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+near+The+Westin+Melbourne+Collins+Street"
+          "mapsUrl": null
         }
       ]
     },
@@ -3551,7 +3551,7 @@
       "type": "hotel",
       "title": "Check in · room ready · afternoon free · explore CBD or rest",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": "https://maps.app.goo.gl/b19zq43S6YvbjKjN7",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3573,7 +3573,7 @@
       "type": "food",
       "title": "Dinner · TBC",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+near+The+Westin+Melbourne+Collins+Street",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3585,7 +3585,7 @@
           "label": "CBD dinner",
           "title": "Melbourne CBD dinner",
           "detail": "Dinner not fixed; search near Westin / Collins Street.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+near+The+Westin+Melbourne+Collins+Street"
+          "mapsUrl": null
         }
       ]
     },
@@ -3603,7 +3603,7 @@
       "type": "food",
       "title": "Breakfast",
       "detail": "Westin Melbourne",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westin%20Melbourne%20205%20Collins%20St%20Melbourne",
+      "mapsUrl": "https://maps.app.goo.gl/b19zq43S6YvbjKjN7",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3625,7 +3625,7 @@
       "type": "activity",
       "title": "Morning · Melbourne",
       "detail": "TBC",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=family+activities+Melbourne+CBD",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3637,7 +3637,7 @@
           "label": "Activity search",
           "title": "Melbourne activity",
           "detail": "Morning plan not fixed; search attractions nearby.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=family+activities+Melbourne+CBD"
+          "mapsUrl": null
         }
       ]
     },
@@ -3655,7 +3655,7 @@
       "type": "food",
       "title": "Lunch",
       "detail": "TBC",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Melbourne+CBD",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3667,7 +3667,7 @@
           "label": "Lunch search",
           "title": "Melbourne lunch",
           "detail": "Lunch not fixed; search nearby.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Melbourne+CBD"
+          "mapsUrl": null
         }
       ]
     },
@@ -3685,7 +3685,7 @@
       "type": "food",
       "title": "Dinner",
       "detail": "TBC",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Melbourne+CBD",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3697,7 +3697,7 @@
           "label": "Dinner search",
           "title": "Melbourne dinner",
           "detail": "Dinner not fixed; search nearby.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Melbourne+CBD"
+          "mapsUrl": null
         }
       ]
     },
@@ -3715,7 +3715,7 @@
       "type": "food",
       "title": "Breakfast",
       "detail": "Westin Melbourne",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westin%20Melbourne%20205%20Collins%20St%20Melbourne",
+      "mapsUrl": "https://maps.app.goo.gl/b19zq43S6YvbjKjN7",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3737,7 +3737,7 @@
       "type": "activity",
       "title": "Morning · Melbourne",
       "detail": "Last full day · TBC",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=family+activities+Melbourne+CBD",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3749,7 +3749,7 @@
           "label": "Activity search",
           "title": "Melbourne activity",
           "detail": "Last full day not fixed; search family-friendly options.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=family+activities+Melbourne+CBD"
+          "mapsUrl": null
         }
       ]
     },
@@ -3767,7 +3767,7 @@
       "type": "food",
       "title": "Lunch",
       "detail": "TBC",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Melbourne+CBD",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3779,7 +3779,7 @@
           "label": "Lunch search",
           "title": "Melbourne lunch",
           "detail": "Lunch not fixed; search nearby.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Melbourne+CBD"
+          "mapsUrl": null
         }
       ]
     },
@@ -3797,7 +3797,7 @@
       "type": "food",
       "title": "Farewell dinner",
       "detail": "TBC · make it a good one",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=best+dinner+Melbourne+CBD",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3809,7 +3809,7 @@
           "label": "Farewell dinner",
           "title": "Melbourne farewell dinner",
           "detail": "Farewell dinner not fixed; search quality options nearby.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=best+dinner+Melbourne+CBD"
+          "mapsUrl": null
         }
       ]
     },
@@ -3827,7 +3827,7 @@
       "type": "food",
       "title": "Breakfast · Westin · final morning",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westin%20Melbourne%20205%20Collins%20St%20Melbourne",
+      "mapsUrl": "https://maps.app.goo.gl/b19zq43S6YvbjKjN7",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3849,7 +3849,7 @@
       "type": "hotel",
       "title": "Hard departure · Westin",
       "detail": "Uber/taxi pre-booked · all luggage loaded",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Melbourne+Airport+Terminal+2",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Melbourne+Airport+T2+Departures",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3871,7 +3871,7 @@
       "type": "transit",
       "title": "Arrive Melbourne Airport T2",
       "detail": "QF37 · Qantas international",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Melbourne%20Airport%20Tullamarine%20Terminal%202",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Melbourne+Airport+T2+Departures",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3893,7 +3893,7 @@
       "type": "hotel",
       "title": "Check-in / bag drop · QF counter",
       "detail": "Allow 30 min",
-      "mapsUrl": "",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3915,7 +3915,7 @@
       "type": "transit",
       "title": "Security + outbound immigration",
       "detail": "Allow 35 min",
-      "mapsUrl": "",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3937,7 +3937,7 @@
       "type": "activity",
       "title": "Airside · toilet / water / snacks / toddler management",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Airside%20%20%20toilet%20/%20water%20/%20snacks%20/%20toddler%20management%20Victoria%20Australia",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3959,7 +3959,7 @@
       "type": "transit",
       "title": "Move toward gate",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3981,7 +3981,7 @@
       "type": "transit",
       "title": "Gate-side · boarding starts",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -4003,7 +4003,7 @@
       "type": "transit",
       "title": "Gate closes",
       "detail": "15:55 · QF37 departs MEL → SIN",
-      "mapsUrl": "",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -4025,7 +4025,7 @@
       "type": "transit",
       "title": "Arrive Singapore",
       "detail": "",
-      "mapsUrl": "",
+      "mapsUrl": null,
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
