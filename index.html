@@ -361,6 +361,13 @@
       overflow: hidden;
     }
 
+    .anchor.anchor-empty {
+      background: rgba(255,255,255,.05);
+      border-style: dashed;
+      border-color: rgba(255,255,255,.22);
+    }
+    .anchor.anchor-empty span { font-weight: 600; color: rgba(255,255,255,.7); }
+
     .anchor b {
       display: block;
       font-size: 11px;
@@ -715,11 +722,11 @@
     }
 
     function nextFoodForCard(card) {
+      // Only look forward within the SAME day. If no food stop remains today,
+      // return null so the anchor falls back to a "food near me" search.
       const cards = visibleCards();
       const start = minutes(card.start);
-      return cards.find(c => c.date === card.date && c.type === 'food' && minutes(c.start) >= start) ||
-             cards.find(c => c.date === card.date && c.type === 'food') ||
-             null;
+      return cards.find(c => c.date === card.date && c.type === 'food' && minutes(c.start) >= start) || null;
     }
 
     function mapsButton(url, label = 'Open Maps') {
@@ -850,9 +857,9 @@
       const hotel = hotelForCard(card);
       $('anchors').innerHTML = `
         <div class="anchor-inner">
-          <button class="anchor" id="foodAnchor">
-            <b>Next food</b>
-            <span>${food ? `${food.start} · ${escapeHtml(food.title)}` : 'No food stop listed'}</span>
+          <button class="anchor${food ? '' : ' anchor-empty'}" id="foodAnchor">
+            <b>${food ? 'Next food' : 'Food · none planned'}</b>
+            <span>${food ? `${food.start} · ${escapeHtml(food.title)}` : 'Tap to search nearby'}</span>
           </button>
           <button class="anchor" id="hotelAnchor">
             <b>Tonight</b>
@@ -860,7 +867,7 @@
           </button>
         </div>
       `;
-      $('foodAnchor').addEventListener('click', () => food ? openCardModal(food) : null);
+      $('foodAnchor').addEventListener('click', () => food ? openCardModal(food) : openFoodSearchModal());
       $('hotelAnchor').addEventListener('click', () => hotel ? openHotelModal(hotel) : null);
     }
 
@@ -930,6 +937,20 @@
         ${optionDetails(card)}
         ${activityDetails(card)}
         <div class="actions">${mapActions(card)}<button class="btn secondary" id="modalCloseBtn">Close</button></div>
+      `);
+      $('modalCloseBtn').addEventListener('click', closeModal);
+    }
+
+    function openFoodSearchModal() {
+      const url = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('food near me');
+      openModal(`
+        <div class="modal-title">No food stop planned</div>
+        <div class="modal-meta">Nothing shortlisted for this part of the day</div>
+        <div class="summary">There is no planned food stop left today. You can open Maps to find something open near where you are right now.</div>
+        <div class="actions">
+          <a class="btn primary" href="${url}" target="_blank" rel="noopener">📍 Search food near me</a>
+          <button class="btn secondary" id="modalCloseBtn">Close</button>
+        </div>
       `);
       $('modalCloseBtn').addEventListener('click', closeModal);
     }
