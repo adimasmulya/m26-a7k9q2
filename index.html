@@ -721,12 +721,28 @@
       return state.data.hotels.find(h => h.id === day.hotelId) || null;
     }
 
+    function isRealFoodStop(c) {
+      // A food card only counts as a genuine shortlisted stop if it names a real
+      // venue. TBC / placeholder cards (no fixed restaurant) should fall through
+      // to the "food near me" search instead of posing as a definite plan.
+      if (!c) return false;
+      const text = ((c.title || '') + ' ' + (c.detail || '')).trim();
+      // "TBC" anywhere in title or detail = not a fixed venue
+      if (/\bTBC\b/i.test(text)) return false;
+      const opts = Array.isArray(c.options) ? c.options : [];
+      // a card whose ONLY option is a generic "... search" placeholder is not fixed
+      if (opts.length === 1 && /search$/i.test((opts[0].label || '').trim())) return false;
+      return true;
+    }
+
     function nextFoodForCard(card) {
-      // Only look forward within the SAME day. If no food stop remains today,
-      // return null so the anchor falls back to a "food near me" search.
+      // Only look forward within the SAME day, and only at REAL (non-TBC) food
+      // stops. If none remain today, return null so the anchor falls back to a
+      // "food near me" search.
       const cards = visibleCards();
       const start = minutes(card.start);
-      return cards.find(c => c.date === card.date && c.type === 'food' && minutes(c.start) >= start) || null;
+      return cards.find(c => c.date === card.date && c.type === 'food'
+                            && minutes(c.start) >= start && isRealFoodStop(c)) || null;
     }
 
     function mapsButton(url, label = 'Open Maps') {
