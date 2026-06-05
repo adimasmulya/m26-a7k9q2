@@ -148,6 +148,7 @@
     .card.food::before { background: linear-gradient(90deg, #b45309, #f59e0b); }
     .card.hotel::before { background: linear-gradient(90deg, #6d28d9, #a78bfa); }
     .card.rest::before { background: linear-gradient(90deg, #475467, #98a2b3); }
+    .card.warn::before { background: linear-gradient(90deg, #b42318, #f97066); height: 9px; }
 
     .card-body {
       padding: 22px 20px 18px;
@@ -157,52 +158,124 @@
       cursor: pointer;
     }
 
-    .eyebrow {
+    .daystrip {
       display: flex;
       flex-wrap: wrap;
-      gap: 7px;
+      gap: 8px;
       align-items: center;
-      margin-bottom: 17px;
+      margin-bottom: 14px;
     }
 
-    .type-pill {
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-size: 11px;
-      letter-spacing: .04em;
+    .daystrip-leg {
+      font-size: 10.5px;
+      letter-spacing: .07em;
       text-transform: uppercase;
       font-weight: 800;
-      color: #fff;
+      color: var(--muted);
+      padding: 2px 0;
+      position: relative;
+      padding-left: 13px;
+    }
+    .daystrip-leg::before {
+      content: "";
+      position: absolute; left: 0; top: 50%;
+      width: 7px; height: 7px; border-radius: 50%;
+      transform: translateY(-50%);
       background: var(--accent);
     }
+    .daystrip-leg.transit::before { background: var(--transit); }
+    .daystrip-leg.food::before { background: var(--food); }
+    .daystrip-leg.hotel::before { background: var(--hotel); }
+    .daystrip-leg.rest::before { background: var(--rest); }
 
-    .type-pill.transit { background: var(--transit); }
-    .type-pill.food { background: var(--food); }
-    .type-pill.hotel { background: var(--hotel); }
-    .type-pill.rest { background: var(--rest); }
+    .daystrip-day {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--muted);
+    }
 
-    .small-pill {
-      padding: 5px 9px;
+    .live-tag {
+      margin-left: auto;
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      color: #15803d;
+    }
+
+    /* Hero time row */
+    .time-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .time-digits {
+      font-size: clamp(34px, 9vw, 48px);
+      font-weight: 820;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+    .time-dash { opacity: .45; margin: 0 2px; font-weight: 500; }
+    .time-remaining {
+      margin-top: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #15803d;
+    }
+    .dial-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: none;
+    }
+    .dial { display: block; }
+    .dial-now {
+      font-size: 9.5px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 2px;
+      font-weight: 700;
+    }
+
+    .warn-flag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      color: var(--danger);
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      padding: 4px 9px;
       border-radius: 999px;
-      background: #eef2f7;
-      color: #475467;
-      font-size: 12px;
-      font-weight: 650;
+      margin-bottom: 12px;
     }
 
     .card-title {
-      font-size: clamp(31px, 7.8vw, 48px);
-      line-height: .98;
-      letter-spacing: -0.055em;
-      margin: 0 0 14px;
-      font-weight: 860;
+      font-size: clamp(23px, 5.6vw, 31px);
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      margin: 0 0 6px;
+      font-weight: 800;
     }
 
-    .card-time {
-      color: #344054;
-      font-size: 16px;
-      font-weight: 750;
-      margin-bottom: 18px;
+    .card-sub {
+      font-size: 15px;
+      font-weight: 500;
+      color: #475467;
+      line-height: 1.4;
+      margin-bottom: 12px;
+      white-space: pre-line;
+    }
+
+    .route-line {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 16px;
     }
 
     .summary {
@@ -645,6 +718,27 @@
 
     const $ = (id) => document.getElementById(id);
 
+    // --- Time source -------------------------------------------------------
+    // Single source of truth for "what time is it now". By default this is the
+    // real clock. For testing before the trip, append ?now=2026-06-22T16:32 to
+    // the URL and the whole app behaves as if that were the current moment.
+    // Absent the parameter, behaviour is identical to using the real clock.
+    function getNowOverride() {
+      try {
+        const p = new URLSearchParams(window.location.search).get('now');
+        if (!p) return null;
+        // Interpret the supplied time as Melbourne local (the trip's timezone).
+        const offset = '+10:00';
+        const iso = /\d{2}:\d{2}:\d{2}/.test(p) ? p : (p.length === 16 ? p + ':00' : p);
+        const d = new Date(`${iso}${offset}`);
+        return isNaN(d.getTime()) ? null : d;
+      } catch (e) { return null; }
+    }
+
+    function getNow() {
+      return getNowOverride() || new Date();
+    }
+
     function escapeHtml(value) {
       return String(value ?? '').replace(/[&<>"']/g, ch => ({
         '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
@@ -688,7 +782,7 @@
     function findNowCardId() {
       const cards = visibleCards();
       if (!cards.length) return null;
-      const now = new Date();
+      const now = getNow();
       const active = cards.find(c => now >= localDate(c, 'start') && now < localDate(c, 'end'));
       if (active) return active.id;
       const upcoming = cards.find(c => now < localDate(c, 'start'));
@@ -802,8 +896,70 @@
       ).join('')}</div>`;
     }
 
+    // --- Card presentation helpers ----------------------------------------
+    // Split a title into a short bold headline + a quieter sub-line.
+    // Uses the " · " separator the data already employs. A leading ⚠ is pulled
+    // out as a warning flag so the card can mark it without shouting in the title.
+    function splitTitle(rawTitle) {
+      let t = String(rawTitle || '').trim();
+      let warn = false;
+      if (t.startsWith('⚠')) { warn = true; t = t.replace(/^⚠\s*/, ''); }
+      const parts = t.split('·').map(s => s.trim()).filter(Boolean);
+      const headline = parts.length ? parts[0] : t;
+      const sub = parts.length > 1 ? parts.slice(1).join(' · ') : '';
+      return { headline, sub, warn };
+    }
+
+    // Is the given card the one happening at the current (real or overridden) moment?
+    function isLiveCard(card) {
+      if (!card) return false;
+      const now = getNow();
+      return now >= localDate(card, 'start') && now < localDate(card, 'end');
+    }
+
+    // Build the "time remaining" line for the live card.
+    function remainingText(card) {
+      const now = getNow();
+      const end = localDate(card, 'end');
+      const mins = Math.max(0, Math.round((end - now) / 60000));
+      if (mins <= 0) return 'wrapping up';
+      if (mins < 60) return `${mins} min left`;
+      const h = Math.floor(mins / 60), m = mins % 60;
+      return m ? `${h} hr ${m} min left` : `${h} hr left`;
+    }
+
+    // Small 12-hour dial: full circle = 12h. Highlighted arc = the card's slot.
+    // A live dot marks the current moment. Only rendered for the live card.
+    // (12h chosen for legibility — a 1-hr slot is a readable 30° wedge.)
+    function dialSvg(card) {
+      const R = 26, C = 30, STROKE = 5;          // geometry within a 60x60 box
+      const toAngle = (mins) => ((mins % 720) / 720) * 360 - 90; // 12h clock, 0 at top
+      const polar = (mins, r) => {
+        const a = toAngle(mins) * Math.PI / 180;
+        return [C + r * Math.cos(a), C + r * Math.sin(a)];
+      };
+      const s = minutes(card.start), e = minutes(card.end);
+      const [sx, sy] = polar(s, R), [ex, ey] = polar(e, R);
+      const large = ((e - s) % 720) > 360 ? 1 : 0;
+      const arc = `M ${sx.toFixed(2)} ${sy.toFixed(2)} A ${R} ${R} 0 ${large} 1 ${ex.toFixed(2)} ${ey.toFixed(2)}`;
+
+      const now = getNow();
+      const nowMins = now.getHours() * 60 + now.getMinutes();
+      const [nx, ny] = polar(nowMins, R);
+
+      const col = ({transit:'#0369a1',food:'#b45309',hotel:'#7c3aed',rest:'#475467',activity:'#2563eb'})[card.type] || '#2563eb';
+      return `
+        <svg class="dial" viewBox="0 0 60 60" width="56" height="56" aria-hidden="true">
+          <circle cx="${C}" cy="${C}" r="${R}" fill="none" stroke="#e5e7eb" stroke-width="${STROKE}"/>
+          <path d="${arc}" fill="none" stroke="${col}" stroke-width="${STROKE}" stroke-linecap="round"/>
+          <circle cx="${nx.toFixed(2)}" cy="${ny.toFixed(2)}" r="4.5" fill="#101828" stroke="#fff" stroke-width="2"/>
+        </svg>`;
+    }
+
     function renderNormalCard(card) {
       const expanded = state.expanded ? ' expanded' : '';
+      const { headline, sub, warn } = splitTitle(card.title);
+      const live = isLiveCard(card);
       const details = [
         card.detail ? `<div class="summary">${escapeHtml(card.detail)}</div>` : '',
         optionDetails(card),
@@ -811,18 +967,31 @@
         `<div class="hint">Tap card to ${state.expanded ? 'collapse' : 'expand'} details. Swipe left/right for next or previous.</div>`
       ].join('');
 
+      const timeBlock = `
+        <div class="time-row${live ? ' live' : ''}">
+          <div class="time-main">
+            <div class="time-digits">${escapeHtml(card.start)}<span class="time-dash">–</span>${escapeHtml(card.end)}</div>
+            ${live ? `<div class="time-remaining">${escapeHtml(remainingText(card))}</div>` : ''}
+          </div>
+          ${live ? `<div class="dial-wrap">${dialSvg(card)}<span class="dial-now">now</span></div>` : ''}
+        </div>`;
+
       $('main').innerHTML = `
         <section class="card-shell">
-          <article class="card ${escapeHtml(card.type)}${expanded}" id="activeCard">
+          <article class="card ${escapeHtml(card.type)}${expanded}${warn ? ' warn' : ''}" id="activeCard">
             <div class="card-body" id="cardBody">
-              <div class="eyebrow">
-                <span class="type-pill ${escapeHtml(card.type)}">${escapeHtml(typeLabel(card.type))}</span>
-                <span class="small-pill">${escapeHtml(card.dayLabel)} · ${escapeHtml(card.dateLabel)}</span>
-                ${card.branch ? `<span class="small-pill">${escapeHtml(card.branch.toUpperCase())}</span>` : ''}
+              <div class="daystrip">
+                <span class="daystrip-leg ${escapeHtml(card.type)}">${escapeHtml(typeLabel(card.type))}</span>
+                <span class="daystrip-day">${escapeHtml(card.dayLabel)} · ${escapeHtml(card.dateLabel)}</span>
+                ${card.branch ? `<span class="daystrip-day">${escapeHtml(card.branch.toUpperCase())}</span>` : ''}
+                ${live ? `<span class="live-tag">● NOW</span>` : ''}
               </div>
-              <h1 class="card-title">${escapeHtml(card.title)}</h1>
-              <div class="card-time">${escapeHtml(card.start)}–${escapeHtml(card.end)} · ${escapeHtml(card.routeTitle)}</div>
-              ${card.detail ? `<div class="summary">${escapeHtml(card.detail)}</div>` : `<div class="summary">No extra note for this card.</div>`}
+              ${timeBlock}
+              ${warn ? `<div class="warn-flag">⚠ Time-critical</div>` : ''}
+              <h1 class="card-title">${escapeHtml(headline)}</h1>
+              ${sub ? `<div class="card-sub">${escapeHtml(sub)}</div>` : ''}
+              <div class="route-line">${escapeHtml(card.routeTitle)}</div>
+              ${card.detail ? `<div class="summary">${escapeHtml(card.detail)}</div>` : ''}
               <div class="actions">
                 ${mapActions(card)}
                 <button class="btn secondary" id="expandBtn">${state.expanded ? 'Collapse details' : 'More details'}</button>
