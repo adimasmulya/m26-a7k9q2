@@ -207,17 +207,20 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 14px;
+      gap: 12px;
       margin-bottom: 16px;
     }
     .time-digits {
-      font-size: clamp(34px, 9vw, 48px);
+      font-size: clamp(30px, 7.4vw, 42px);
       font-weight: 820;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.045em;
       line-height: 1;
       color: var(--text);
       font-variant-numeric: tabular-nums;
+      white-space: nowrap;
     }
+    /* On the live card the clock shares the row, so digits run a touch smaller. */
+    .time-row.live .time-digits { font-size: clamp(27px, 6.6vw, 38px); }
     .time-dash { opacity: .45; margin: 0 2px; font-weight: 500; }
     .time-remaining {
       margin-top: 6px;
@@ -232,6 +235,12 @@
       flex: none;
     }
     .dial { display: block; }
+    .dial-num {
+      font-size: 9px;
+      font-weight: 700;
+      fill: #98a2b3;
+      font-family: inherit;
+    }
     .dial-now {
       font-size: 9.5px;
       letter-spacing: .08em;
@@ -739,6 +748,27 @@
       return getNowOverride() || new Date();
     }
 
+    // Minutes-since-midnight in MELBOURNE local time, regardless of the device's
+    // own timezone. The whole app hardcodes Melbourne time; the dial must too,
+    // or the "now" hand would be wrong when viewed from another timezone.
+    function nowMinutesMelbourne() {
+      const now = getNow();
+      // Use Intl to read the wall-clock time in Melbourne from a real instant.
+      try {
+        const parts = new Intl.DateTimeFormat('en-GB', {
+          timeZone: 'Australia/Melbourne', hour: '2-digit', minute: '2-digit', hour12: false
+        }).formatToParts(now);
+        const h = Number(parts.find(p => p.type === 'hour').value);
+        const m = Number(parts.find(p => p.type === 'minute').value);
+        return ((h % 24) * 60 + m);
+      } catch (e) {
+        // Fallback: derive from the fixed +10:00 offset.
+        const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+        const mel = new Date(utc + 10 * 3600000);
+        return mel.getHours() * 60 + mel.getMinutes();
+      }
+    }
+
     function escapeHtml(value) {
       return String(value ?? '').replace(/[&<>"']/g, ch => ({
         '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
@@ -928,12 +958,12 @@
       return m ? `${h} hr ${m} min left` : `${h} hr left`;
     }
 
-    // Small 12-hour dial: full circle = 12h. Highlighted arc = the card's slot.
-    // A live dot marks the current moment. Only rendered for the live card.
-    // (12h chosen for legibility — a 1-hr slot is a readable 30° wedge.)
+    // Classic 12-hour clock face: twelve hour numbers, the card's slot drawn as
+    // a coloured arc on the rim, and "now" shown as a hand from the centre.
+    // Melbourne time is used for the hand (timezone-independent). Live card only.
     function dialSvg(card) {
-      const R = 26, C = 30, STROKE = 5;          // geometry within a 60x60 box
-      const toAngle = (mins) => ((mins % 720) / 720) * 360 - 90; // 12h clock, 0 at top
+      const C = 60, R = 50, STROKE = 6;          // 120x120 box (~2x previous)
+      const toAngle = (mins) => ((mins % 720) / 720) * 360 - 90; // 12h, 0 at top
       const polar = (mins, r) => {
         const a = toAngle(mins) * Math.PI / 180;
         return [C + r * Math.cos(a), C + r * Math.sin(a)];
@@ -943,16 +973,28 @@
       const large = ((e - s) % 720) > 360 ? 1 : 0;
       const arc = `M ${sx.toFixed(2)} ${sy.toFixed(2)} A ${R} ${R} 0 ${large} 1 ${ex.toFixed(2)} ${ey.toFixed(2)}`;
 
-      const now = getNow();
-      const nowMins = now.getHours() * 60 + now.getMinutes();
-      const [nx, ny] = polar(nowMins, R);
+      // hour numbers 1..12
+      let numbers = '';
+      for (let n = 1; n <= 12; n++) {
+        const ang = (n / 12) * 360 - 90;
+        const rad = ang * Math.PI / 180;
+        const nx = C + (R - 13) * Math.cos(rad);
+        const ny = C + (R - 13) * Math.sin(rad);
+        numbers += `<text x="${nx.toFixed(1)}" y="${(ny + 4).toFixed(1)}" text-anchor="middle" class="dial-num">${n}</text>`;
+      }
+
+      // now hand (Melbourne)
+      const nowM = nowMinutesMelbourne();
+      const [hx, hy] = polar(nowM, R - 16);
 
       const col = ({transit:'#0369a1',food:'#b45309',hotel:'#7c3aed',rest:'#475467',activity:'#2563eb'})[card.type] || '#2563eb';
       return `
-        <svg class="dial" viewBox="0 0 60 60" width="56" height="56" aria-hidden="true">
-          <circle cx="${C}" cy="${C}" r="${R}" fill="none" stroke="#e5e7eb" stroke-width="${STROKE}"/>
-          <path d="${arc}" fill="none" stroke="${col}" stroke-width="${STROKE}" stroke-linecap="round"/>
-          <circle cx="${nx.toFixed(2)}" cy="${ny.toFixed(2)}" r="4.5" fill="#101828" stroke="#fff" stroke-width="2"/>
+        <svg class="dial" viewBox="0 0 120 120" width="104" height="104" aria-hidden="true">
+          <circle cx="${C}" cy="${C}" r="${R}" fill="#fff" stroke="#e5e7eb" stroke-width="2"/>
+          <path d="${arc}" fill="none" stroke="${col}" stroke-width="${STROKE}" stroke-linecap="round" opacity="0.92"/>
+          ${numbers}
+          <line x1="${C}" y1="${C}" x2="${hx.toFixed(2)}" y2="${hy.toFixed(2)}" stroke="#101828" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="${C}" cy="${C}" r="3.5" fill="#101828"/>
         </svg>`;
     }
 
