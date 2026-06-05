@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#102039">
-  <title>Melbourne & Victoria · Travel Cards v2</title>
+  <title>Melbourne & Victoria · Travel Cards V3</title>
   <style>
     :root {
       --bg: #0c1424;
@@ -221,6 +221,27 @@
       padding-top: 16px;
     }
 
+    .option-actions {
+      display: grid;
+      gap: 8px;
+      width: 100%;
+      margin-bottom: 4px;
+    }
+
+    .option-actions .btn {
+      width: 100%;
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    .option-note {
+      color: #667085;
+      font-size: 12.5px;
+      line-height: 1.35;
+      margin: -2px 0 8px;
+    }
+
+
     .btn {
       appearance: none;
       border: 0;
@@ -246,12 +267,6 @@
     .btn.secondary {
       background: #eef2f7;
       color: #344054;
-    }
-
-    .btn.danger {
-      background: #fff1f3;
-      color: #b42318;
-      border: 1px solid #fecdd3;
     }
 
     .btn.ghost {
@@ -592,7 +607,7 @@
       </div>
       <div id="dayList"></div>
       <div class="detail-grid">
-        <button class="btn danger" id="resetBranch">Change / reset Day 1 scenario</button>
+        <button class="btn secondary" id="resetBranch">Reset Day 1 branch</button>
       </div>
     </aside>
   </div>
@@ -713,21 +728,24 @@
     }
 
     function mapActions(card) {
-      if (Array.isArray(card.mapOptions) && card.mapOptions.length) {
-        return card.mapOptions.map(opt => mapsButton(opt.url, opt.label || 'Open Maps')).join('');
+      const opts = Array.isArray(card.options) ? card.options.filter(o => o && o.mapsUrl) : [];
+      if (opts.length) {
+        return `
+          <div class="option-actions">
+            <div class="option-note">This slot has multiple possible stops. Pick the one you are actually doing.</div>
+            ${opts.map(o => `<a class="btn primary" href="${escapeHtml(o.mapsUrl)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">📍 ${escapeHtml(o.label || o.title || 'Open Maps')}</a>`).join('')}
+          </div>
+        `;
       }
-      const label = card.mapsLabel || (card.type === 'transit' && card.navigationTarget ? `Navigate to ${card.navigationTarget}` : 'Open Maps');
-      return mapsButton(card.mapsUrl, label);
+      return mapsButton(card.mapsUrl);
     }
 
-    function resetBranchChoice() {
-      localStorage.removeItem('melTripDay1Branch');
-      state.branch = null;
-      state.expanded = false;
-      const firstBranch = state.data?.cards?.find(c => c.dayNumber === 1 && c.branch);
-      if (firstBranch) state.currentId = firstBranch.id;
-      closeDrawer();
-      render();
+    function optionDetails(card) {
+      const opts = Array.isArray(card.options) ? card.options : [];
+      if (!opts.length) return '';
+      return `<div class="detail-grid">
+        ${opts.map(o => `<div class="info-box"><b>${escapeHtml(o.label || 'Option')}</b><span>${escapeHtml(o.title || '')}${o.detail ? '\n' + escapeHtml(o.detail) : ''}</span></div>`).join('')}
+      </div>`;
     }
 
     function activityDetails(card) {
@@ -750,7 +768,7 @@
       const expanded = state.expanded ? ' expanded' : '';
       const details = [
         card.detail ? `<div class="summary">${escapeHtml(card.detail)}</div>` : '',
-        card.navigationTarget ? `<div class="detail-grid"><div class="info-box"><b>Navigation target</b><span>${escapeHtml(card.navigationTarget)}</span></div></div>` : '',
+        optionDetails(card),
         activityDetails(card),
         `<div class="hint">Tap card to ${state.expanded ? 'collapse' : 'expand'} details. Swipe left/right for next or previous.</div>`
       ].join('');
@@ -770,7 +788,6 @@
               <div class="actions">
                 ${mapActions(card)}
                 <button class="btn secondary" id="expandBtn">${state.expanded ? 'Collapse details' : 'More details'}</button>
-                ${card.dayNumber === 1 && state.branch ? `<button class="btn danger" id="changeBranchBtn">Change scenario</button>` : ''}
               </div>
               <div class="details">${details}</div>
             </div>
@@ -788,11 +805,6 @@
         state.expanded = !state.expanded;
         render();
       });
-      const changeBranchBtn = $('changeBranchBtn');
-      if (changeBranchBtn) changeBranchBtn.addEventListener('click', (ev) => {
-        ev.stopPropagation();
-        resetBranchChoice();
-      });
       attachSwipe($('activeCard'));
     }
 
@@ -804,7 +816,7 @@
       $('main').innerHTML = `
         <section class="branch-screen" id="branchScreen">
           <div class="branch-title">Which Day 1 scenario is happening?</div>
-          <div class="branch-sub">Choose the real situation now. You can change this later from any Day 1 card or from the menu.</div>
+          <div class="branch-sub">Choose once and the itinerary will hide the unused branch. You can reset this from the menu.</div>
           <div class="branch-grid">
             ${options.map(c => `
               <button class="branch-card" data-branch="${escapeHtml(c.branch)}">
@@ -813,7 +825,7 @@
               </button>
             `).join('')}
           </div>
-          <div class="hint">This only affects the branched Day 1 cards and is saved on this browser.</div>
+          <div class="hint">This only affects the branched Day 1 cards.</div>
         </section>
       `;
       document.querySelectorAll('.branch-card').forEach(btn => {
@@ -915,6 +927,7 @@
         <div class="modal-title">${escapeHtml(card.title)}</div>
         <div class="modal-meta">${escapeHtml(card.dayLabel)} · ${escapeHtml(card.dateLabel)} · ${escapeHtml(card.start)}–${escapeHtml(card.end)}</div>
         ${card.detail ? `<div class="summary">${escapeHtml(card.detail)}</div>` : ''}
+        ${optionDetails(card)}
         ${activityDetails(card)}
         <div class="actions">${mapActions(card)}<button class="btn secondary" id="modalCloseBtn">Close</button></div>
       `);
@@ -987,7 +1000,11 @@
     $('prevBtn').addEventListener('click', () => move(-1));
     $('nextBtn').addEventListener('click', () => move(1));
     $('todayBtn').addEventListener('click', () => { state.currentId = findNowCardId(); state.expanded = false; render(); });
-    $('resetBranch').addEventListener('click', resetBranchChoice);
+    $('resetBranch').addEventListener('click', () => {
+      localStorage.removeItem('melTripDay1Branch');
+      state.branch = null;
+      render();
+    });
     $('modalScrim').addEventListener('click', closeModal);
 
     document.addEventListener('keydown', ev => {
