@@ -157,6 +157,31 @@
       display: block;
     }
 
+    .leg-band {
+      position: relative;
+      height: 84px;
+      overflow: hidden;
+      background: var(--bg2);
+      border-bottom: 3px solid var(--accent);
+    }
+    .leg-band img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 70%;
+      display: block;
+    }
+    /* soft fade so the photo melts toward the accent divider / paper below */
+    .leg-band-fade {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 30px;
+      background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--card) 55%, transparent));
+      pointer-events: none;
+    }
+    /* hide the card's top accent bar when a band is present (band has its own divider) */
+    .card:has(.leg-band)::before { display: none; }
+
     .card.warn::before { background: linear-gradient(90deg, #b42318, #f97066); height: 9px; }
 
     .card-body {
@@ -1096,6 +1121,8 @@
       const expanded = state.expanded ? ' expanded' : '';
       const { headline, sub, warn } = splitTitle(card.title);
       const live = isLiveCard(card);
+      const legImages = (state.data && state.data.legImages) || {};
+      const bandImg = legImages[moodForDay(card.dayNumber)] || null;
       const details = [
         card.detail ? `<div class="summary">${escapeHtml(card.detail)}</div>` : '',
         optionDetails(card),
@@ -1115,6 +1142,7 @@
       $('main').innerHTML = `
         <section class="card-shell">
           <article class="card ${escapeHtml(card.type)}${expanded}${warn ? ' warn' : ''}" id="activeCard">
+            ${bandImg ? `<div class="leg-band"><img src="${escapeHtml(bandImg)}" alt="" loading="lazy"><div class="leg-band-fade"></div></div>` : ''}
             <div class="card-body" id="cardBody">
               <div class="daystrip">
                 <span class="daystrip-leg ${escapeHtml(card.type)}">${escapeHtml(typeLabel(card.type))}</span>

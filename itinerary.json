@@ -4033,5 +4033,12 @@
         "column": 15
       }
     }
-  ]
+  ],
+  "legImages": {
+    "coast": "images/coast.jpg",
+    "forest": "images/forest.jpg",
+    "island": "images/island.jpg",
+    "city": "images/city.jpg",
+    "departure": "images/departure.jpg"
+  }
 }
