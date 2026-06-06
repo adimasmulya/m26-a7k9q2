@@ -1303,6 +1303,11 @@
       const dayNumber = (typeof card === 'object' && card) ? card.dayNumber : card;
       const id = (typeof card === 'object' && card) ? (card.id || '') : '';
       if (dayNumber <= 4) return 'coast';        // Great Ocean Road
+      if (dayNumber === 5) {
+        // Day 5 is the transfer: Warrnambool/Colac/Geelong still finish the GOR run (coast);
+        // forest begins only when departing Geelong up the Black Spur to Marysville
+        return (card && card.start && card.start >= '14:05') ? 'forest' : 'coast';
+      }
       if (dayNumber <= 6) return 'forest';       // Marysville
       if (dayNumber === 7) {
         // Day 7 forks: Marysville/Healesville morning = forest; from Balgownie depart onward = vineyard
@@ -1313,6 +1318,10 @@
         return (card && card.start && card.start >= '11:05') ? 'island' : 'vineyard';
       }
       if (dayNumber <= 10) return 'island';      // Phillip Island
+      if (dayNumber === 11) {
+        // Day 11 morning is still on Phillip Island (wake, checkout); city begins at the hard departure to Melbourne
+        return (card && card.start && card.start >= '09:00') ? 'city' : 'island';
+      }
       if (dayNumber <= 13) return 'city';        // Melbourne
       return 'departure';                        // Day 14
     }

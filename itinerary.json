@@ -399,7 +399,7 @@
           "label": "Geelong route",
           "title": "Go via Geelong",
           "detail": "Use this if Alyssa is awake: Cunningham Pier/playground, then Coles Westfield Geelong.",
-          "mapsUrl": "https://maps.app.goo.gl/VnNx1fZUxCygjgZ27"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cunningham+Pier%2C+Geelong+VIC"
         },
         {
           "label": "Torquay route",
@@ -445,7 +445,7 @@
       "type": "activity",
       "title": "Cunningham Pier",
       "detail": "Carousel & playground · Geelong",
-      "mapsUrl": "https://maps.app.goo.gl/VnNx1fZUxCygjgZ27",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cunningham+Pier%2C+Geelong+VIC",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -489,7 +489,7 @@
       "type": "food",
       "title": "Coles Westfield Geelong",
       "detail": "Groceries · ~30 min · stock up for GOR nights",
-      "mapsUrl": "https://maps.app.goo.gl/VnNx1fZUxCygjgZ27",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Coles+Westfield+Geelong+VIC",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
