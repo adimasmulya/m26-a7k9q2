@@ -1122,7 +1122,7 @@
       const { headline, sub, warn } = splitTitle(card.title);
       const live = isLiveCard(card);
       const legImages = (state.data && state.data.legImages) || {};
-      const bandImg = legImages[moodForDay(card.dayNumber)] || null;
+      const bandImg = legImages[moodForDay(card)] || null;
       const details = [
         card.detail ? `<div class="summary">${escapeHtml(card.detail)}</div>` : '',
         optionDetails(card),
@@ -1292,21 +1292,33 @@
     const MOODS = {
       coast:     { bg:'#e6ddc8', bg2:'#d8cdb0', card:'#fdfbf6', accent:'#5a8048', accent2:'#6b8e5a', dot:'#b07a3a', ink:'#2c3a30', theme:'#5a8048' },
       forest:    { bg:'#d9e0cf', bg2:'#c3cfb0', card:'#fbfcf7', accent:'#4a7a3e', accent2:'#6b9b5a', dot:'#a06a2a', ink:'#2a3a28', theme:'#4a7a3e' },
+      vineyard:  { bg:'#e3dcc4', bg2:'#d2c8a6', card:'#fdfbf4', accent:'#8a6d3a', accent2:'#a8884e', dot:'#9a6a2a', ink:'#352f22', theme:'#8a6d3a' },
       island:    { bg:'#d6e2dd', bg2:'#bcd0c8', card:'#f9fcfa', accent:'#2f7d6e', accent2:'#4ba596', dot:'#c2691a', ink:'#23352f', theme:'#2f7d6e' },
       city:      { bg:'#e4ddd6', bg2:'#cfc6bc', card:'#fdfbf8', accent:'#7a5a8e', accent2:'#9a7aae', dot:'#b07a3a', ink:'#322a38', theme:'#7a5a8e' },
       departure: { bg:'#dde2e6', bg2:'#c6cdd4', card:'#fbfcfd', accent:'#5a7a8e', accent2:'#7a9aae', dot:'#8a7a6a', ink:'#2a343a', theme:'#5a7a8e' },
     };
 
-    function moodForDay(dayNumber) {
-      if (dayNumber <= 4) return 'coast';      // Great Ocean Road
-      if (dayNumber <= 7) return 'forest';     // Marysville / Yarra Valley
-      if (dayNumber <= 10) return 'island';    // Phillip Island
-      if (dayNumber <= 13) return 'city';      // Melbourne
-      return 'departure';                      // Day 14
+    function moodForDay(card) {
+      // Accepts a card (preferred) or a bare day number for backwards safety.
+      const dayNumber = (typeof card === 'object' && card) ? card.dayNumber : card;
+      const id = (typeof card === 'object' && card) ? (card.id || '') : '';
+      if (dayNumber <= 4) return 'coast';        // Great Ocean Road
+      if (dayNumber <= 6) return 'forest';       // Marysville
+      if (dayNumber === 7) {
+        // Day 7 forks: Marysville/Healesville morning = forest; from Balgownie depart onward = vineyard
+        return (card && card.start && card.start >= '14:00') ? 'vineyard' : 'forest';
+      }
+      if (dayNumber === 8) {
+        // Day 8 forks: Balgownie / Chocolateries morning = vineyard; from the San Remo run onward = island
+        return (card && card.start && card.start >= '11:05') ? 'island' : 'vineyard';
+      }
+      if (dayNumber <= 10) return 'island';      // Phillip Island
+      if (dayNumber <= 13) return 'city';        // Melbourne
+      return 'departure';                        // Day 14
     }
 
     function setMood(card) {
-      const m = MOODS[moodForDay(card.dayNumber)] || MOODS.coast;
+      const m = MOODS[moodForDay(card)] || MOODS.coast;
       const r = document.documentElement.style;
       r.setProperty('--bg', m.bg);
       r.setProperty('--bg2', m.bg2);
