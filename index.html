@@ -182,6 +182,57 @@
     /* hide the card's top accent bar when a band is present (band has its own divider) */
     .card:has(.leg-band)::before { display: none; }
 
+    /* full-bleed leg-transition splash */
+    .card.splash { min-height: 445px; }
+    .card.splash::before { display: none; }
+    .splash-body {
+      position: relative;
+      flex: 1;
+      min-height: 445px;
+      cursor: pointer;
+      overflow: hidden;
+      background: var(--bg2);
+    }
+    .splash-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 55%;
+      display: block;
+    }
+    .splash-overlay {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      padding: 26px 22px 28px;
+      background: linear-gradient(180deg, transparent, rgba(20,24,20,.16) 30%, rgba(20,24,20,.62));
+      color: #fff;
+    }
+    .splash-kicker {
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      opacity: .92;
+      margin-bottom: 4px;
+    }
+    .splash-title {
+      font-family: var(--font-serif);
+      font-size: 38px;
+      line-height: 1.02;
+      font-weight: 600;
+      letter-spacing: -.015em;
+      text-shadow: 0 1px 14px rgba(0,0,0,.35);
+    }
+    .splash-hint {
+      font-family: var(--font-sans);
+      font-size: 12.5px;
+      opacity: .85;
+      margin-top: 10px;
+    }
+
     .card.warn::before { background: linear-gradient(90deg, #b42318, #f97066); height: 9px; }
 
     .card-body {
@@ -895,12 +946,52 @@
       return ({ transit: 'Move', food: 'Food', hotel: 'Hotel', rest: 'Rest', activity: 'Activity' })[type] || 'Plan';
     }
 
-    function visibleCards() {
+    // The ordered real cards for the current branch selection (no splashes).
+    function realCards() {
       if (!state.data) return [];
       return state.data.cards.filter(c => {
         if (c.dayNumber === 1 && c.branch && state.branch) return c.branch === state.branch;
         return true;
       });
+    }
+
+    // Build a synthetic full-bleed splash card for a leg.
+    function makeSplash(leg, afterCard) {
+      const legImages = (state.data && state.data.legImages) || {};
+      const legNames = {
+        coast:'Great Ocean Road', forest:'Marysville', vineyard:'Yarra Valley',
+        island:'Phillip Island', city:'Melbourne', departure:'Departure'
+      };
+      return {
+        id: 'splash-' + leg + '-' + afterCard.id,
+        isSplash: true,
+        leg,
+        splashTitle: legNames[leg] || leg,
+        image: legImages[leg] || null,
+        dayNumber: afterCard.dayNumber,
+        date: afterCard.date,
+        routeTitle: afterCard.routeTitle,
+        // borrow timing so any time-based helper stays harmless
+        start: afterCard.start, end: afterCard.end
+      };
+    }
+
+    // The full swipe sequence: real cards with a leg-transition splash inserted
+    // immediately BEFORE the first card of each new leg.
+    function visibleCards() {
+      const reals = realCards();
+      if (!reals.length) return [];
+      const out = [];
+      let prevLeg = null;
+      reals.forEach(c => {
+        const leg = moodForDay(c);
+        if (prevLeg !== null && leg !== prevLeg) {
+          out.push(makeSplash(leg, c));   // splash announces the leg you're entering
+        }
+        out.push(c);
+        prevLeg = leg;
+      });
+      return out;
     }
 
     function currentIndex() {
@@ -916,7 +1007,7 @@
     }
 
     function findNowCardId() {
-      const cards = visibleCards();
+      const cards = visibleCards().filter(c => !c.isSplash);
       if (!cards.length) return null;
       const now = getNow();
       const active = cards.find(c => now >= localDate(c, 'start') && now < localDate(c, 'end'));
@@ -1115,6 +1206,32 @@
           <line x1="${C}" y1="${C}" x2="${hx.toFixed(2)}" y2="${hy.toFixed(2)}" stroke="#101828" stroke-width="3" stroke-linecap="round"/>
           <circle cx="${C}" cy="${C}" r="3.5" fill="#101828"/>
         </svg>`;
+    }
+
+    function renderSplash(card) {
+      $('main').innerHTML = `
+        <section class="card-shell">
+          <article class="card splash" id="activeCard">
+            <div class="splash-body" id="cardBody">
+              ${card.image ? `<img class="splash-img" src="${escapeHtml(card.image)}" alt="">` : ''}
+              <div class="splash-overlay">
+                <div class="splash-kicker">Now entering</div>
+                <h1 class="splash-title">${escapeHtml(card.splashTitle)}</h1>
+                <div class="splash-hint">swipe to continue</div>
+              </div>
+            </div>
+          </article>
+        </section>
+      `;
+      // Edge-tap navigation only (no expand on a splash); swipe handled by attachSwipe.
+      const body = $('cardBody');
+      body.addEventListener('click', (ev) => {
+        if (suppressTap) return;
+        const rect = body.getBoundingClientRect();
+        const x = (ev.clientX - rect.left) / rect.width;
+        if (x < 0.5) { move(-1); } else { move(1); }
+      });
+      attachSwipe($('activeCard'));
     }
 
     function renderNormalCard(card) {
@@ -1327,7 +1444,8 @@
     }
 
     function setMood(card) {
-      const m = MOODS[moodForDay(card)] || MOODS.coast;
+      const leg = card.isSplash ? card.leg : moodForDay(card);
+      const m = MOODS[leg] || MOODS.coast;
       const r = document.documentElement.style;
       r.setProperty('--bg', m.bg);
       r.setProperty('--bg2', m.bg2);
@@ -1352,7 +1470,9 @@
       $('tripSubtitle').textContent = state.data.trip.subtitle;
       renderStatus(card);
       renderDayMenu(card);
-      if (card.dayNumber === 1 && card.branch && !state.branch) {
+      if (card.isSplash) {
+        renderSplash(card);
+      } else if (card.dayNumber === 1 && card.branch && !state.branch) {
         renderBranchChooser(card);
       } else {
         renderNormalCard(card);
@@ -1369,12 +1489,21 @@
       const prevBtn = $('prevBtn');
       const nextBtn = $('nextBtn');
       // Full title (headline + location) so a place is never ambiguous; wraps rather than truncates.
-      const label = (dir, c) => c
-        ? `<span class="nav-dir">${dir === 'prev' ? '←' : ''}</span>`
+      const label = (dir, c) => {
+        if (!c) return `<span class="nav-meta nav-empty">${dir === 'prev' ? 'Start of trip' : 'End of trip'}</span>`;
+        const arrowL = `<span class="nav-dir">${dir === 'prev' ? '←' : ''}</span>`;
+        const arrowR = `<span class="nav-dir">${dir === 'next' ? '→' : ''}</span>`;
+        if (c.isSplash) {
+          return arrowL
+            + `<span class="nav-meta"><span class="nav-time">Entering</span>`
+            + `<span class="nav-name">${escapeHtml(c.splashTitle)}</span></span>`
+            + arrowR;
+        }
+        return arrowL
           + `<span class="nav-meta"><span class="nav-time">${escapeHtml(c.start)}</span>`
           + `<span class="nav-name">${escapeHtml(c.title.replace(/^⚠\s*/, ''))}</span></span>`
-          + `<span class="nav-dir">${dir === 'next' ? '→' : ''}</span>`
-        : `<span class="nav-meta nav-empty">${dir === 'prev' ? 'Start of trip' : 'End of trip'}</span>`;
+          + arrowR;
+      };
       prevBtn.innerHTML = label('prev', prev);
       nextBtn.innerHTML = label('next', next);
       prevBtn.disabled = !prev;
