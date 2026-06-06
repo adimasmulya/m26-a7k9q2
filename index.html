@@ -775,6 +775,56 @@
 
     .modal.open { display: block; }
 
+    .list-shortcuts {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .list-btn {
+      width: 100%;
+      text-align: left;
+      padding: 12px 14px;
+      border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+      background: color-mix(in srgb, var(--accent) 7%, transparent);
+      color: var(--header-ink);
+      border-radius: 14px;
+      font-family: var(--font-sans);
+      font-size: 14.5px;
+      font-weight: 600;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .list-btn:active { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+    .place-group-title {
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 16px 0 8px;
+    }
+    .place-group-title:first-child { margin-top: 4px; }
+    .place-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+      text-align: left;
+      padding: 11px 12px;
+      margin-bottom: 7px;
+      border: 1px solid #e6e2d6;
+      border-radius: 12px;
+      background: #fff;
+      cursor: pointer;
+      font-family: var(--font-sans);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .place-row:active { background: #faf8f1; }
+    .place-row .place-name { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.25; }
+    .place-row .place-pin { font-size: 13px; color: var(--accent); flex: none; font-weight: 600; }
+
     .modal-panel {
       position: absolute;
       left: 12px;
@@ -860,6 +910,11 @@
           <div class="hint" id="drawerHint">Tap a day to jump.</div>
         </div>
         <button class="btn secondary" id="closeDrawer">Close</button>
+      </div>
+      <div class="list-shortcuts">
+        <button class="list-btn" id="listSee">📍 All attractions</button>
+        <button class="list-btn" id="listEat">🍴 All food</button>
+        <button class="list-btn" id="listStay">🛏 Stays &amp; logistics</button>
       </div>
       <div id="dayList"></div>
       <div class="detail-grid">
@@ -1551,6 +1606,37 @@
       $('modalCloseBtn').addEventListener('click', closeModal);
     }
 
+    function openPlaceList(which) {
+      const lists = (state.data && state.data.placeLists) || {};
+      const titles = { see:'All attractions', eat:'All food', stay:'Stays & logistics' };
+      let items = [];
+      if (which === 'stay') {
+        items = (lists.stay || []).concat(lists.go || []);
+      } else {
+        items = lists[which] || [];
+      }
+      // group by leg (in trip order); items without a leg go under "Other"
+      const order = ['Great Ocean Road','Marysville & Yarra Valley','Phillip Island','Melbourne','Departure',''];
+      const groups = {};
+      items.forEach(it => { (groups[it.leg || ''] = groups[it.leg || ''] || []).push(it); });
+      const body = order.filter(l => groups[l]).map(l => {
+        const head = which === 'stay' && l === '' ? 'Stays' : (l || 'Other');
+        const rows = groups[l].map((it, i) =>
+          `<a class="place-row" href="${escapeHtml(it.mapsUrl)}" target="_blank" rel="noopener">
+             <span class="place-name">${escapeHtml(it.name)}</span>
+             <span class="place-pin">📍 Map</span>
+           </a>`).join('');
+        return `<div class="place-group-title">${escapeHtml(head)}</div>${rows}`;
+      }).join('');
+      openModal(`
+        <div class="modal-title">${escapeHtml(titles[which] || 'Places')}</div>
+        <div class="modal-meta">Tap any place to open it in Maps</div>
+        ${body || '<div class="summary">Nothing shortlisted yet.</div>'}
+        <div class="actions"><button class="btn secondary" id="modalCloseBtn">Close</button></div>
+      `);
+      $('modalCloseBtn').addEventListener('click', closeModal);
+    }
+
     function openHotelModal(hotel) {
       const rows = [
         ['Address', hotel.address],
@@ -1623,6 +1709,9 @@
     $('menuBtn').addEventListener('click', openDrawer);
     $('closeDrawer').addEventListener('click', closeDrawer);
     $('drawerScrim').addEventListener('click', closeDrawer);
+    $('listSee').addEventListener('click', () => { closeDrawer(); openPlaceList('see'); });
+    $('listEat').addEventListener('click', () => { closeDrawer(); openPlaceList('eat'); });
+    $('listStay').addEventListener('click', () => { closeDrawer(); openPlaceList('stay'); });
     $('prevBtn').addEventListener('click', () => move(-1));
     $('nextBtn').addEventListener('click', () => move(1));
     $('todayBtn').addEventListener('click', () => { state.currentId = findNowCardId(); state.expanded = false; render(); });
