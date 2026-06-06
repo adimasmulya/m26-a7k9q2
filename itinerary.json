@@ -1253,7 +1253,7 @@
       "type": "food",
       "title": "Lunch · The Perch Restaurant",
       "detail": "Lavers Hill Winery · confirm opening hrs Mon\n13:00 · Lunch continues",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJneMU7xUp02oRqAfXPtUv5_U",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Perch+Restaurant+Lavers+Hill+VIC",
       "activity": "The Perch · Lavers Hill Winery",
       "source": {
         "sheet": "Tab A — East to West",
