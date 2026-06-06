@@ -433,6 +433,54 @@
 
     .nav-row .btn {
       flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-align: left;
+      padding: 9px 11px;
+      min-height: 46px;
+      line-height: 1.2;
+      overflow: hidden;
+    }
+    .nav-row #nextBtn { text-align: right; }
+    .nav-row #nextBtn .nav-meta { align-items: flex-end; }
+    .nav-dir {
+      font-family: var(--font-sans);
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--accent);
+      flex: none;
+    }
+    .nav-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      min-width: 0;
+      flex: 1;
+    }
+    .nav-time {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: -.01em;
+    }
+    .nav-name {
+      font-family: var(--font-sans);
+      font-size: 11.5px;
+      font-weight: 400;
+      color: #667065;
+      line-height: 1.2;
+      word-break: break-word;
+    }
+    .nav-empty {
+      font-family: var(--font-sans);
+      font-size: 12px;
+      color: #9aa39a;
+      font-style: italic;
+    }
+    .nav-row .btn.is-disabled {
+      opacity: .4;
+      pointer-events: none;
     }
 
     .anchors {
@@ -720,8 +768,8 @@
     <main id="main"></main>
 
     <div class="nav-row">
-      <button class="btn ghost" id="prevBtn">← Previous</button>
-      <button class="btn ghost" id="nextBtn">Next →</button>
+      <button class="btn ghost" id="prevBtn"></button>
+      <button class="btn ghost" id="nextBtn"></button>
     </div>
   </div>
 
@@ -1261,6 +1309,29 @@
         renderNormalCard(card);
       }
       renderAnchors(card);
+      renderNavButtons(card);
+    }
+
+    function renderNavButtons() {
+      const cards = visibleCards();
+      const idx = currentIndex();
+      const prev = idx > 0 ? cards[idx - 1] : null;
+      const next = idx < cards.length - 1 ? cards[idx + 1] : null;
+      const prevBtn = $('prevBtn');
+      const nextBtn = $('nextBtn');
+      // Full title (headline + location) so a place is never ambiguous; wraps rather than truncates.
+      const label = (dir, c) => c
+        ? `<span class="nav-dir">${dir === 'prev' ? '←' : ''}</span>`
+          + `<span class="nav-meta"><span class="nav-time">${escapeHtml(c.start)}</span>`
+          + `<span class="nav-name">${escapeHtml(c.title.replace(/^⚠\s*/, ''))}</span></span>`
+          + `<span class="nav-dir">${dir === 'next' ? '→' : ''}</span>`
+        : `<span class="nav-meta nav-empty">${dir === 'prev' ? 'Start of trip' : 'End of trip'}</span>`;
+      prevBtn.innerHTML = label('prev', prev);
+      nextBtn.innerHTML = label('next', next);
+      prevBtn.disabled = !prev;
+      nextBtn.disabled = !next;
+      prevBtn.classList.toggle('is-disabled', !prev);
+      nextBtn.classList.toggle('is-disabled', !next);
     }
 
     function openDrawer() { $('drawer').classList.add('open'); }

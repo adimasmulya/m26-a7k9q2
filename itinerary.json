@@ -343,7 +343,7 @@
       "type": "food",
       "title": "Lunch · Nööödles",
       "detail": "Melbourne Airport",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=N%C3%B6%C3%B6%C3%B6dles+Melbourne+Airport+T2",
+      "mapsUrl": "https://maps.app.goo.gl/kJpigvZg3ZjM2ANVA",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -382,7 +382,7 @@
       "leg": "Great Ocean Road",
       "routeTitle": "Arrival · Lorne",
       "start": "13:30",
-      "end": "16:00",
+      "end": "14:15",
       "branch": null,
       "type": "transit",
       "title": "Depart Tullamarine",
@@ -399,13 +399,13 @@
           "label": "Geelong route",
           "title": "Go via Geelong",
           "detail": "Use this if Alyssa is awake: Cunningham Pier/playground, then Coles Westfield Geelong.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westfield+Geelong+VIC&query_place_id=ChIJCbHcQsMV1GoRwJwR6LFyCjI"
+          "mapsUrl": "https://maps.app.goo.gl/VnNx1fZUxCygjgZ27"
         },
         {
           "label": "Torquay route",
           "title": "Go via Torquay",
           "detail": "Use this if Alyssa is asleep: continue further west, then Coles Torquay / short stop.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fish+by+Moonlite%2C+Anglesea+VIC&query_place_id=ChIJe26HAut91GoRSX12zs_wF9c"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Coles+Torquay+VIC"
         }
       ]
     },
@@ -423,7 +423,7 @@
       "type": "transit",
       "title": "Depart airport area",
       "detail": "Continue driving · daughter still asleep",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fish+by+Moonlite%2C+Anglesea+VIC&query_place_id=ChIJe26HAut91GoRSX12zs_wF9c",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Coles+Torquay+VIC",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -445,7 +445,7 @@
       "type": "activity",
       "title": "Cunningham Pier",
       "detail": "Carousel & playground · Geelong",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cunningham+Pier+Geelong+Victoria",
+      "mapsUrl": "https://maps.app.goo.gl/VnNx1fZUxCygjgZ27",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -489,7 +489,7 @@
       "type": "food",
       "title": "Coles Westfield Geelong",
       "detail": "Groceries · ~30 min · stock up for GOR nights",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westfield+Geelong+VIC&query_place_id=ChIJCbHcQsMV1GoRwJwR6LFyCjI",
+      "mapsUrl": "https://maps.app.goo.gl/VnNx1fZUxCygjgZ27",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -591,7 +591,7 @@
       "type": "food",
       "title": "Fish by Moonlite · Anglesea",
       "detail": "Seafood dinner · closes 19:00 · both branches converge",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fish+by+Moonlite%2C+Anglesea+VIC&query_place_id=ChIJe26HAut91GoRSX12zs_wF9c",
+      "mapsUrl": "https://maps.app.goo.gl/M6MtcRJxXzuPLTXu5",
       "activity": "Fish by Moonlite · Anglesea",
       "source": {
         "sheet": "Tab A — East to West",
