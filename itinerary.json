@@ -399,13 +399,13 @@
           "label": "Geelong route",
           "title": "Go via Geelong",
           "detail": "Use this if Alyssa is awake: Cunningham Pier/playground, then Coles Westfield Geelong.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJCbHcQsMV1GoRwJwR6LFyCjI"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westfield+Geelong+VIC&query_place_id=ChIJCbHcQsMV1GoRwJwR6LFyCjI"
         },
         {
           "label": "Torquay route",
           "title": "Go via Torquay",
           "detail": "Use this if Alyssa is asleep: continue further west, then Coles Torquay / short stop.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe26HAut91GoRSX12zs_wF9c"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fish+by+Moonlite%2C+Anglesea+VIC&query_place_id=ChIJe26HAut91GoRSX12zs_wF9c"
         }
       ]
     },
@@ -423,7 +423,7 @@
       "type": "transit",
       "title": "Depart airport area",
       "detail": "Continue driving · daughter still asleep",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe26HAut91GoRSX12zs_wF9c",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fish+by+Moonlite%2C+Anglesea+VIC&query_place_id=ChIJe26HAut91GoRSX12zs_wF9c",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -489,7 +489,7 @@
       "type": "food",
       "title": "Coles Westfield Geelong",
       "detail": "Groceries · ~30 min · stock up for GOR nights",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJCbHcQsMV1GoRwJwR6LFyCjI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westfield+Geelong+VIC&query_place_id=ChIJCbHcQsMV1GoRwJwR6LFyCjI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -547,7 +547,7 @@
       "type": "transit",
       "title": "Depart Geelong",
       "detail": "→ Anglesea · ~40 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe26HAut91GoRSX12zs_wF9c",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fish+by+Moonlite%2C+Anglesea+VIC&query_place_id=ChIJe26HAut91GoRSX12zs_wF9c",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -569,7 +569,7 @@
       "type": "transit",
       "title": "Depart Torquay",
       "detail": "→ Anglesea · ~15 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe26HAut91GoRSX12zs_wF9c",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fish+by+Moonlite%2C+Anglesea+VIC&query_place_id=ChIJe26HAut91GoRSX12zs_wF9c",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -591,7 +591,7 @@
       "type": "food",
       "title": "Fish by Moonlite · Anglesea",
       "detail": "Seafood dinner · closes 19:00 · both branches converge",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe26HAut91GoRSX12zs_wF9c",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fish+by+Moonlite%2C+Anglesea+VIC&query_place_id=ChIJe26HAut91GoRSX12zs_wF9c",
       "activity": "Fish by Moonlite · Anglesea",
       "source": {
         "sheet": "Tab A — East to West",
@@ -622,7 +622,7 @@
       "type": "transit",
       "title": "Depart Anglesea",
       "detail": "→ Lorne · ~20 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJFWO8t79k02oRbjpHfT76zMw",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mantra+Lorne%2C+Mountjoy+Parade%2C+Lorne+VIC&query_place_id=ChIJFWO8t79k02oRbjpHfT76zMw",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -644,7 +644,7 @@
       "type": "hotel",
       "title": "Check in · Mantra Lorne",
       "detail": "1-bed apartment · via ALL\n⚠ Free until 13 Jun · AUD 50 fee 13-18 Jun · non-refundable after 18 Jun",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJFWO8t79k02oRbjpHfT76zMw",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mantra+Lorne%2C+Mountjoy+Parade%2C+Lorne+VIC&query_place_id=ChIJFWO8t79k02oRbjpHfT76zMw",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -708,7 +708,7 @@
       "type": "food",
       "title": "Breakfast",
       "detail": "Self-cater · Mantra Lorne 1-bed apartment",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJFWO8t79k02oRbjpHfT76zMw",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mantra+Lorne%2C+Mountjoy+Parade%2C+Lorne+VIC&query_place_id=ChIJFWO8t79k02oRbjpHfT76zMw",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -730,7 +730,7 @@
       "type": "rest",
       "title": "Morning prep",
       "detail": "Pack bags",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJFWO8t79k02oRbjpHfT76zMw",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mantra+Lorne%2C+Mountjoy+Parade%2C+Lorne+VIC&query_place_id=ChIJFWO8t79k02oRbjpHfT76zMw",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -752,7 +752,7 @@
       "type": "food",
       "title": "Le Comptoir Pigalle",
       "detail": "Pastries & bread for the road · closes 14:30",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJdb5zw4Vl02oRZ3pGoyNltDQ",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Le+Comptoir+Pigalle%2C+Lorne+VIC&query_place_id=ChIJdb5zw4Vl02oRZ3pGoyNltDQ",
       "activity": "Le Comptoir Pigalle · Lorne",
       "source": {
         "sheet": "Tab A — East to West",
@@ -804,13 +804,13 @@
           "label": "Museum",
           "title": "GOR Story Museum",
           "detail": "Indoor/weather-safe option; opens 09:00.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJyXbSCcdk02oR9bJURPOpMKw"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Great+Ocean+Road+Story+Museum%2C+Lorne+VIC&query_place_id=ChIJyXbSCcdk02oR9bJURPOpMKw"
         },
         {
           "label": "Waterfall",
           "title": "Erskine Falls",
           "detail": "Outdoor option; upper lookout only if wet/slippery with toddler.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJZ8CHhFVl02oRvgdNLwyuckM"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Erskine+Falls%2C+Lorne+VIC&query_place_id=ChIJZ8CHhFVl02oRvgdNLwyuckM"
         }
       ]
     },
@@ -828,7 +828,7 @@
       "type": "activity",
       "title": "Teddy's Lookout",
       "detail": "Panoramic views · 15-20 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJN0RfaZJk02oRLF0wPLa6JN4",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Teddy%27s+Lookout%2C+Lorne+VIC&query_place_id=ChIJN0RfaZJk02oRLF0wPLa6JN4",
       "activity": "Teddy's Lookout · Lorne",
       "source": {
         "sheet": "Tab A — East to West",
@@ -859,7 +859,7 @@
       "type": "transit",
       "title": "Depart Lorne",
       "detail": "→ Apollo Bay · ~45 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJeZ8ALzg302oR1q8vDU8lQ90",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollo+Bay+Fishermen%27s+Co-op+VIC&query_place_id=ChIJeZ8ALzg302oR1q8vDU8lQ90",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -881,7 +881,7 @@
       "type": "food",
       "title": "Lunch · Fishermen's Co-op",
       "detail": "Apollo Bay · open 11:00-19:00\n13:30 · Lunch continues",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJeZ8ALzg302oR1q8vDU8lQ90",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollo+Bay+Fishermen%27s+Co-op+VIC&query_place_id=ChIJeZ8ALzg302oR1q8vDU8lQ90",
       "activity": "Apollo Bay Fishermen's Co-op",
       "source": {
         "sheet": "Tab A — East to West",
@@ -948,7 +948,7 @@
       "type": "transit",
       "title": "Depart Apollo Bay",
       "detail": "→ Cape Otway · ~1 hr drive",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqd-ZoF53gqoRP42NCDSXO9c",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cape+Otway+Lightstation+VIC&query_place_id=ChIJqd-ZoF53gqoRP42NCDSXO9c",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -970,7 +970,7 @@
       "type": "activity",
       "title": "Cape Otway Lightstation",
       "detail": "Lighthouse · koalas on entry road · allow 1.5-2 hrs\n16:00 · Cape Otway Lightstation continues\n16:30 · Cape Otway Lightstation continues",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqd-ZoF53gqoRP42NCDSXO9c",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cape+Otway+Lightstation+VIC&query_place_id=ChIJqd-ZoF53gqoRP42NCDSXO9c",
       "activity": "Cape Otway Lightstation",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1001,7 +1001,7 @@
       "type": "food",
       "title": "Check in · Bimbi Park",
       "detail": "Cape Otway · settle in, prep dinner",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bimbi+Park%2C+Cape+Otway+VIC&query_place_id=ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": "Bimbi Park · Cape Otway",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1032,7 +1032,7 @@
       "type": "food",
       "title": "Dinner at camp",
       "detail": "Cook or heat provisions",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bimbi+Park%2C+Cape+Otway+VIC&query_place_id=ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1054,7 +1054,7 @@
       "type": "activity",
       "title": "Evening · Bimbi Park",
       "detail": "Stargazing, campfire if available",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bimbi+Park%2C+Cape+Otway+VIC&query_place_id=ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": "Bimbi Park · Cape Otway",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1085,7 +1085,7 @@
       "type": "food",
       "title": "Breakfast",
       "detail": "Bimbi Park",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bimbi+Park%2C+Cape+Otway+VIC&query_place_id=ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": "Bimbi Park · Cape Otway",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1116,7 +1116,7 @@
       "type": "hotel",
       "title": "Morning prep",
       "detail": "Pack up · checkout 09:30",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bimbi+Park%2C+Cape+Otway+VIC&query_place_id=ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1138,7 +1138,7 @@
       "type": "activity",
       "title": "Checkout",
       "detail": "Bimbi Park",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ99LoJTR4gqoR-V7V09TqgpY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bimbi+Park%2C+Cape+Otway+VIC&query_place_id=ChIJ99LoJTR4gqoR-V7V09TqgpY",
       "activity": "Bimbi Park · Cape Otway",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1169,7 +1169,7 @@
       "type": "transit",
       "title": "Depart Bimbi Park",
       "detail": "→ Maits Rest · ~1 hr drive",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ9_jMQPIt02oR_oQbQHRaLGI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Maits+Rest+Rainforest+Walk%2C+Great+Otway+National+Park+VIC&query_place_id=ChIJ9_jMQPIt02oR_oQbQHRaLGI",
       "activity": "Bimbi Park · Cape Otway",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1200,7 +1200,7 @@
       "type": "activity",
       "title": "Maits Rest Rainforest Walk",
       "detail": "~60 min · ancient rainforest boardwalk\n11:30 · Maits Rest continues",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ9_jMQPIt02oR_oQbQHRaLGI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Maits+Rest+Rainforest+Walk%2C+Great+Otway+National+Park+VIC&query_place_id=ChIJ9_jMQPIt02oR_oQbQHRaLGI",
       "activity": "Maits Rest Rainforest Walk",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1231,7 +1231,7 @@
       "type": "transit",
       "title": "Depart Maits Rest",
       "detail": "→ Lavers Hill · ~30 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJneMU7xUp02oRqAfXPtUv5_U",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Perch+Restaurant%2C+Lavers+Hill+VIC&query_place_id=ChIJneMU7xUp02oRqAfXPtUv5_U",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1284,7 +1284,7 @@
       "type": "transit",
       "title": "Depart Lavers Hill",
       "detail": "→ apostles cluster · ~1 hr",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJE-KzjwuegqoRzMREy8VNnKQ",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gibson+Steps%2C+Port+Campbell+National+Park+VIC&query_place_id=ChIJE-KzjwuegqoRzMREy8VNnKQ",
       "activity": "Twelve Apostles Marine NP",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1315,7 +1315,7 @@
       "type": "activity",
       "title": "Gibson Steps",
       "detail": "Beach access · 30-40 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJE-KzjwuegqoRzMREy8VNnKQ",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gibson+Steps%2C+Port+Campbell+National+Park+VIC&query_place_id=ChIJE-KzjwuegqoRzMREy8VNnKQ",
       "activity": "Gibson Steps · Port Campbell NP",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1346,7 +1346,7 @@
       "type": "transit",
       "title": "Drive 4 min · Twelve Apostles",
       "detail": "Viewing platform · 20 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJL362CkecgqoRlPjnF4If7Pc",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Twelve+Apostles%2C+Princetown+VIC&query_place_id=ChIJL362CkecgqoRlPjnF4If7Pc",
       "activity": "Twelve Apostles Marine NP",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1377,7 +1377,7 @@
       "type": "transit",
       "title": "Depart Twelve Apostles",
       "detail": "→ Loch Ard Gorge · 10 min drive\n15:40 · Loch Ard Gorge\nDramatic gorge · 30 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJDYxfGtCfgqoR3bzH2zNqsk0",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loch+Ard+Gorge%2C+Port+Campbell+VIC&query_place_id=ChIJDYxfGtCfgqoR3bzH2zNqsk0",
       "activity": "Twelve Apostles Marine NP",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1408,7 +1408,7 @@
       "type": "transit",
       "title": "Depart Loch Ard Gorge",
       "detail": "→ Port Campbell · 15 min drive",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-0EPwmKggqoRyi6-_rCgWjY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loch+Ard+Motor+Inn%2C+Port+Campbell+VIC&query_place_id=ChIJ-0EPwmKggqoRyi6-_rCgWjY",
       "activity": "Loch Ard Gorge",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1439,7 +1439,7 @@
       "type": "transit",
       "title": "Arrive Port Campbell",
       "detail": "Children's playground · optional",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-0EPwmKggqoRyi6-_rCgWjY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loch+Ard+Motor+Inn%2C+Port+Campbell+VIC&query_place_id=ChIJ-0EPwmKggqoRyi6-_rCgWjY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1461,7 +1461,7 @@
       "type": "hotel",
       "title": "Check in · Loch Ard Motor Inn",
       "detail": "Port Campbell · confirmed\n⚠ Free cancellation until 15 Jun · non-refundable after",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-0EPwmKggqoRyi6-_rCgWjY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loch+Ard+Motor+Inn%2C+Port+Campbell+VIC&query_place_id=ChIJ-0EPwmKggqoRyi6-_rCgWjY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1525,7 +1525,7 @@
       "type": "food",
       "title": "Breakfast",
       "detail": "Port Campbell · Loch Ard Motor Inn",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-0EPwmKggqoRyi6-_rCgWjY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loch+Ard+Motor+Inn%2C+Port+Campbell+VIC&query_place_id=ChIJ-0EPwmKggqoRyi6-_rCgWjY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1547,7 +1547,7 @@
       "type": "hotel",
       "title": "Morning prep",
       "detail": "Pack up · checkout 10:00",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-0EPwmKggqoRyi6-_rCgWjY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loch+Ard+Motor+Inn%2C+Port+Campbell+VIC&query_place_id=ChIJ-0EPwmKggqoRyi6-_rCgWjY",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1569,7 +1569,7 @@
       "type": "hotel",
       "title": "Checkout · depart Port Campbell",
       "detail": "→ Warrnambool · ~50-60 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJo18vdvU1zWoRmX6GnBnbh5o",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tower+Hill+Wildlife+Reserve+VIC&query_place_id=ChIJo18vdvU1zWoRmX6GnBnbh5o",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1621,7 +1621,7 @@
       "type": "transit",
       "title": "Drive · Tower Hill Wildlife Reserve",
       "detail": "~20 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJo18vdvU1zWoRmX6GnBnbh5o",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tower+Hill+Wildlife+Reserve+VIC&query_place_id=ChIJo18vdvU1zWoRmX6GnBnbh5o",
       "activity": "Tower Hill Wildlife Reserve",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1652,7 +1652,7 @@
       "type": "activity",
       "title": "Tower Hill Wildlife Reserve",
       "detail": "Emus, kangaroos, koalas · allow 1 hr\n13:00 · Tower Hill continues",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJo18vdvU1zWoRmX6GnBnbh5o",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tower+Hill+Wildlife+Reserve+VIC&query_place_id=ChIJo18vdvU1zWoRmX6GnBnbh5o",
       "activity": "Tower Hill Wildlife Reserve",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1683,7 +1683,7 @@
       "type": "transit",
       "title": "Depart Tower Hill",
       "detail": "→ Warrnambool · ~20 min",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ39PtxnZNzWoRyiEsue5HTz8",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Logan+Beach+Whale+Watching+Platform%2C+Warrnambool+VIC&query_place_id=ChIJ39PtxnZNzWoRyiEsue5HTz8",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1705,7 +1705,7 @@
       "type": "activity",
       "title": "Logan Beach",
       "detail": "Southern right whale watching · land-based · Jun-Sep\n14:30 · Logan Beach continues",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ39PtxnZNzWoRyiEsue5HTz8",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Logan+Beach+Whale+Watching+Platform%2C+Warrnambool+VIC&query_place_id=ChIJ39PtxnZNzWoRyiEsue5HTz8",
       "activity": "Logan Beach Whale Watching",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1736,7 +1736,7 @@
       "type": "activity",
       "title": "Town walk & playground",
       "detail": "Warrnambool\n15:30 · Town walk & playground continues",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elm+Tree+Motel%2C+Warrnambool+VIC&query_place_id=ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1758,7 +1758,7 @@
       "type": "hotel",
       "title": "Check in · Elm Tree Motel",
       "detail": "Warrnambool · confirmed\n⚠ Free cancellation until 23:59 on 20 Jun · non-refundable from 21 Jun",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elm+Tree+Motel%2C+Warrnambool+VIC&query_place_id=ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1780,7 +1780,7 @@
       "type": "hotel",
       "title": "Freshen up",
       "detail": "Elm Tree Motel · settle in",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elm+Tree+Motel%2C+Warrnambool+VIC&query_place_id=ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1832,7 +1832,7 @@
       "type": "food",
       "title": "Breakfast · local café Warrnambool",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elm+Tree+Motel%2C+Warrnambool+VIC&query_place_id=ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1854,7 +1854,7 @@
       "type": "transit",
       "title": "Hard departure → Colac",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ63PgDwAP02oREI134qZeehA",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Colac+Memorial+Square+Playground+VIC&query_place_id=ChIJ63PgDwAP02oREI134qZeehA",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1876,7 +1876,7 @@
       "type": "transit",
       "title": "Arrive Colac · playground · toilet · coffee/snacks · ~45 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ63PgDwAP02oREI134qZeehA",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Colac+Memorial+Square+Playground+VIC&query_place_id=ChIJ63PgDwAP02oREI134qZeehA",
       "activity": "Colac Memorial Square Playground",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1907,7 +1907,7 @@
       "type": "transit",
       "title": "Depart Colac → Geelong",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJCbHcQsMV1GoRwJwR6LFyCjI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westfield+Geelong+VIC&query_place_id=ChIJCbHcQsMV1GoRwJwR6LFyCjI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1929,7 +1929,7 @@
       "type": "food",
       "title": "Arrive Westfield Geelong · Marrybrown · lunch · 1 hr",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJCbHcQsMV1GoRwJwR6LFyCjI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Westfield+Geelong+VIC&query_place_id=ChIJCbHcQsMV1GoRwJwR6LFyCjI",
       "activity": "Marrybrown · Westfield Geelong",
       "source": {
         "sheet": "Tab A — East to West",
@@ -1960,7 +1960,7 @@
       "type": "transit",
       "title": "Depart Geelong → Marysville · 3 hrs",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+VIC&query_place_id=ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1982,7 +1982,7 @@
       "type": "hotel",
       "title": "Arrive Peppers Marysville · check in",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+VIC&query_place_id=ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2004,7 +2004,7 @@
       "type": "rest",
       "title": "Settle · daughter decompress",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+VIC&query_place_id=ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2062,7 +2062,7 @@
       "type": "food",
       "title": "Breakfast · Peppers Marysville or nearby café",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+VIC&query_place_id=ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2074,13 +2074,13 @@
           "label": "Hotel",
           "title": "Peppers breakfast",
           "detail": "Breakfast at hotel.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+VIC&query_place_id=ChIJ5y98H-g9KGsR416R7Oc1CXI"
         },
         {
           "label": "Cafe",
           "title": "Nearby café",
           "detail": "Search nearby café if you prefer outside breakfast.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+VIC&query_place_id=ChIJ5y98H-g9KGsR416R7Oc1CXI"
         }
       ]
     },
@@ -2098,7 +2098,7 @@
       "type": "transit",
       "title": "Hard departure → Lake Mountain · ~30 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Mountain+Alpine+Resort+VIC&query_place_id=ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
       "activity": "Lake Mountain Alpine Resort",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2129,7 +2129,7 @@
       "type": "transit",
       "title": "Arrive Lake Mountain · parking · tickets · gear · toilet · ~30 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Mountain+Alpine+Resort+VIC&query_place_id=ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
       "activity": "Lake Mountain Alpine Resort",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2160,7 +2160,7 @@
       "type": "activity",
       "title": "Snow play · tobogganing · ~1.5–2 hrs with toddler",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Mountain+Alpine+Resort+VIC&query_place_id=ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2182,7 +2182,7 @@
       "type": "food",
       "title": "Lunch/snacks on mountain · wet clothes change · warm up · ~45 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Mountain+Alpine+Resort+VIC&query_place_id=ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2204,7 +2204,7 @@
       "type": "transit",
       "title": "Depart Lake Mountain → Marysville · ~30 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+VIC&query_place_id=ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": "Lake Mountain Alpine Resort",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2235,7 +2235,7 @@
       "type": "hotel",
       "title": "Arrive Peppers Marysville · same room · dump wet gear · daughter bath · rest",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+VIC&query_place_id=ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2293,7 +2293,7 @@
       "type": "food",
       "title": "Breakfast · Peppers Marysville · last morning",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+VIC&query_place_id=ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2315,7 +2315,7 @@
       "type": "hotel",
       "title": "Pack up · load luggage · checkout",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5y98H-g9KGsR416R7Oc1CXI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peppers+Marysville+VIC&query_place_id=ChIJ5y98H-g9KGsR416R7Oc1CXI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2337,7 +2337,7 @@
       "type": "transit",
       "title": "Hard departure → Healesville Sanctuary · ~50 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJs4tV8FUqKGsRAEIxBXZWBA8",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Healesville+Sanctuary+VIC&query_place_id=ChIJs4tV8FUqKGsRAEIxBXZWBA8",
       "activity": "Healesville Sanctuary",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2368,7 +2368,7 @@
       "type": "transit",
       "title": "Arrive Healesville Sanctuary · tickets · begin visit",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJs4tV8FUqKGsRAEIxBXZWBA8",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Healesville+Sanctuary+VIC&query_place_id=ChIJs4tV8FUqKGsRAEIxBXZWBA8",
       "activity": "Healesville Sanctuary",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2399,7 +2399,7 @@
       "type": "food",
       "title": "Lunch · Sanctuary café or packed",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJs4tV8FUqKGsRAEIxBXZWBA8",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Healesville+Sanctuary+VIC&query_place_id=ChIJs4tV8FUqKGsRAEIxBXZWBA8",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2411,13 +2411,13 @@
           "label": "Cafe",
           "title": "Sanctuary café",
           "detail": "Eat at Healesville Sanctuary café.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJs4tV8FUqKGsRAEIxBXZWBA8"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Healesville+Sanctuary+VIC&query_place_id=ChIJs4tV8FUqKGsRAEIxBXZWBA8"
         },
         {
           "label": "Packed",
           "title": "Packed lunch",
           "detail": "No navigation needed; use packed lunch if queues/weather are poor.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJs4tV8FUqKGsRAEIxBXZWBA8"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Healesville+Sanctuary+VIC&query_place_id=ChIJs4tV8FUqKGsRAEIxBXZWBA8"
         }
       ]
     },
@@ -2435,7 +2435,7 @@
       "type": "hotel",
       "title": "Depart → Balgownie Estate · ~25 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Balgownie+Estate%2C+Yarra+Glen+VIC&query_place_id=ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2457,7 +2457,7 @@
       "type": "hotel",
       "title": "Arrive Balgownie · early check in if available · drop bags",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Balgownie+Estate%2C+Yarra+Glen+VIC&query_place_id=ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2479,7 +2479,7 @@
       "type": "rest",
       "title": "Cellar door tasting · both adults · daughter settled",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Balgownie+Estate%2C+Yarra+Glen+VIC&query_place_id=ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2501,7 +2501,7 @@
       "type": "hotel",
       "title": "Room · daughter bath · rest",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Balgownie+Estate%2C+Yarra+Glen+VIC&query_place_id=ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2523,7 +2523,7 @@
       "type": "food",
       "title": "Dinner · Balgownie restaurant · reserve ahead · kids menu",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Balgownie+Estate%2C+Yarra+Glen+VIC&query_place_id=ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2545,7 +2545,7 @@
       "type": "hotel",
       "title": "Back to room · no driving · full wind down",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Balgownie+Estate%2C+Yarra+Glen+VIC&query_place_id=ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2567,7 +2567,7 @@
       "type": "food",
       "title": "Slow breakfast · Balgownie on-site",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Balgownie+Estate%2C+Yarra+Glen+VIC&query_place_id=ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2589,7 +2589,7 @@
       "type": "hotel",
       "title": "Pack up · load luggage · checkout",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Balgownie+Estate%2C+Yarra+Glen+VIC&query_place_id=ChIJqWY7B3jU12oR4jhpDu4a9GM",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2611,7 +2611,7 @@
       "type": "food",
       "title": "Hard departure → The Chocolateries · ~5 min",
       "detail": "10:05 · Arrive · free entry · tastings · daughter on lawns · 1 hr",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ5R_CsX_T12oRN0n5x7Ahs0Q",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Chocolaterie+%26+Ice+Creamery%2C+Yarra+Glen+VIC&query_place_id=ChIJ5R_CsX_T12oRN0n5x7Ahs0Q",
       "activity": "The Chocolateries · Yarra Glen",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2642,7 +2642,7 @@
       "type": "transit",
       "title": "Depart → San Remo · ~2h30 real-life · school holiday Saturday traffic",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJOcVhaK_z1WoRt3PBihuOfNA",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=San+Remo+Fishermen%27s+Co-op+VIC&query_place_id=ChIJOcVhaK_z1WoRt3PBihuOfNA",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2664,7 +2664,7 @@
       "type": "food",
       "title": "Arrive San Remo Fisherman's Co-op · lunch · allow 1.5 hrs · queue likely",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJOcVhaK_z1WoRt3PBihuOfNA",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=San+Remo+Fishermen%27s+Co-op+VIC&query_place_id=ChIJOcVhaK_z1WoRt3PBihuOfNA",
       "activity": "San Remo Fisherman's Co-op",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2695,7 +2695,7 @@
       "type": "food",
       "title": "Depart San Remo → Woolworths · ~20 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2739,7 +2739,7 @@
       "type": "food",
       "title": "Depart Woolworths → Ramada Wyndham · ~5–7 min",
       "detail": "16:20 · Arrive Ramada Wyndham · check in · unpack · done for the day",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2761,7 +2761,7 @@
       "type": "food",
       "title": "Dinner · from provisions · in room or hotel",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2773,13 +2773,13 @@
           "label": "Provisions",
           "title": "In-room provisions",
           "detail": "No driving option from provisions.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI"
         },
         {
           "label": "Hotel",
           "title": "Hotel meal option",
           "detail": "Search hotel / nearby meal option.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI"
         }
       ]
     },
@@ -2797,7 +2797,7 @@
       "type": "food",
       "title": "Breakfast · hotel · relaxed",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2819,7 +2819,7 @@
       "type": "transit",
       "title": "Depart → Koala Conservation Reserve · ~15 min",
       "detail": "10:15 · Arrive · treetop boardwalk · koala viewing · 1 hr",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJB6p56FDs1WoRkOdCFKV5BQ8",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Koala+Conservation+Reserve%2C+Phillip+Island+VIC&query_place_id=ChIJB6p56FDs1WoRkOdCFKV5BQ8",
       "activity": "Koala Conservation Reserve",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2902,7 +2902,7 @@
       "type": "transit",
       "title": "Depart → Nobbies Centre · ~20 min",
       "detail": "12:50 · Nobbies · clifftop boardwalk · seal viewing · 1 hr",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJe8bUIzW-1WoRGxZcFXtSxlE",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nobbies+Centre%2C+Phillip+Island+VIC&query_place_id=ChIJe8bUIzW-1WoRGxZcFXtSxlE",
       "activity": "Nobbies Centre",
       "source": {
         "sheet": "Tab A — East to West",
@@ -2933,7 +2933,7 @@
       "type": "hotel",
       "title": "Depart → hotel · ~20 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -2955,7 +2955,7 @@
       "type": "food",
       "title": "Back at hotel · no more agenda · rest · explore nearby if energy allows · free until dinner",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3013,7 +3013,7 @@
       "type": "food",
       "title": "Wake up · quick breakfast · hotel or provisions",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3025,13 +3025,13 @@
           "label": "Hotel",
           "title": "Hotel breakfast / provisions",
           "detail": "No navigation needed if eating in room/hotel.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI"
         },
         {
           "label": "Provisions",
           "title": "Nearby provisions",
           "detail": "Search grocery/provisions nearby if needed.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI"
         }
       ]
     },
@@ -3049,7 +3049,7 @@
       "type": "transit",
       "title": "Depart → Rhyll Jetty · ~20 min",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Wildlife+Coast+Cruises%2C+Cowes+VIC&query_place_id=ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
       "activity": "Whale Watching · Wildlife Coast Cruises",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3080,7 +3080,7 @@
       "type": "transit",
       "title": "Arrive Rhyll Jetty · board · motion sickness tablets if needed",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Wildlife+Coast+Cruises%2C+Cowes+VIC&query_place_id=ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
       "activity": "Whale Watching · Wildlife Coast Cruises",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3111,7 +3111,7 @@
       "type": "transit",
       "title": "Whale watching cruise departs · 4 hrs",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Wildlife+Coast+Cruises%2C+Cowes+VIC&query_place_id=ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
       "activity": "Whale Watching · Wildlife Coast Cruises",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3142,7 +3142,7 @@
       "type": "activity",
       "title": "Back at Rhyll Jetty · disembark",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Wildlife+Coast+Cruises%2C+Cowes+VIC&query_place_id=ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
       "activity": "Whale Watching · Wildlife Coast Cruises",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3203,7 +3203,7 @@
       "type": "hotel",
       "title": "Free time · rest at hotel · no agenda",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3225,7 +3225,7 @@
       "type": "transit",
       "title": "⚠ Hard cutoff · depart → Penguin Parade · ~15 min",
       "detail": "17:15 · Arrive · settle into viewing area",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJW7bw6GeV1WoRJ-q-NvGxZZw",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Penguin+Parade%2C+Phillip+Island+VIC&query_place_id=ChIJW7bw6GeV1WoRJ-q-NvGxZZw",
       "activity": "Penguin Parade",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3256,7 +3256,7 @@
       "type": "activity",
       "title": "Penguin Parade begins · sunset",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJW7bw6GeV1WoRJ-q-NvGxZZw",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Penguin+Parade%2C+Phillip+Island+VIC&query_place_id=ChIJW7bw6GeV1WoRJ-q-NvGxZZw",
       "activity": "Penguin Parade",
       "source": {
         "sheet": "Tab A — East to West",
@@ -3287,7 +3287,7 @@
       "type": "food",
       "title": "Parade ends · depart → hotel",
       "detail": "19:15 · Back at Ramada · dinner from provisions",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3309,7 +3309,7 @@
       "type": "transit",
       "title": "⚠ Pack bags tonight · Day 11 departs 09:00 sharp · early night",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3331,7 +3331,7 @@
       "type": "food",
       "title": "Wake up · quick breakfast · hotel or provisions",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3343,13 +3343,13 @@
           "label": "Hotel",
           "title": "Hotel breakfast / provisions",
           "detail": "No navigation needed if eating in room/hotel.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI"
         },
         {
           "label": "Cafe",
           "title": "Nearby café",
           "detail": "Search café near Westin Melbourne.",
-          "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI"
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI"
         }
       ]
     },
@@ -3367,7 +3367,7 @@
       "type": "hotel",
       "title": "Final room sweep · passports · chargers · medicine · toys",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -3389,7 +3389,7 @@
       "type": "hotel",
       "title": "Load luggage into Q5 · checkout",
       "detail": "",
-      "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJA5HBGWns1WoR1DPZHtTIHdI",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramada+Resort+Phillip+Island%2C+Cowes+VIC&query_place_id=ChIJA5HBGWns1WoR1DPZHtTIHdI",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
