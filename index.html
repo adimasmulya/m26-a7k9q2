@@ -825,6 +825,32 @@
     .place-row .place-name { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.25; }
     .place-row .place-pin { font-size: 13px; color: var(--accent); flex: none; font-weight: 600; }
 
+    .pd-table { margin: 4px 0 6px; }
+    .pd-row {
+      display: grid;
+      grid-template-columns: 96px 1fr;
+      gap: 10px;
+      padding: 9px 0;
+      border-bottom: 1px solid #eee7d8;
+    }
+    .pd-row:last-child { border-bottom: none; }
+    .pd-label {
+      font-family: var(--font-sans);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      padding-top: 1px;
+    }
+    .pd-val {
+      font-family: var(--font-body-serif);
+      font-size: 14px;
+      line-height: 1.4;
+      color: var(--text);
+      white-space: pre-line;
+    }
+
     .modal-panel {
       position: absolute;
       left: 12px;
@@ -1620,23 +1646,56 @@
       // group by leg/area (in trip order); items without a leg go under "Other"
       const order = ['Great Ocean Road','Marysville & Yarra Valley','Phillip Island','Melbourne','Melbourne CBD','Apollo Bay','Warrnambool','Marysville','Departure',''];
       const groups = {};
-      items.forEach(it => { (groups[it.leg || ''] = groups[it.leg || ''] || []).push(it); });
+      items.forEach((it, idx) => { it._idx = idx; (groups[it.leg || ''] = groups[it.leg || ''] || []).push(it); });
+      // stash the active list so a row tap can resolve its detail
+      state._activeList = { which, items };
       const body = order.filter(l => groups[l]).map(l => {
         const head = which === 'stay' && l === '' ? 'Stays' : (l || 'Other');
-        const rows = groups[l].map((it, i) =>
-          `<a class="place-row" href="${escapeHtml(it.mapsUrl)}" target="_blank" rel="noopener">
+        const rows = groups[l].map((it) => {
+          const hasDetail = !!it.detail;
+          return `<button class="place-row" data-idx="${it._idx}">
              <span class="place-name">${escapeHtml(it.name)}</span>
-             <span class="place-pin">📍 Map</span>
-           </a>`).join('');
+             <span class="place-pin">${hasDetail ? 'Details ›' : '📍 Map'}</span>
+           </button>`;
+        }).join('');
         return `<div class="place-group-title">${escapeHtml(head)}</div>${rows}`;
       }).join('');
       openModal(`
         <div class="modal-title">${escapeHtml(titles[which] || 'Places')}</div>
-        <div class="modal-meta">Tap any place to open it in Maps</div>
+        <div class="modal-meta">Tap a place for details &amp; map</div>
         ${body || '<div class="summary">Nothing shortlisted yet.</div>'}
         <div class="actions"><button class="btn secondary" id="modalCloseBtn">Close</button></div>
       `);
       $('modalCloseBtn').addEventListener('click', closeModal);
+      document.querySelectorAll('.place-row[data-idx]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const it = items[parseInt(btn.dataset.idx, 10)];
+          if (it && it.detail) openPlaceDetail(it, which);
+          else if (it && it.mapsUrl) window.open(it.mapsUrl, '_blank', 'noopener');
+        });
+      });
+    }
+
+    function openPlaceDetail(it, which) {
+      const d = it.detail || {};
+      // field order per list type
+      const order = which === 'restaurants'
+        ? [['cuisine','Cuisine'],['hours','Hours'],['price','Price'],['rating','Rating'],['order','Must order'],['pork','Pork note'],['family','Family-friendly']]
+        : which === 'coffee'
+        ? [['style','Roasting style'],['blend','House blend'],['fruity','Fruity profile'],['hours','Hours'],['notes','Notes']]
+        : [['hours','Hours'],['cost','Entry'],['booking','Booking'],['time','Time needed'],['toddler','Toddler'],['tip','Practical tip']];
+      const rows = order.filter(([k]) => d[k]).map(([k, label]) =>
+        `<div class="pd-row"><div class="pd-label">${label}</div><div class="pd-val">${escapeHtml(d[k])}</div></div>`
+      ).join('');
+      openModal(`
+        <div class="modal-title">${escapeHtml(it.name)}</div>
+        <div class="pd-table">${rows}</div>
+        <div class="actions">
+          ${it.mapsUrl ? `<a class="btn" href="${escapeHtml(it.mapsUrl)}" target="_blank" rel="noopener">📍 Open in Maps</a>` : ''}
+          <button class="btn secondary" id="pdBack">‹ Back to list</button>
+        </div>
+      `);
+      $('pdBack').addEventListener('click', () => openPlaceList(which));
     }
 
     function openHotelModal(hotel) {

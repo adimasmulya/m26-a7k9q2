@@ -4358,97 +4358,249 @@
       {
         "name": "Cunningham Pier · Geelong",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cunningham+Pier%2C+Geelong+VIC"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cunningham+Pier%2C+Geelong+VIC",
+        "detail": {
+          "hours": "Open access",
+          "cost": "Free (carousel/playground paid)",
+          "booking": "No",
+          "time": "45–60 min",
+          "toddler": "4/5",
+          "tip": "Carousel + playground combo; good first stop to burn energy after the drive"
+        }
       },
       {
         "name": "Nordenfine Ice Cream · Torquay",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nordenfine+Ice+Cream+34+Bell+St+Torquay"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nordenfine+Ice+Cream+34+Bell+St+Torquay",
+        "detail": {
+          "hours": "From 12:00",
+          "cost": "Ice cream prices",
+          "booking": "No",
+          "time": "30 min",
+          "toddler": "4/5",
+          "tip": "Asleep-branch stop; playground nearby if she's not in an ice-cream mood"
+        }
       },
       {
         "name": "Erskine Falls · Lorne",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Erskine+Falls%2C+Lorne+VIC&query_place_id=ChIJZ8CHhFVl02oRvgdNLwyuckM"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Erskine+Falls%2C+Lorne+VIC&query_place_id=ChIJZ8CHhFVl02oRvgdNLwyuckM",
+        "detail": {
+          "hours": "24 hrs · best dawn–dusk",
+          "cost": "Free",
+          "booking": "No",
+          "time": "30 min (top only)",
+          "toddler": "2/5",
+          "tip": "Stick to the upper lookout — 230 damp steps to the base are hazardous for a toddler"
+        }
       },
       {
         "name": "GOR Story Museum · Lorne",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Great+Ocean+Road+Story+Museum%2C+Lorne+VIC&query_place_id=ChIJyXbSCcdk02oR9bJURPOpMKw"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Great+Ocean+Road+Story+Museum%2C+Lorne+VIC&query_place_id=ChIJyXbSCcdk02oR9bJURPOpMKw",
+        "detail": {
+          "hours": "Daily 09:00–17:00",
+          "cost": "Free",
+          "booking": "No",
+          "time": "30–45 min",
+          "toddler": "3/5",
+          "tip": "Good wet-weather shelter — clean toilets, colouring pages"
+        }
       },
       {
         "name": "Teddy's Lookout · Lorne",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Teddy%27s+Lookout%2C+Lorne+VIC&query_place_id=ChIJN0RfaZJk02oRLF0wPLa6JN4"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Teddy%27s+Lookout%2C+Lorne+VIC&query_place_id=ChIJN0RfaZJk02oRLF0wPLa6JN4",
+        "detail": {
+          "hours": "24 hrs · best dawn–dusk",
+          "cost": "Free",
+          "booking": "No",
+          "time": "20–30 min",
+          "toddler": "4/5",
+          "tip": "Hold her hand firmly — winter gusts off the Southern Ocean are fierce"
+        }
       },
       {
         "name": "Cape Otway Lightstation",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cape+Otway+Lightstation+VIC&query_place_id=ChIJqd-ZoF53gqoRP42NCDSXO9c"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cape+Otway+Lightstation+VIC&query_place_id=ChIJqd-ZoF53gqoRP42NCDSXO9c",
+        "detail": {
+          "hours": "Fri–Tue 09:30–16:30 (closed Wed–Thu) · last entry 16:00",
+          "cost": "Adult 11 · Child 5 · Family 28 · under school-age free",
+          "booking": "No — tickets at gatehouse",
+          "time": "1–1.5 hrs",
+          "toddler": "3/5",
+          "tip": "Layer her in windproof gear — the headland is brutally exposed"
+        }
       },
       {
         "name": "Maits Rest Rainforest Walk",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Maits+Rest+Rainforest+Walk%2C+Great+Otway+National+Park+VIC&query_place_id=ChIJ9_jMQPIt02oR_oQbQHRaLGI"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Maits+Rest+Rainforest+Walk%2C+Great+Otway+National+Park+VIC&query_place_id=ChIJ9_jMQPIt02oR_oQbQHRaLGI",
+        "detail": {
+          "hours": "24 hrs · best 08:00–16:30",
+          "cost": "Free",
+          "booking": "No",
+          "time": "30–45 min",
+          "toddler": "4/5",
+          "tip": "Waterproof jacket essential — the canopy drips condensation continuously"
+        }
       },
       {
         "name": "Gibson Steps",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gibson+Steps%2C+Port+Campbell+National+Park+VIC&query_place_id=ChIJE-KzjwuegqoRzMREy8VNnKQ"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gibson+Steps%2C+Port+Campbell+National+Park+VIC&query_place_id=ChIJE-KzjwuegqoRzMREy8VNnKQ",
+        "detail": {
+          "hours": "24 hrs · best 09:00–16:30",
+          "cost": "Free",
+          "booking": "No",
+          "time": "20–30 min (top only)",
+          "toddler": "2/5",
+          "tip": "Steps are slick and steep in winter — stay at the top lookout"
+        }
       },
       {
         "name": "Twelve Apostles",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Twelve+Apostles%2C+Princetown+VIC&query_place_id=ChIJL362CkecgqoRlPjnF4If7Pc"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Twelve+Apostles%2C+Princetown+VIC&query_place_id=ChIJL362CkecgqoRlPjnF4If7Pc",
+        "detail": {
+          "hours": "Boardwalks 24/7 · kiosk 10:00–17:00",
+          "cost": "Free",
+          "booking": "No",
+          "time": "45–60 min",
+          "toddler": "4/5",
+          "tip": "Fully zip her into a windproof coat before leaving the car — platforms are extremely exposed"
+        }
       },
       {
         "name": "Loch Ard Gorge",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loch+Ard+Gorge%2C+Port+Campbell+VIC&query_place_id=ChIJDYxfGtCfgqoR3bzH2zNqsk0"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loch+Ard+Gorge%2C+Port+Campbell+VIC&query_place_id=ChIJDYxfGtCfgqoR3bzH2zNqsk0",
+        "detail": {
+          "hours": "24 hrs · best dawn–dusk",
+          "cost": "Free",
+          "booking": "No",
+          "time": "45–60 min",
+          "toddler": "3/5",
+          "tip": "Main beach stairs closed — upper boardwalks only, flat and safe"
+        }
       },
       {
         "name": "Tower Hill Wildlife Reserve",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tower+Hill+Wildlife+Reserve+VIC&query_place_id=ChIJo18vdvU1zWoRmX6GnBnbh5o"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tower+Hill+Wildlife+Reserve+VIC&query_place_id=ChIJo18vdvU1zWoRmX6GnBnbh5o",
+        "detail": {
+          "hours": "Reserve 24 hrs · visitor centre 10:00–16:00",
+          "cost": "Free (guided tours extra)",
+          "booking": "No",
+          "time": "1–1.5 hrs",
+          "toddler": "5/5",
+          "tip": "Keep snacks zipped away — bold emus approach families looking for food"
+        }
       },
       {
         "name": "Logan Beach Whale Lookout",
         "leg": "Great Ocean Road",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Logan+Beach+Whale+Watching+Platform%2C+Warrnambool+VIC&query_place_id=ChIJ39PtxnZNzWoRyiEsue5HTz8"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Logan+Beach+Whale+Watching+Platform%2C+Warrnambool+VIC&query_place_id=ChIJ39PtxnZNzWoRyiEsue5HTz8",
+        "detail": {
+          "hours": "24 hrs",
+          "cost": "Free",
+          "booking": "No",
+          "time": "30–45 min",
+          "toddler": "4/5",
+          "tip": "Call Warrnambool Visitor Centre first to confirm whale sightings that morning"
+        }
       },
       {
         "name": "Lake Mountain (snow play)",
         "leg": "Marysville & Yarra Valley",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Mountain+Alpine+Resort+VIC&query_place_id=ChIJ6YU-fbpqKGsR9AOgE7rJAu8"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Mountain+Alpine+Resort+VIC&query_place_id=ChIJ6YU-fbpqKGsR9AOgE7rJAu8",
+        "detail": {
+          "hours": "Daily 08:00–15:30 (snow season)",
+          "cost": "Car 69/vehicle · toboggan 6+ 33 · under-5 11",
+          "booking": "Yes — pre-book online 1–2 weeks ahead, capped",
+          "time": "3–4 hrs",
+          "toddler": "5/5",
+          "tip": "Pack a full change of warm clothes in the boot — she will get wet and cold"
+        }
       },
       {
         "name": "Healesville Sanctuary",
         "leg": "Marysville & Yarra Valley",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Healesville+Sanctuary+VIC&query_place_id=ChIJs4tV8FUqKGsRAEIxBXZWBA8"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Healesville+Sanctuary+VIC&query_place_id=ChIJs4tV8FUqKGsRAEIxBXZWBA8",
+        "detail": {
+          "hours": "Daily 09:00–17:00",
+          "cost": "Adult 54.50 · Child 28.50 wkdy / free wknd & hols · under 4 free",
+          "booking": "Yes — timed entry, pre-book (1 wk ahead for weekends)",
+          "time": "2.5–3.5 hrs",
+          "toddler": "5/5",
+          "tip": "Duck into the platypus display or Spirits of the Sky bird show during winter drizzle"
+        }
       },
       {
         "name": "The Chocolateries · Yarra Glen",
         "leg": "Marysville & Yarra Valley",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Chocolaterie+%26+Ice+Creamery%2C+Yarra+Glen+VIC&query_place_id=ChIJ5R_CsX_T12oRN0n5x7Ahs0Q"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Chocolaterie+%26+Ice+Creamery%2C+Yarra+Glen+VIC&query_place_id=ChIJ5R_CsX_T12oRN0n5x7Ahs0Q",
+        "detail": {
+          "hours": "Daily 09:00–17:00",
+          "cost": "Free entry · free tastings on arrival",
+          "booking": "No (classes need booking)",
+          "time": "1–1.5 hrs",
+          "toddler": "5/5",
+          "tip": "Arrive before 10:30 to beat tour buses — hot chocolate in Valley Views Café"
+        }
       },
       {
         "name": "Koala Conservation Reserve",
         "leg": "Phillip Island",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Koala+Conservation+Reserve%2C+Phillip+Island+VIC&query_place_id=ChIJB6p56FDs1WoRkOdCFKV5BQ8"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Koala+Conservation+Reserve%2C+Phillip+Island+VIC&query_place_id=ChIJB6p56FDs1WoRkOdCFKV5BQ8",
+        "detail": {
+          "hours": "Daily 10:00–17:00 · last entry 16:30",
+          "cost": "Adult 17.50 · Child 8.75 · Family 43.75",
+          "booking": "Yes — pre-book a few days ahead",
+          "time": "1–1.5 hrs",
+          "toddler": "4/5",
+          "tip": "Keep her hood up — the eucalyptus canopy drips heavy cold dew"
+        }
       },
       {
         "name": "Nobbies Centre",
         "leg": "Phillip Island",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nobbies+Centre%2C+Phillip+Island+VIC&query_place_id=ChIJe8bUIzW-1WoRGxZcFXtSxlE"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nobbies+Centre%2C+Phillip+Island+VIC&query_place_id=ChIJe8bUIzW-1WoRGxZcFXtSxlE",
+        "detail": {
+          "hours": "Outdoor boardwalks daylight hrs · ⚠ indoor centre closed indefinitely",
+          "cost": "Free (boardwalks)",
+          "booking": "No",
+          "time": "30–45 min",
+          "toddler": "3/5",
+          "tip": "Use the Penguin Parade toilets first — Nobbies indoor facilities are fully closed"
+        }
       },
       {
         "name": "Whale Cruise · Rhyll Jetty",
         "leg": "Phillip Island",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Wildlife+Coast+Cruises%2C+Cowes+VIC&query_place_id=ChIJ4-6QsQbu1WoRQqqPSUgnZcE"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Wildlife+Coast+Cruises%2C+Cowes+VIC&query_place_id=ChIJ4-6QsQbu1WoRQqqPSUgnZcE",
+        "detail": {
+          "hours": "Weekends Jun · departs 08:30, board by 08:00, returns ~12:30",
+          "cost": "Adult 179 · Child 125 · Family 517",
+          "booking": "Yes — essential, book 2–3 wks ahead",
+          "time": "4.5 hrs total",
+          "toddler": "2/5",
+          "tip": "Consult a pharmacist for a toddler-safe motion-sickness routine before departure"
+        }
       },
       {
         "name": "Penguin Parade",
         "leg": "Phillip Island",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Penguin+Parade%2C+Phillip+Island+VIC&query_place_id=ChIJW7bw6GeV1WoRJ-q-NvGxZZw"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Penguin+Parade%2C+Phillip+Island+VIC&query_place_id=ChIJW7bw6GeV1WoRJ-q-NvGxZZw",
+        "detail": {
+          "hours": "Visitor centre from 12:00 · in grandstands by 16:45 · penguins ~17:15",
+          "cost": "Adult 34 · Child 17 · Family 85",
+          "booking": "Yes — mandatory, book 3–4 wks ahead, sells out nightly",
+          "time": "2–2.5 hrs",
+          "toddler": "4/5",
+          "tip": "Bring wool blankets — concrete grandstands by the ocean are freezing after sunset"
+        }
       }
     ],
     "eat": [
@@ -4531,194 +4683,518 @@
       {
         "name": "YOI Indonesian Fusion · Franklin St",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=YOI+Indonesian+Fusion+Franklin+Street+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=YOI+Indonesian+Fusion+Franklin+Street+Melbourne",
+        "detail": {
+          "cuisine": "Indonesian",
+          "hours": "Mon–Thu 11:00–21:00 · Fri–Sun 11:00–21:30",
+          "price": "18–26/main",
+          "rating": "4.5★ (1,600+)",
+          "order": "Iga Bakar · Ayam Geprek · Ayam Kremes (mild, good for kids)",
+          "pork": "✅ No pork identified",
+          "family": "Very high — QR ordering, mild kids options"
+        }
       },
       {
         "name": "Lulu's Malaysian Hawker · Hardware Ln",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lulus+Malaysian+Hawker+Hardware+Lane+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lulus+Malaysian+Hawker+Hardware+Lane+Melbourne",
+        "detail": {
+          "cuisine": "Malaysian (Penang)",
+          "hours": "Daily 11:00–21:00",
+          "price": "18–24/main",
+          "rating": "4.5★",
+          "order": "Penang White Curry Mee ✅ · ⚠ skip Char Koay Teow (pork fat)",
+          "pork": "⚠ CKT has pork — ask staff for pork-free dishes",
+          "family": "High — outdoor lane seating, mild noodles"
+        }
       },
       {
         "name": "Soi 38 · Thai boat noodles",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Soi+38+Royal+Lane+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Soi+38+Royal+Lane+Melbourne",
+        "detail": {
+          "cuisine": "Thai street food",
+          "hours": "Lunch 11:00–15:00 · dinner from 17:00",
+          "price": "15–23/dish",
+          "rating": "4.5★ (2,200+)",
+          "order": "Beef boat noodles ✅ · grilled chicken wings · ⚠ skip crispy pork belly",
+          "pork": "⚠ Signature pork belly — beef/chicken are pork-free",
+          "family": "Moderate — tight alley, best at opening"
+        }
       },
       {
         "name": "Phở Thìn · Lonsdale St",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pho+Thin+13+Lo+Duc+Lonsdale+Street+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pho+Thin+13+Lo+Duc+Lonsdale+Street+Melbourne",
+        "detail": {
+          "cuisine": "Vietnamese (northern pho)",
+          "hours": "Mon–Thu 10:00–21:00 · Fri–Sat 10:00–22:00 · Sun 10:00–21:00",
+          "price": "18.50–22/bowl",
+          "rating": "4.6★ (2,000+)",
+          "order": "Phở Tái Lăn (garlic beef) · Phở Gà (chicken, great for kids)",
+          "pork": "✅ Beef & chicken — no pork",
+          "family": "High — bright, fast, chicken pho ideal for kids"
+        }
       },
       {
         "name": "Kakilang Malaysian · Bourke St",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kakilang+Malaysian+Flavours+Bourke+Street+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kakilang+Malaysian+Flavours+Bourke+Street+Melbourne",
+        "detail": {
+          "cuisine": "Malaysian hawker",
+          "hours": "Daily 11:00–21:30",
+          "price": "17–25/pp",
+          "rating": "4.5★",
+          "order": "Hainanese chicken rice ✅ · seafood laksa ✅ · roti · ⚠ CKT has lap cheong",
+          "pork": "⚠ CKT only — chicken rice/laksa/roti pork-free",
+          "family": "Good — huge shareable portions, mild kids options"
+        }
       },
       {
         "name": "Nana Thai · Bourke St",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nana+Thai+Bourke+Street+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nana+Thai+Bourke+Street+Melbourne",
+        "detail": {
+          "cuisine": "Thai street food / Isan",
+          "hours": "Daily 11:30–22:00 · Fri–Sat to 23:00",
+          "price": "18–28/main",
+          "rating": "4.5★",
+          "order": "Pad Kra Prow beef · Tom Yum seafood noodle · Pad See Ew (ask mai phed for kids)",
+          "pork": "✅ Recommended dishes pork-free",
+          "family": "Good — ask 'mai phed' (no spice) for child dishes"
+        }
       },
       {
         "name": "Shujinko · ramen (24h) · Russell St",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Shujinko+Russell+Street+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Shujinko+Russell+Street+Melbourne",
+        "detail": {
+          "cuisine": "Japanese ramen/izakaya",
+          "hours": "Open 24 hrs, 7 days",
+          "price": "19–27/bowl",
+          "rating": "4.5★",
+          "order": "Tori Ramen (chicken) ✅ · Gyu Don (beef) ✅ · ⚠ skip tonkotsu",
+          "pork": "⚠ Tonkotsu is pork — tori/gyu pork-free",
+          "family": "Very good — booths, sweet beef bowls, 24h backup"
+        }
       },
       {
         "name": "Rare Steakhouse · King St",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rare+Steakhouse+King+Street+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rare+Steakhouse+King+Street+Melbourne",
+        "detail": {
+          "cuisine": "Australian steakhouse",
+          "hours": "Lunch 12:00–15:00 · dinner 17:30–22:00 (varies, Sun closed)",
+          "price": "38–65/steak",
+          "rating": "4.5★",
+          "order": "Monte grain-fed scotch fillet · Cape Grim eye fillet",
+          "pork": "✅ Pure beef",
+          "family": "Very good — Midtown (Goldie Pl) booths better for toddler"
+        }
       },
       {
         "name": "Meatmaiden · Little Collins St",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Meatmaiden+Little+Collins+Street+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Meatmaiden+Little+Collins+Street+Melbourne",
+        "detail": {
+          "cuisine": "Australian smokehouse",
+          "hours": "Tue–Sat lunch+dinner · Sun–Mon closed",
+          "price": "48–68 · Express lunch 55pp",
+          "rating": "4.5★",
+          "order": "O'Connor porterhouse · wagyu brisket · lobster mac & cheese",
+          "pork": "✅ Beef-focused",
+          "family": "Moderate — dark basement, book early 17:00, no stroller space"
+        }
       },
       {
         "name": "Ginger Olive Grill · Manchester Ln",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ginger+Olive+Restaurant+Manchester+Lane+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ginger+Olive+Restaurant+Manchester+Lane+Melbourne",
+        "detail": {
+          "cuisine": "Contemporary Aus grill",
+          "hours": "Tue–Sun lunch+dinner · Mon closed",
+          "price": "34–52/steak — best value",
+          "rating": "4.6★ (~1,000)",
+          "order": "Black Angus rib eye · wagyu sirloin · pasta backup for kids",
+          "pork": "✅ Beef/ribs — confirm individual dishes",
+          "family": "Highly suitable — quiet laneway, diverse menu"
+        }
       },
       {
         "name": "San Telmo · Argentinian grill",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=San+Telmo+Meyers+Place+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=San+Telmo+Meyers+Place+Melbourne",
+        "detail": {
+          "cuisine": "Argentinian charcoal",
+          "hours": "Mon–Thu 12:00–22:00 · Fri–Sat to 23:00 · Sun to 21:30",
+          "price": "45–65/steak (share)",
+          "rating": "4.6★",
+          "order": "Ojo de Bife ⭐ · Entraña · house chimichurri",
+          "pork": "✅ Pure beef & charcoal",
+          "family": "Good — open fire kitchen fascinates kids"
+        }
       },
       {
         "name": "HER BAR · Tue steak night · Lonsdale St",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=HER+BAR+Lonsdale+Street+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=HER+BAR+Lonsdale+Street+Melbourne",
+        "detail": {
+          "cuisine": "French-Aus bistro",
+          "hours": "Daily 11:30–late · ⭐ Tue steak frites all day",
+          "price": "Tue 25pp ⭐ · else 40+",
+          "rating": "4.5★",
+          "order": "⭐ Tue: O'Connor sirloin + frites + béarnaise (25). Day 11 is your only Tue",
+          "pork": "✅ Beef-focused",
+          "family": "Best lunch/early dinner — arrive by 17:30 before it turns to lounge"
+        }
       },
       {
         "name": "Apollo Bay Bakery",
         "leg": "Apollo Bay",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollo+Bay+Bakery+Great+Ocean+Road"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollo+Bay+Bakery+Great+Ocean+Road",
+        "detail": {
+          "cuisine": "Aus bakery",
+          "hours": "Daily 06:00–16:00",
+          "price": "7–15/pie",
+          "rating": "4.5★ (thousands)",
+          "order": "⭐ Famous scallop pie · chunky beef pie · sausage rolls for kids",
+          "pork": "✅ Scallop & beef pies pork-free",
+          "family": "Very high — casual, indoor/outdoor, perfect road stop"
+        }
       },
       {
         "name": "Apollo Bay Fishermen's Co-Op",
         "leg": "Apollo Bay",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollo+Bay+Fishermens+Cooperative"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollo+Bay+Fishermens+Cooperative",
+        "detail": {
+          "cuisine": "Coastal seafood",
+          "hours": "Daily 11:00–19:00 (weather-dependent)",
+          "price": "15–35/pp",
+          "rating": "4.4★",
+          "order": "Flake & chips · rock lobster roll · calamari · ⭐ Day 2 lunch",
+          "pork": "✅ Pure seafood",
+          "family": "Very high — vast harbour deck, kids roam free"
+        }
       },
       {
         "name": "Casalingo · Italian & seafood",
         "leg": "Apollo Bay",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casalingo+Restaurant+Apollo+Bay"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casalingo+Restaurant+Apollo+Bay",
+        "detail": {
+          "cuisine": "Italian & local seafood",
+          "hours": "Daily dinner only 17:30–20:30/21:00",
+          "price": "26–39 pasta · 33–54 mains",
+          "rating": "4.5★",
+          "order": "Linguine marinara · beef ragu gnocchi · kids penne 14",
+          "pork": "⚠ Skip carbonara/pork belly/salami pizza — seafood line pork-free",
+          "family": "Very high — dedicated kids menu, warm service"
+        }
       },
       {
         "name": "Chris's Beacon Point",
         "leg": "Apollo Bay",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chris+Beacon+Point+Restaurant+Apollo+Bay"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chris+Beacon+Point+Restaurant+Apollo+Bay",
+        "detail": {
+          "cuisine": "Greek / S. European fine dining",
+          "hours": "Thu–Mon 18:00–late (closed Tue–Wed)",
+          "price": "42–60/main",
+          "rating": "4.6★",
+          "order": "Fish of the day · saganaki starter",
+          "pork": "✅ Seafood/lamb/beef/duck focus",
+          "family": "Moderate — book early 18:00 with kids · ocean views"
+        }
       },
       {
         "name": "Coco Cafe (formerly La Bimba)",
         "leg": "Apollo Bay",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Coco+Cafe+Restaurant+Apollo+Bay+Great+Ocean+Road"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Coco+Cafe+Restaurant+Apollo+Bay+Great+Ocean+Road",
+        "detail": {
+          "cuisine": "French-Balinese",
+          "hours": "Wed–Sun 11:30–15:00 & 17:30–21:00 (closed Mon–Tue)",
+          "price": "24–38 plates · 36–55 mains",
+          "rating": "4.5★",
+          "order": "Balinese seafood curry · crispy duck leg",
+          "pork": "✅ Fish/chicken/beef/duck weighted",
+          "family": "Good — spacious upstairs, ocean windows"
+        }
       },
       {
         "name": "GOR Brewhouse · gastropub",
         "leg": "Apollo Bay",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Great+Ocean+Road+Brewhouse+Apollo+Bay"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Great+Ocean+Road+Brewhouse+Apollo+Bay",
+        "detail": {
+          "cuisine": "Aus gastropub",
+          "hours": "Daily 11:00–late · kitchen 12:00–14:30 & 17:30–20:30",
+          "price": "24–45/main",
+          "rating": "4.4★ (2,000+)",
+          "order": "Black Angus steaks · battered fish & chips · salt & pepper squid",
+          "pork": "⚠ Avoid parma (ham)/bacon burgers — steaks/squid/lamb pork-free",
+          "family": "Very high — kids menu + activity sheets, buzzy"
+        }
       },
       {
         "name": "Simon's Waterfront",
         "leg": "Warrnambool",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Simons+Waterfront+Warrnambool+Pertobe+Road"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Simons+Waterfront+Warrnambool+Pertobe+Road",
+        "detail": {
+          "cuisine": "Modern Aus seafood",
+          "hours": "Daily 12:00–20:00",
+          "price": "30–55/main",
+          "rating": "Highly rated",
+          "order": "Seafood chowder in cobb loaf · garlic prawns · prawn tacos",
+          "pork": "⚠ Some burgers have bacon — seafood/beef/chicken pork-free",
+          "family": "Very high — counter-order, opposite Lake Pertobe playground"
+        }
       },
       {
         "name": "Images Restaurant · Liebig St",
         "leg": "Warrnambool",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Images+Restaurant+Liebig+Street+Warrnambool"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Images+Restaurant+Liebig+Street+Warrnambool",
+        "detail": {
+          "cuisine": "Modern Aus (Italian/Asian)",
+          "hours": "Daily 11:30–14:30 & 17:00–21:00",
+          "price": "25–45/pp",
+          "rating": "Excellent local",
+          "order": "Satay chicken · grilled salmon · garlic king prawns · kids menu",
+          "pork": "⚠ Skip ham/bacon pizzas & carbonara — most mains pork-free",
+          "family": "Excellent — booths, carpeted (quiet), kids menu + drawing"
+        }
       },
       {
         "name": "Clovelly Restaurant & Bar",
         "leg": "Warrnambool",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Clovelly+Restaurant+Bar+Merri+Street+Warrnambool"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Clovelly+Restaurant+Bar+Merri+Street+Warrnambool",
+        "detail": {
+          "cuisine": "Modern Aus bistro",
+          "hours": "Breakfast + dinner 7 days 17:00–21:00",
+          "price": "35–55/main",
+          "rating": "Top-rated",
+          "order": "300g scotch fillet · chilli beef pasta · Portland flake",
+          "pork": "⚠ Parma & carbonara have ham/bacon — most menu pork-free",
+          "family": "Good — sleek but family-welcoming"
+        }
       },
       {
         "name": "Liebig Thai & Asian",
         "leg": "Warrnambool",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Liebig+Thai+Asian+Restaurant+Warrnambool"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Liebig+Thai+Asian+Restaurant+Warrnambool",
+        "detail": {
+          "cuisine": "Pan-Asian / Thai",
+          "hours": "Tue–Sun 11:00–15:30 & 17:00–22:00 (Mon closed)",
+          "price": "22–38/main",
+          "rating": "Outstanding local",
+          "order": "Duck red curry · duck pancakes · pad kee mao",
+          "pork": "✅ Protein choice on most dishes — ask for chicken/beef/seafood",
+          "family": "Very family-friendly — fast, mild options"
+        }
       },
       {
         "name": "Penang Alley · Malaysian",
         "leg": "Warrnambool",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Penang+Alley+Liebig+Street+Warrnambool"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Penang+Alley+Liebig+Street+Warrnambool",
+        "detail": {
+          "cuisine": "Malaysian hawker",
+          "hours": "Daily 11:00–14:00 & 16:30–20:00",
+          "price": "18–30/pp",
+          "rating": "Highly rated",
+          "order": "Penang asam laksa · curry laksa · ⚠ skip pork nasi lemak",
+          "pork": "⚠ Pork nasi lemak — order chicken; noodle soups pork-free",
+          "family": "Good — cozy, tighter seating"
+        }
       },
       {
         "name": "Ichiban Izakaya",
         "leg": "Warrnambool",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ichiban+Izakaya+Koroit+Street+Warrnambool"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ichiban+Izakaya+Koroit+Street+Warrnambool",
+        "detail": {
+          "cuisine": "Japanese izakaya",
+          "hours": "Tue–Sun 11:00–15:00 & 17:00–20:00 · Mon lunch only",
+          "price": "20–40/pp",
+          "rating": "Highly rated",
+          "order": "Ebi fry curry don · teriyaki beef don · sashimi · ⚠ confirm ramen broth",
+          "pork": "⚠ Ramen may be pork base — rice bowls/sushi pork-free",
+          "family": "Suitable — mild teriyaki/rice/gyoza for kids"
+        }
       },
       {
         "name": "Red Spoon Thai",
         "leg": "Warrnambool",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Red+Spoon+Thai+Eatery+Timor+Street+Warrnambool"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Red+Spoon+Thai+Eatery+Timor+Street+Warrnambool",
+        "detail": {
+          "cuisine": "Thai",
+          "hours": "Daily 11:30–15:00 & 17:00–21:00",
+          "price": "25–40/pp",
+          "rating": "Very highly rated",
+          "order": "Pad Thai · tom kha · cashew stir fry · roti for kids",
+          "pork": "✅ Highly customisable — specify protein",
+          "family": "Excellent — spacious, fast, roti keeps kids happy"
+        }
       },
       {
         "name": "The Duck Inn · pub bistro",
         "leg": "Marysville",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Duck+Inn+Marysville+Murchison+Street"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Duck+Inn+Marysville+Murchison+Street",
+        "detail": {
+          "cuisine": "Aus pub bistro",
+          "hours": "Daily lunch 12:00–14:30 · dinner 17:30–20:30",
+          "price": "25–45/main",
+          "rating": "Outstanding local",
+          "order": "Local beef steaks · fresh trout · parma (no bacon) · ⚠ skip pork ribs",
+          "pork": "⚠ Pork ribs & bacon burgers — steaks/seafood/chicken pork-free",
+          "family": "Excellent — high chairs, kids menu, mountain-air deck"
+        }
       },
       {
         "name": "Andiamo · at Peppers",
         "leg": "Marysville",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Andiamo+Restaurant+Peppers+Marysville"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Andiamo+Restaurant+Peppers+Marysville",
+        "detail": {
+          "cuisine": "Modern Aus (Italian)",
+          "hours": "Breakfast daily · dinner Tue–Sat (Sun–Mon closed)",
+          "price": "35–60/main",
+          "rating": "Highly rated",
+          "order": "Char-grilled rib eye · seafood pasta · wood-fired pizza (no smallgoods)",
+          "pork": "⚠ Some pizzas have prosciutto/salami — ask to omit",
+          "family": "Very good — kids menu, early 17:00 sitting · in your hotel"
+        }
       },
       {
         "name": "Pavilion Bar & Grill · golf club",
         "leg": "Marysville",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pavilion+Bar+Grill+Marysville+Golf+Club"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pavilion+Bar+Grill+Marysville+Golf+Club",
+        "detail": {
+          "cuisine": "Modern Aus bistro",
+          "hours": "Wed–Sun 12:00–21:00 (Mon–Tue closed)",
+          "price": "28–45/pp",
+          "rating": "Highly rated",
+          "order": "Lamb madras · smoked trout niçoise · seafood al pomodoro",
+          "pork": "✅ Minimal pork — lamb/beef/seafood/veg",
+          "family": "Excellent — huge windows over greens, peaceful"
+        }
       },
       {
         "name": "Elevation 423 · pizza/pasta",
         "leg": "Marysville",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elevation+423+Bar+Cafe+Marysville"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elevation+423+Bar+Cafe+Marysville",
+        "detail": {
+          "cuisine": "Italian bistro",
+          "hours": "Wed–Sun 11:00–late (Mon–Tue closed)",
+          "price": "20–35/pp — most affordable",
+          "rating": "Very well-regarded",
+          "order": "Wood-fired pizzas (no pepperoni/bacon) · schnitzel · pasta",
+          "pork": "⚠ Pepperoni/bacon listed — easy to avoid",
+          "family": "Highly suitable — laid-back, pizza loved by kids"
+        }
       }
     ],
     "coffee": [
       {
         "name": "St Ali · South Melbourne",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://maps.app.goo.gl/StAliSouthMelb"
+        "mapsUrl": "https://maps.app.goo.gl/StAliSouthMelb",
+        "detail": {
+          "style": "Bold, rich, third-wave pioneer",
+          "blend": "Orthodox (50% Colombia / 50% Brazil) — apple jam, fudge, butterscotch",
+          "hours": "Daily 07:00–17:00",
+          "fruity": "Yes — natural Ethiopian rotations",
+          "notes": "Flagship warehouse down a graffiti laneway. Large retail. Day 12 walk from the market. ⚠ confirm Maps link"
+        }
       },
       {
         "name": "Bench Coffee Co. · Little Collins",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://maps.app.goo.gl/yahtBFh2afqzzRaD6"
+        "mapsUrl": "https://maps.app.goo.gl/yahtBFh2afqzzRaD6",
+        "detail": {
+          "style": "Hyper-modern, clean, max clarity",
+          "blend": "Bauhaus (Colombia + Ethiopia) — orange, toffee, honey",
+          "hours": "Mon–Wed 08:00–16:00 · Thu–Fri to 17:00 · wknd 09:00–17:00",
+          "fruity": "High — Ethiopian & experimental lots",
+          "notes": "Minimalist CBD space, mostly takeaway. Upscale pastries. Online shop"
+        }
       },
       {
         "name": "Code Black · Flinders Ln",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://maps.app.goo.gl/STmz9qy919R6jfX39"
+        "mapsUrl": "https://maps.app.goo.gl/STmz9qy919R6jfX39",
+        "detail": {
+          "style": "Technically brilliant, heavy body, forgiving",
+          "blend": "3056 (medium) stewed fruit/caramel/milk choc · Ex-Wife (med-dark) punchier",
+          "hours": "Mon–Fri 07:00–17:00 · wknd 08:00–16:30",
+          "fruity": "Yes — natural Colombian & Ethiopian",
+          "notes": "Moody 'cocktail bar' look, dedicated brew bar. Roastery in Brunswick"
+        }
       },
       {
         "name": "Market Lane · South Melbourne",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://maps.app.goo.gl/8fzDhaqKXDRjXqne6"
+        "mapsUrl": "https://maps.app.goo.gl/8fzDhaqKXDRjXqne6",
+        "detail": {
+          "style": "Traceable, seasonal, small-batch, B-Corp",
+          "blend": "Seasonal (~80% Brazil fudge + 20% Colombia/Ethiopia, dried apricot)",
+          "hours": "Mon/Tue/Thu 07:00–15:00 · Wed/Fri/Sat to 16:00 · Sun 08:00–16:40",
+          "fruity": "Very high — red apple, berry, stone fruit",
+          "notes": "Most organised retail in Melbourne — custom bags, origin cards. 2 min from South Melbourne Market"
+        }
       },
       {
         "name": "Industry Beans · Little Collins",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://maps.app.goo.gl/m46kr7o9bvS8uD7TA"
+        "mapsUrl": "https://maps.app.goo.gl/m46kr7o9bvS8uD7TA",
+        "detail": {
+          "style": "Scientific, precise, batch-consistent",
+          "blend": "Rose Street (three continents) — citrus, cherry, cocoa butter",
+          "hours": "Mon–Fri 07:00–16:00 · wknd 08:00–15:30",
+          "fruity": "High — citrus, cherry, berry",
+          "notes": "CBD outpost of Fitzroy flagship. Famous cold drinks. Online shop"
+        }
       },
       {
         "name": "Seven Seeds / Brother Baba Budan",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Brother+Baba+Budan+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Brother+Baba+Budan+Melbourne",
+        "detail": {
+          "style": "Clean, transparent, balanced — Melbourne pioneer",
+          "blend": "House (Colombia + Brazil) — milk choc, caramel, clean fruit",
+          "hours": "Mon–Sat 07:00–17:00 · Sun 08:00–17:00",
+          "fruity": "Very high — natural Ethiopian/Peruvian",
+          "notes": "Famous for wooden chairs hanging from the ceiling. Tiny, retail shelf, quick stop"
+        }
       },
       {
         "name": "Dukes Coffee · Flinders Ln",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dukes+Coffee+Roasters+Flinders+Lane+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dukes+Coffee+Roasters+Flinders+Lane+Melbourne",
+        "detail": {
+          "style": "Vibrant, smooth, organic/ethical focus",
+          "blend": "Dukes Espresso — red apple, milk choc, roasted almond",
+          "hours": "Mon–Fri 07:00–16:30 · Sat 08:00–17:00 · Sun closed",
+          "fruity": "High — rotating African & Central American",
+          "notes": "Inside historic Ross House — beautiful tilework. Counter seating, large online shop"
+        }
       },
       {
         "name": "Axil Coffee · Flinders Ln",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Axil+Coffee+Roasters+76+Flinders+Lane+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Axil+Coffee+Roasters+76+Flinders+Lane+Melbourne",
+        "detail": {
+          "style": "Precise, powerful, balanced — award-winning baristas",
+          "blend": "Seasonal — milk choc, honey, subtle stone fruit",
+          "hours": "Mon–Fri 07:00–16:00 · wknd 08:00–16:00",
+          "fruity": "High — fermented & natural microlots",
+          "notes": "Multiple CBD spots; Flinders Ln has a filter bar. Roastery in Hawthorn. Online shop"
+        }
       },
       {
         "name": "Patricia Coffee Brewers",
         "leg": "Melbourne CBD",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Patricia+Coffee+Brewers+Melbourne"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Patricia+Coffee+Brewers+Melbourne",
+        "detail": {
+          "style": "Multi-roaster showcase, ultra-premium espresso",
+          "blend": "Patricia Patricia (medium) — caramel, cocoa, subtle fruit",
+          "hours": "Mon–Fri 07:00–16:00 · ⚠ closed weekends",
+          "fruity": "High — guest roasters (Seven Seeds, Market Lane)",
+          "notes": "⚠ Standing espresso bar only, no seating. Brick alleyway, neon sign. One-stop for multiple labels"
+        }
       }
     ]
   }
