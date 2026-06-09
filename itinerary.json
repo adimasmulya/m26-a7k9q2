@@ -17,7 +17,14 @@
       "pickup": "Melbourne Airport (Tullamarine) · Sat 20 Jun · 13:00",
       "dropoff": "Hertz Melbourne Downtown · 8 Franklin St · Tue 30 Jun · 13:00"
     },
-    "notes": "V3: option groups added for same-time alternatives; Maps links use normal Google Maps search URLs."
+    "notes": "V3: option groups added for same-time alternatives; Maps links use normal Google Maps search URLs.",
+    "carRental2": {
+      "reservation": "Dollar L6143190309",
+      "vehicle": "Toyota Cross Hybrid or similar",
+      "pickup": "Melbourne Downtown · Shop 3/8 Franklin St · Thu 2 Jul · 13:30",
+      "dropoff": "Melbourne Airport (Tullamarine) · Fri 3 Jul · 13:30",
+      "total": "AUD 131.92 (due at rental)"
+    }
   },
   "days": [
     {
@@ -54,7 +61,7 @@
       "dayLabel": "Day 4",
       "leg": "Great Ocean Road",
       "routeTitle": "GOR · Warrnambool",
-      "hotelId": "hotel-elm-tree-motel"
+      "hotelId": "hotel-quest-warrnambool"
     },
     {
       "dayNumber": 5,
@@ -179,19 +186,19 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loch+Ard+Motor+Inn+18+Lord+St%2C+Port+Campbell+VIC+3269%0A%2B61+3+5598+6328%0Ahello%40lochardmotorinn.com.au+Victoria+Australia"
     },
     {
-      "id": "hotel-elm-tree-motel",
-      "property": "Elm Tree Motel",
-      "address": "179 Kepler Street, Warrnambool 3280\n+61 3 5562 4133",
-      "checkIn": "23 Jun 2026\nFrom 14:00\nStaff until 18:00",
-      "checkOut": "24 Jun 2026\n08:00–10:00",
+      "id": "hotel-quest-warrnambool",
+      "property": "Quest Warrnambool",
+      "address": "15–19 Liebig Street\nWarrnambool VIC 3280\n+61 3 5564 1200",
+      "checkIn": "23 Jun 2026\nFrom 14:00 (until 21:00)",
+      "checkOut": "24 Jun 2026\n07:30–10:00",
       "checkInDate": "2026-06-23",
       "checkOutDate": "2026-06-24",
-      "bookingRef": "6359744029\nPIN: 7028",
-      "totalCost": "AUD 179.86\n(incl. VAT)",
-      "cancelBy": "⚠ 19 Jun 2026\n(Full charge from 21 Jun)",
-      "payment": "Auto-charged by Booking.com\nNotified by email",
-      "notes": "Twin Room · 2 adults + 1 child (4yo)\nBreakfast AUD 11/person if chosen\nPhoto ID + credit card at check-in",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elm+Tree+Motel+179+Kepler+Street%2C+Warrnambool+3280%0A%2B61+3+5562+4133+Victoria+Australia"
+      "bookingRef": "6083461432\nPIN: 3049 (confidential)",
+      "totalCost": "AUD 240.00\n(AUD 218.18 + AUD 21.82 VAT)",
+      "cancelBy": "⚠ 20 Jun 2026 23:59 AEST\n(AUD 0 until then)\nFrom 21 Jun: AUD 240 full charge",
+      "payment": "Auto-charged by Booking.com\nCard surcharge: 1.26% MC/Visa · 2.05% Amex\nNot yet charged",
+      "notes": "Executive One-Bedroom Apartment · 1 night\n✅ Confirmed 2 adults + 1 child (4yo) by David K\nChild shares King bed (Quest policy) · no extra charge\nNo meal plan · Photo ID + credit card at check-in",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quest+Warrnambool+Liebig+Street"
     },
     {
       "id": "hotel-peppers-marysville",
@@ -1745,7 +1752,7 @@
       }
     },
     {
-      "id": "d04-1630-54-check-in-elm-tree-motel",
+      "id": "d04-1630-54-check-in-quest-warrnambool",
       "dayNumber": 4,
       "date": "2026-06-23",
       "dateLabel": "Tue 23 Jun",
@@ -1756,9 +1763,9 @@
       "end": "17:00",
       "branch": null,
       "type": "hotel",
-      "title": "Check in · Elm Tree Motel",
-      "detail": "Warrnambool · confirmed\n⚠ Free cancellation until 23:59 on 20 Jun · non-refundable from 21 Jun",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elm+Tree+Motel%2C+Warrnambool+VIC&query_place_id=ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
+      "title": "Check in · Quest Warrnambool",
+      "detail": "15–19 Liebig Street · confirmed (ref 6083461432)\n✅ 2 adults + 1 child confirmed by property\nOffice until 21:00 · inform of arrival time",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quest+Warrnambool+Liebig+Street",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
@@ -1779,7 +1786,7 @@
       "branch": null,
       "type": "hotel",
       "title": "Freshen up",
-      "detail": "Elm Tree Motel · settle in",
+      "detail": "Quest Warrnambool · settle in",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elm+Tree+Motel%2C+Warrnambool+VIC&query_place_id=ChIJdQUyXlFMzWoRQKEj4_wfAMQ",
       "activity": null,
       "source": {
@@ -3546,17 +3553,105 @@
       "leg": "Westin Melbourne",
       "routeTitle": "Westin · Melbourne",
       "start": "15:00",
-      "end": "19:00",
+      "end": "15:30",
       "branch": null,
       "type": "hotel",
-      "title": "Check in · room ready · afternoon free · explore CBD or rest",
-      "detail": "",
+      "title": "Check in · drop bags · freshen up",
+      "detail": "Room ready · drop bags · freshen up before heading out",
       "mapsUrl": "https://maps.app.goo.gl/b19zq43S6YvbjKjN7",
       "activity": null,
       "source": {
         "sheet": "Tab A — East to West",
         "row": 24,
         "column": 12
+      }
+    },
+    {
+      "id": "d11-1530-dfo-depart",
+      "dayNumber": 11,
+      "date": "2026-06-30",
+      "dateLabel": "Tue 30 Jun",
+      "dayLabel": "Day 11",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "15:30",
+      "end": "16:00",
+      "branch": null,
+      "type": "transit",
+      "title": "Head to DFO South Wharf",
+      "detail": "Uber ~10 min or 20 min walk\n⚠ Everyone tired from Phillip Island drive — manage pace",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=DFO+South+Wharf+Melbourne",
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d11-1600-dfo-arrive",
+      "dayNumber": 11,
+      "date": "2026-06-30",
+      "dateLabel": "Tue 30 Jun",
+      "dayLabel": "Day 11",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "16:00",
+      "end": "17:45",
+      "branch": null,
+      "type": "activity",
+      "title": "DFO South Wharf",
+      "detail": "Clearance sale on · Dissa shops · Adimas + daughter on South Wharf waterfront · ~1.5 hrs\n⚠ Closes 18:00\nValidate parking at any store for 50% off",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=DFO+South+Wharf+Melbourne",
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d11-1745-dfo-leave",
+      "dayNumber": 11,
+      "date": "2026-06-30",
+      "dateLabel": "Tue 30 Jun",
+      "dayLabel": "Day 11",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "17:45",
+      "end": "18:00",
+      "branch": null,
+      "type": "transit",
+      "title": "Leave DFO → Westin",
+      "detail": "Uber back to Westin · ~10 min",
+      "mapsUrl": null,
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d11-1800-westin-rest",
+      "dayNumber": 11,
+      "date": "2026-06-30",
+      "dateLabel": "Tue 30 Jun",
+      "dayLabel": "Day 11",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "18:00",
+      "end": "19:00",
+      "branch": null,
+      "type": "hotel",
+      "title": "Back at Westin · rest",
+      "detail": "Rest · freshen up before dinner",
+      "mapsUrl": null,
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
       }
     },
     {
@@ -3590,7 +3685,7 @@
       ]
     },
     {
-      "id": "d12-0900-124-breakfast",
+      "id": "d12-0900-breakfast",
       "dayNumber": 12,
       "date": "2026-07-01",
       "dateLabel": "Wed 1 Jul",
@@ -3603,16 +3698,16 @@
       "type": "food",
       "title": "Breakfast",
       "detail": "Westin Melbourne",
-      "mapsUrl": "https://maps.app.goo.gl/b19zq43S6YvbjKjN7",
+      "mapsUrl": null,
       "activity": null,
       "source": {
-        "sheet": "Tab A — East to West",
-        "row": 12,
-        "column": 13
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
       }
     },
     {
-      "id": "d12-1000-125-morning-melbourne",
+      "id": "d12-1000-depart-smm",
       "dayNumber": 12,
       "date": "2026-07-01",
       "dateLabel": "Wed 1 Jul",
@@ -3620,29 +3715,65 @@
       "leg": "Westin Melbourne",
       "routeTitle": "Westin · Melbourne",
       "start": "10:00",
-      "end": "13:00",
+      "end": "10:30",
       "branch": null,
-      "type": "activity",
-      "title": "Morning · Melbourne",
-      "detail": "TBC",
+      "type": "transit",
+      "title": "Tram 96 → South Melbourne",
+      "detail": "From Collins/Swanston · ~20 min",
       "mapsUrl": null,
       "activity": null,
       "source": {
-        "sheet": "Tab A — East to West",
-        "row": 14,
-        "column": 13
-      },
-      "options": [
-        {
-          "label": "Activity search",
-          "title": "Melbourne activity",
-          "detail": "Morning plan not fixed; search attractions nearby.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=family+activities+Melbourne+CBD"
-        }
-      ]
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
     },
     {
-      "id": "d12-1300-126-lunch",
+      "id": "d12-1030-south-melbourne-market",
+      "dayNumber": 12,
+      "date": "2026-07-01",
+      "dateLabel": "Wed 1 Jul",
+      "dayLabel": "Day 12",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "10:30",
+      "end": "12:00",
+      "branch": null,
+      "type": "activity",
+      "title": "South Melbourne Market",
+      "detail": "Corner Coventry & Cecil St · browse stalls · produce · SO:ME Space · relaxed pace\n⭐ Market Lane Coffee across the road — pick up retail beans",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=South+Melbourne+Market+Coventry+Street",
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d12-1200-market-lunch",
+      "dayNumber": 12,
+      "date": "2026-07-01",
+      "dateLabel": "Wed 1 Jul",
+      "dayLabel": "Day 12",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "12:00",
+      "end": "13:00",
+      "branch": null,
+      "type": "food",
+      "title": "Lunch · market food stalls",
+      "detail": "~1 hr at the market",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=South+Melbourne+Market+Coventry+Street",
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d12-1300-st-ali",
       "dayNumber": 12,
       "date": "2026-07-01",
       "dateLabel": "Wed 1 Jul",
@@ -3650,29 +3781,87 @@
       "leg": "Westin Melbourne",
       "routeTitle": "Westin · Melbourne",
       "start": "13:00",
-      "end": "19:00",
+      "end": "13:30",
       "branch": null,
-      "type": "food",
-      "title": "Lunch",
-      "detail": "TBC",
+      "type": "activity",
+      "title": "Walk to St Ali",
+      "detail": "12–18 Yarra Place · ~12 min · pick up coffee beans · one coffee · ~20 min",
+      "mapsUrl": "https://maps.app.goo.gl/StAliSouthMelb",
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d12-1330-return-westin",
+      "dayNumber": 12,
+      "date": "2026-07-01",
+      "dateLabel": "Wed 1 Jul",
+      "dayLabel": "Day 12",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "13:30",
+      "end": "14:00",
+      "branch": null,
+      "type": "transit",
+      "title": "Tram back to Westin",
+      "detail": "~20 min",
       "mapsUrl": null,
       "activity": null,
       "source": {
-        "sheet": "Tab A — East to West",
-        "row": 20,
-        "column": 13
-      },
-      "options": [
-        {
-          "label": "Lunch search",
-          "title": "Melbourne lunch",
-          "detail": "Lunch not fixed; search nearby.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Melbourne+CBD"
-        }
-      ]
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
     },
     {
-      "id": "d12-1900-127-dinner",
+      "id": "d12-1400-free-afternoon",
+      "dayNumber": 12,
+      "date": "2026-07-01",
+      "dateLabel": "Wed 1 Jul",
+      "dayLabel": "Day 12",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "14:00",
+      "end": "17:00",
+      "branch": null,
+      "type": "rest",
+      "title": "Free afternoon · rest",
+      "detail": "Daughter nap · no agenda",
+      "mapsUrl": null,
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d12-1700-qvm-night-market",
+      "dayNumber": 12,
+      "date": "2026-07-01",
+      "dateLabel": "Wed 1 Jul",
+      "dayLabel": "Day 12",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "17:00",
+      "end": "19:00",
+      "branch": null,
+      "type": "activity",
+      "title": "QVM Winter Night Market",
+      "detail": "~15 min walk north on Elizabeth St · arrive early, beats 18:00–19:00 crush · free entry\nChristmas in July · fake snow · Santa · fire pits · live music\nFood: Soup Factory · Oh My Doner · American Doughnut Kitchen · Churro Kitchen",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Queen+Victoria+Market+Melbourne",
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d12-1900-qvm-return",
       "dayNumber": 12,
       "date": "2026-07-01",
       "dateLabel": "Wed 1 Jul",
@@ -3682,27 +3871,19 @@
       "start": "19:00",
       "end": "20:00",
       "branch": null,
-      "type": "food",
-      "title": "Dinner",
-      "detail": "TBC",
+      "type": "transit",
+      "title": "Leave QVM → Westin",
+      "detail": "~15 min walk south on Elizabeth St",
       "mapsUrl": null,
       "activity": null,
       "source": {
-        "sheet": "Tab A — East to West",
-        "row": 32,
-        "column": 13
-      },
-      "options": [
-        {
-          "label": "Dinner search",
-          "title": "Melbourne dinner",
-          "detail": "Dinner not fixed; search nearby.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=dinner+Melbourne+CBD"
-        }
-      ]
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
     },
     {
-      "id": "d13-0900-128-breakfast",
+      "id": "d13-0900-breakfast",
       "dayNumber": 13,
       "date": "2026-07-02",
       "dateLabel": "Thu 2 Jul",
@@ -3715,16 +3896,16 @@
       "type": "food",
       "title": "Breakfast",
       "detail": "Westin Melbourne",
-      "mapsUrl": "https://maps.app.goo.gl/b19zq43S6YvbjKjN7",
+      "mapsUrl": null,
       "activity": null,
       "source": {
-        "sheet": "Tab A — East to West",
-        "row": 12,
-        "column": 14
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
       }
     },
     {
-      "id": "d13-1000-129-morning-melbourne",
+      "id": "d13-1000-depart-museum",
       "dayNumber": 13,
       "date": "2026-07-02",
       "dateLabel": "Thu 2 Jul",
@@ -3732,86 +3913,172 @@
       "leg": "Westin Melbourne",
       "routeTitle": "Westin · Melbourne",
       "start": "10:00",
-      "end": "13:00",
+      "end": "10:30",
+      "branch": null,
+      "type": "transit",
+      "title": "Tram north → Carlton",
+      "detail": "Up Swanston · ~25 min",
+      "mapsUrl": null,
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d13-1030-melbourne-museum",
+      "dayNumber": 13,
+      "date": "2026-07-02",
+      "dateLabel": "Thu 2 Jul",
+      "dayLabel": "Day 13",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "10:30",
+      "end": "12:00",
       "branch": null,
       "type": "activity",
-      "title": "Morning · Melbourne",
-      "detail": "Last full day · TBC",
-      "mapsUrl": null,
+      "title": "Melbourne Museum",
+      "detail": "Pauline Gandel Children’s Gallery · dinosaur dig · net climbing · light-play · water garden\nDesigned for 0–5 · 1.5 hrs · ⚠ pre-book timed session",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Melbourne+Museum+Nicholson+Street+Carlton",
       "activity": null,
       "source": {
-        "sheet": "Tab A — East to West",
-        "row": 14,
-        "column": 14
-      },
-      "options": [
-        {
-          "label": "Activity search",
-          "title": "Melbourne activity",
-          "detail": "Last full day not fixed; search family-friendly options.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=family+activities+Melbourne+CBD"
-        }
-      ]
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
     },
     {
-      "id": "d13-1300-130-lunch",
+      "id": "d13-1215-cbd-lunch",
       "dayNumber": 13,
       "date": "2026-07-02",
       "dateLabel": "Thu 2 Jul",
       "dayLabel": "Day 13",
       "leg": "Westin Melbourne",
       "routeTitle": "Westin · Melbourne",
-      "start": "13:00",
-      "end": "19:00",
+      "start": "12:15",
+      "end": "13:00",
       "branch": null,
       "type": "food",
-      "title": "Lunch",
-      "detail": "TBC",
+      "title": "Quick lunch · CBD",
+      "detail": "Near Franklin St · done by 13:00",
       "mapsUrl": null,
       "activity": null,
       "source": {
-        "sheet": "Tab A — East to West",
-        "row": 20,
-        "column": 14
-      },
-      "options": [
-        {
-          "label": "Lunch search",
-          "title": "Melbourne lunch",
-          "detail": "Lunch not fixed; search nearby.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=lunch+Melbourne+CBD"
-        }
-      ]
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
     },
     {
-      "id": "d13-1900-131-farewell-dinner",
+      "id": "d13-1310-dollar-pickup",
       "dayNumber": 13,
       "date": "2026-07-02",
       "dateLabel": "Thu 2 Jul",
       "dayLabel": "Day 13",
       "leg": "Westin Melbourne",
       "routeTitle": "Westin · Melbourne",
-      "start": "19:00",
+      "start": "13:10",
+      "end": "13:30",
+      "branch": null,
+      "type": "transit",
+      "title": "Pick up Dollar rental",
+      "detail": "Shop 3/8 Franklin St · Toyota Cross Hybrid · ref L6143190309 · AUD 131.92 due\nThen depart → DFO Moorabbin",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dollar+Car+Rental+8+Franklin+Street+Melbourne",
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d13-1410-dfo-moorabbin",
+      "dayNumber": 13,
+      "date": "2026-07-02",
+      "dateLabel": "Thu 2 Jul",
+      "dayLabel": "Day 13",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "14:10",
+      "end": "17:30",
+      "branch": null,
+      "type": "activity",
+      "title": "DFO Moorabbin",
+      "detail": "250 Centre Dandenong Rd · Dissa shops · Adimas + daughter explore\n⚠ Closes 18:00\nMoorabbin Airport 2 min away — plane spotting if restless",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=DFO+Moorabbin+Centre+Dandenong+Road",
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d13-1730-drive-chadstone",
+      "dayNumber": 13,
+      "date": "2026-07-02",
+      "dateLabel": "Thu 2 Jul",
+      "dayLabel": "Day 13",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "17:30",
+      "end": "18:00",
+      "branch": null,
+      "type": "transit",
+      "title": "Wrap up DFO → Chadstone",
+      "detail": "~15 min drive",
+      "mapsUrl": null,
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d13-1800-chadstone-dinner",
+      "dayNumber": 13,
+      "date": "2026-07-02",
+      "dateLabel": "Thu 2 Jul",
+      "dayLabel": "Day 13",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "18:00",
       "end": "20:00",
       "branch": null,
       "type": "food",
-      "title": "Farewell dinner",
-      "detail": "TBC · make it a good one",
+      "title": "Dinner · Chadstone",
+      "detail": "Dining terrace or food precinct · TBC",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chadstone+Shopping+Centre+Dandenong+Road",
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d13-2000-return-westin",
+      "dayNumber": 13,
+      "date": "2026-07-02",
+      "dateLabel": "Thu 2 Jul",
+      "dayLabel": "Day 13",
+      "leg": "Westin Melbourne",
+      "routeTitle": "Westin · Melbourne",
+      "start": "20:00",
+      "end": "20:30",
+      "branch": null,
+      "type": "transit",
+      "title": "Chadstone → Westin",
+      "detail": "~40 min · ⚠ pack bags tonight — flight tomorrow",
       "mapsUrl": null,
       "activity": null,
       "source": {
-        "sheet": "Tab A — East to West",
-        "row": 32,
-        "column": 14
-      },
-      "options": [
-        {
-          "label": "Farewell dinner",
-          "title": "Melbourne farewell dinner",
-          "detail": "Farewell dinner not fixed; search quality options nearby.",
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=best+dinner+Melbourne+CBD"
-        }
-      ]
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
     },
     {
       "id": "d14-0700-132-breakfast-westin-final-morning",
@@ -3822,7 +4089,7 @@
       "leg": "Departure",
       "routeTitle": "Departure · SIN",
       "start": "07:00",
-      "end": "12:10",
+      "end": "10:30",
       "branch": null,
       "type": "food",
       "title": "Breakfast · Westin · final morning",
@@ -3836,6 +4103,50 @@
       }
     },
     {
+      "id": "d14-1030-room-sweep",
+      "dayNumber": 14,
+      "date": "2026-07-03",
+      "dateLabel": "Fri 3 Jul",
+      "dayLabel": "Day 14",
+      "leg": "Departure",
+      "routeTitle": "Departure · SIN",
+      "start": "10:30",
+      "end": "11:00",
+      "branch": null,
+      "type": "hotel",
+      "title": "Final room sweep",
+      "detail": "Passports · chargers · medicine · toys",
+      "mapsUrl": null,
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "id": "d14-1100-checkout",
+      "dayNumber": 14,
+      "date": "2026-07-03",
+      "dateLabel": "Fri 3 Jul",
+      "dayLabel": "Day 14",
+      "leg": "Departure",
+      "routeTitle": "Departure · SIN",
+      "start": "11:00",
+      "end": "11:30",
+      "branch": null,
+      "type": "hotel",
+      "title": "Checkout · luggage to lobby",
+      "detail": "All luggage to lobby",
+      "mapsUrl": null,
+      "activity": null,
+      "source": {
+        "sheet": "Tab A",
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
       "id": "d14-1210-133-hard-departure-westin",
       "dayNumber": 14,
       "date": "2026-07-03",
@@ -3843,12 +4154,12 @@
       "dayLabel": "Day 14",
       "leg": "Departure",
       "routeTitle": "Departure · SIN",
-      "start": "12:10",
-      "end": "12:55",
+      "start": "11:30",
+      "end": "12:10",
       "branch": null,
       "type": "hotel",
-      "title": "Hard departure · Westin",
-      "detail": "Uber/taxi pre-booked · all luggage loaded",
+      "title": "⚠ Hard departure from Westin",
+      "detail": "Drive → Melbourne Airport (Tullamarine) via CityLink + Tullamarine Fwy · ~35 min\n⚠ Dollar car drop-off deadline 13:30",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Melbourne+Airport+T2+Departures",
       "activity": null,
       "source": {
@@ -3865,12 +4176,12 @@
       "dayLabel": "Day 14",
       "leg": "Departure",
       "routeTitle": "Departure · SIN",
-      "start": "12:55",
-      "end": "13:00",
+      "start": "12:10",
+      "end": "12:25",
       "branch": null,
       "type": "transit",
       "title": "Arrive Melbourne Airport T2",
-      "detail": "QF37 · Qantas international",
+      "detail": "Dollar car return bay · allow 15 min · ⚠ drop-off deadline 13:30\nThen proceed to T2",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Melbourne+Airport+T2+Departures",
       "activity": null,
       "source": {
@@ -4169,9 +4480,9 @@
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loch+Ard+Motor+Inn+18+Lord+St%2C+Port+Campbell+VIC+3269%0A%2B61+3+5598+6328%0Ahello%40lochardmotorinn.com.au+Victoria+Australia"
       },
       {
-        "name": "Elm Tree Motel",
+        "name": "Quest Warrnambool",
         "leg": "",
-        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elm+Tree+Motel+179+Kepler+Street%2C+Warrnambool+3280%0A%2B61+3+5562+4133+Victoria+Australia"
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quest+Warrnambool+Liebig+Street"
       },
       {
         "name": "Peppers Marysville",
@@ -4214,6 +4525,200 @@
         "name": "Melbourne Airport T2",
         "leg": "Departure",
         "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Melbourne+Airport+T2+Departures"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "YOI Indonesian Fusion · Franklin St",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=YOI+Indonesian+Fusion+Franklin+Street+Melbourne"
+      },
+      {
+        "name": "Lulu's Malaysian Hawker · Hardware Ln",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lulus+Malaysian+Hawker+Hardware+Lane+Melbourne"
+      },
+      {
+        "name": "Soi 38 · Thai boat noodles",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Soi+38+Royal+Lane+Melbourne"
+      },
+      {
+        "name": "Phở Thìn · Lonsdale St",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pho+Thin+13+Lo+Duc+Lonsdale+Street+Melbourne"
+      },
+      {
+        "name": "Kakilang Malaysian · Bourke St",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kakilang+Malaysian+Flavours+Bourke+Street+Melbourne"
+      },
+      {
+        "name": "Nana Thai · Bourke St",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nana+Thai+Bourke+Street+Melbourne"
+      },
+      {
+        "name": "Shujinko · ramen (24h) · Russell St",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Shujinko+Russell+Street+Melbourne"
+      },
+      {
+        "name": "Rare Steakhouse · King St",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rare+Steakhouse+King+Street+Melbourne"
+      },
+      {
+        "name": "Meatmaiden · Little Collins St",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Meatmaiden+Little+Collins+Street+Melbourne"
+      },
+      {
+        "name": "Ginger Olive Grill · Manchester Ln",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ginger+Olive+Restaurant+Manchester+Lane+Melbourne"
+      },
+      {
+        "name": "San Telmo · Argentinian grill",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=San+Telmo+Meyers+Place+Melbourne"
+      },
+      {
+        "name": "HER BAR · Tue steak night · Lonsdale St",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=HER+BAR+Lonsdale+Street+Melbourne"
+      },
+      {
+        "name": "Apollo Bay Bakery",
+        "leg": "Apollo Bay",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollo+Bay+Bakery+Great+Ocean+Road"
+      },
+      {
+        "name": "Apollo Bay Fishermen's Co-Op",
+        "leg": "Apollo Bay",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollo+Bay+Fishermens+Cooperative"
+      },
+      {
+        "name": "Casalingo · Italian & seafood",
+        "leg": "Apollo Bay",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casalingo+Restaurant+Apollo+Bay"
+      },
+      {
+        "name": "Chris's Beacon Point",
+        "leg": "Apollo Bay",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chris+Beacon+Point+Restaurant+Apollo+Bay"
+      },
+      {
+        "name": "Coco Cafe (formerly La Bimba)",
+        "leg": "Apollo Bay",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Coco+Cafe+Restaurant+Apollo+Bay+Great+Ocean+Road"
+      },
+      {
+        "name": "GOR Brewhouse · gastropub",
+        "leg": "Apollo Bay",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Great+Ocean+Road+Brewhouse+Apollo+Bay"
+      },
+      {
+        "name": "Simon's Waterfront",
+        "leg": "Warrnambool",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Simons+Waterfront+Warrnambool+Pertobe+Road"
+      },
+      {
+        "name": "Images Restaurant · Liebig St",
+        "leg": "Warrnambool",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Images+Restaurant+Liebig+Street+Warrnambool"
+      },
+      {
+        "name": "Clovelly Restaurant & Bar",
+        "leg": "Warrnambool",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Clovelly+Restaurant+Bar+Merri+Street+Warrnambool"
+      },
+      {
+        "name": "Liebig Thai & Asian",
+        "leg": "Warrnambool",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Liebig+Thai+Asian+Restaurant+Warrnambool"
+      },
+      {
+        "name": "Penang Alley · Malaysian",
+        "leg": "Warrnambool",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Penang+Alley+Liebig+Street+Warrnambool"
+      },
+      {
+        "name": "Ichiban Izakaya",
+        "leg": "Warrnambool",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ichiban+Izakaya+Koroit+Street+Warrnambool"
+      },
+      {
+        "name": "Red Spoon Thai",
+        "leg": "Warrnambool",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Red+Spoon+Thai+Eatery+Timor+Street+Warrnambool"
+      },
+      {
+        "name": "The Duck Inn · pub bistro",
+        "leg": "Marysville",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Duck+Inn+Marysville+Murchison+Street"
+      },
+      {
+        "name": "Andiamo · at Peppers",
+        "leg": "Marysville",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Andiamo+Restaurant+Peppers+Marysville"
+      },
+      {
+        "name": "Pavilion Bar & Grill · golf club",
+        "leg": "Marysville",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pavilion+Bar+Grill+Marysville+Golf+Club"
+      },
+      {
+        "name": "Elevation 423 · pizza/pasta",
+        "leg": "Marysville",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elevation+423+Bar+Cafe+Marysville"
+      }
+    ],
+    "coffee": [
+      {
+        "name": "St Ali · South Melbourne",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://maps.app.goo.gl/StAliSouthMelb"
+      },
+      {
+        "name": "Bench Coffee Co. · Little Collins",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://maps.app.goo.gl/yahtBFh2afqzzRaD6"
+      },
+      {
+        "name": "Code Black · Flinders Ln",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://maps.app.goo.gl/STmz9qy919R6jfX39"
+      },
+      {
+        "name": "Market Lane · South Melbourne",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://maps.app.goo.gl/8fzDhaqKXDRjXqne6"
+      },
+      {
+        "name": "Industry Beans · Little Collins",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://maps.app.goo.gl/m46kr7o9bvS8uD7TA"
+      },
+      {
+        "name": "Seven Seeds / Brother Baba Budan",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Brother+Baba+Budan+Melbourne"
+      },
+      {
+        "name": "Dukes Coffee · Flinders Ln",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dukes+Coffee+Roasters+Flinders+Lane+Melbourne"
+      },
+      {
+        "name": "Axil Coffee · Flinders Ln",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Axil+Coffee+Roasters+76+Flinders+Lane+Melbourne"
+      },
+      {
+        "name": "Patricia Coffee Brewers",
+        "leg": "Melbourne CBD",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Patricia+Coffee+Brewers+Melbourne"
       }
     ]
   }

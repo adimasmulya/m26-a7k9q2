@@ -913,7 +913,9 @@
       </div>
       <div class="list-shortcuts">
         <button class="list-btn" id="listSee">📍 All attractions</button>
-        <button class="list-btn" id="listEat">🍴 All food</button>
+        <button class="list-btn" id="listEat">🍴 Planned food stops</button>
+        <button class="list-btn" id="listRestaurants">🍽 Restaurant shortlist</button>
+        <button class="list-btn" id="listCoffee">☕ Coffee roasters</button>
         <button class="list-btn" id="listStay">🛏 Stays &amp; logistics</button>
       </div>
       <div id="dayList"></div>
@@ -1608,15 +1610,15 @@
 
     function openPlaceList(which) {
       const lists = (state.data && state.data.placeLists) || {};
-      const titles = { see:'All attractions', eat:'All food', stay:'Stays & logistics' };
+      const titles = { see:'All attractions', eat:'Planned food stops', restaurants:'Restaurant shortlist', coffee:'Coffee roasters', stay:'Stays & logistics' };
       let items = [];
       if (which === 'stay') {
         items = (lists.stay || []).concat(lists.go || []);
       } else {
         items = lists[which] || [];
       }
-      // group by leg (in trip order); items without a leg go under "Other"
-      const order = ['Great Ocean Road','Marysville & Yarra Valley','Phillip Island','Melbourne','Departure',''];
+      // group by leg/area (in trip order); items without a leg go under "Other"
+      const order = ['Great Ocean Road','Marysville & Yarra Valley','Phillip Island','Melbourne','Melbourne CBD','Apollo Bay','Warrnambool','Marysville','Departure',''];
       const groups = {};
       items.forEach(it => { (groups[it.leg || ''] = groups[it.leg || ''] || []).push(it); });
       const body = order.filter(l => groups[l]).map(l => {
@@ -1711,6 +1713,8 @@
     $('drawerScrim').addEventListener('click', closeDrawer);
     $('listSee').addEventListener('click', () => { closeDrawer(); openPlaceList('see'); });
     $('listEat').addEventListener('click', () => { closeDrawer(); openPlaceList('eat'); });
+    $('listRestaurants').addEventListener('click', () => { closeDrawer(); openPlaceList('restaurants'); });
+    $('listCoffee').addEventListener('click', () => { closeDrawer(); openPlaceList('coffee'); });
     $('listStay').addEventListener('click', () => { closeDrawer(); openPlaceList('stay'); });
     $('prevBtn').addEventListener('click', () => move(-1));
     $('nextBtn').addEventListener('click', () => move(1));
