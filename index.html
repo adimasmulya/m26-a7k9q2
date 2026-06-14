@@ -1514,10 +1514,14 @@
         return (card && card.start && card.start >= '14:00') ? 'vineyard' : 'forest';
       }
       if (dayNumber === 8) {
-        // Day 8 forks: Balgownie / Chocolateries morning = vineyard; from the San Remo run onward = island
-        return (card && card.start && card.start >= '11:05') ? 'island' : 'vineyard';
+        // Day 8 is now a full extra Yarra Valley day (Balgownie night 2)
+        return 'vineyard';
       }
-      if (dayNumber <= 10) return 'island';      // Phillip Island
+      if (dayNumber === 9) {
+        // Day 9 forks: Balgownie morning = vineyard; island begins at the hard departure to Phillip Island
+        return (card && card.start && card.start >= '10:00') ? 'island' : 'vineyard';
+      }
+      if (dayNumber === 10) return 'island';     // Phillip Island day 2
       if (dayNumber === 11) {
         // Day 11 morning is still on Phillip Island (wake, checkout); city begins at the hard departure to Melbourne
         return (card && card.start && card.start >= '09:00') ? 'city' : 'island';
