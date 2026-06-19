@@ -4460,6 +4460,149 @@
           "toddler": "4/5",
           "tip": "Bring wool blankets — concrete grandstands by the ocean are freezing after sunset"
         }
+      },
+      {
+        "name": "Colac Memorial Square Playground",
+        "leg": "Great Ocean Road",
+        "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ63PgDwAP02oREI134qZeehA",
+        "detail": {
+          "hours": "24 hrs",
+          "cost": "Free",
+          "booking": "No",
+          "time": "45–60 min",
+          "toddler": "5/5",
+          "tip": "Heated Changing Places family room on-site — ideal for a nappy or clothes change"
+        }
+      },
+      {
+        "name": "Marrybrown · Westfield Geelong",
+        "leg": "Great Ocean Road",
+        "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJCbHcQsMV1GoRwJwR6LFyCjI",
+        "detail": {
+          "hours": "Mon–Wed 09:00–17:30 · Thu–Fri to 21:00 · Sat to 17:00 · Sun 10:00–17:00",
+          "cost": "Free entry",
+          "booking": "No",
+          "time": "30–45 min",
+          "toddler": "4/5",
+          "tip": "Indoor transit haven — heated mall, parent rooms on the same level"
+        }
+      },
+      {
+        "name": "Apollo Bay Fishermen's Co-op",
+        "leg": "Great Ocean Road",
+        "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJeZ8ALzg302oR1q8vDU8lQ90",
+        "detail": {
+          "hours": "Tue–Sun 11:00–19:00 (closed Mon)",
+          "cost": "Free entry · menu prices apply",
+          "booking": "No",
+          "time": "30–45 min",
+          "toddler": "4/5",
+          "tip": "Secure an indoor heated table — harbour winds are intensely cold in late June"
+        }
+      },
+      {
+        "name": "Balgownie Estate Cellar Door",
+        "leg": "Marysville & Yarra Valley",
+        "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJqWY7B3jU12oR4jhpDu4a9GM",
+        "detail": {
+          "hours": "Daily 10:30–17:00 (restaurant extended)",
+          "cost": "Free entry · tasting flights AUD 15–35/adult",
+          "booking": "Yes — 3–5 days ahead for weekends",
+          "time": "45–60 min",
+          "toddler": "3/5",
+          "tip": "Request a table away from the entrance doors — drafts will chill a toddler"
+        }
+      },
+      {
+        "name": "South Melbourne Market",
+        "leg": "Melbourne",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=South+Melbourne+Market+Coventry+Street",
+        "detail": {
+          "hours": "Wed/Sat/Sun 08:00–16:00 · Fri to 17:00 (closed Mon/Tue/Thu)",
+          "cost": "Free entry",
+          "booking": "No",
+          "time": "1.5–2 hrs",
+          "toddler": "3.5/5",
+          "tip": "Wednesday morning is much quieter than weekends — easier with the pram, no queues"
+        }
+      },
+      {
+        "name": "QVM Winter Night Market",
+        "leg": "Melbourne",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Queen+Victoria+Market+Melbourne",
+        "detail": {
+          "hours": "Wednesday evenings only · 17:00–22:00 (Jun 3–Aug 26)",
+          "cost": "Free entry · ⭐ optional family table in L Shed AUD 60",
+          "booking": "General: No · family table: yes, book online",
+          "time": "1.5–2 hrs",
+          "toddler": "3/5",
+          "tip": "Arrive 16:45–17:00 to beat lines and grab a fire-pit spot. Leave by ~19:30 before it gets very cold"
+        }
+      },
+      {
+        "name": "Melbourne Museum · Pauline Gandel Gallery",
+        "leg": "Melbourne",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Melbourne+Museum+Nicholson+Street+Carlton",
+        "detail": {
+          "hours": "Daily 09:00–17:00 · 50-min timed sessions",
+          "cost": "Adult AUD 18 · under-16 free · ⚠ must pre-book timed session",
+          "booking": "⚠ YES — mandatory, sells out weeks ahead",
+          "time": "1–1.5 hrs",
+          "toddler": "5/5",
+          "tip": "Pack spare socks + a change of clothes — kids get covered in sand at the outdoor fossil dig"
+        }
+      },
+      {
+        "name": "DFO South Wharf",
+        "leg": "Melbourne",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=DFO+South+Wharf+Melbourne",
+        "detail": {
+          "hours": "Mon–Thu 10:00–18:00 · Fri to 21:00 · wknd 10:00–18:00",
+          "cost": "Free entry (outlet)",
+          "booking": "No",
+          "time": "2–3 hrs",
+          "toddler": "2.5/5",
+          "tip": "Validate parking at any store for 50% off; or tram to Stop 124A and walk the footbridge"
+        }
+      },
+      {
+        "name": "DFO Moorabbin",
+        "leg": "Melbourne",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=DFO+Moorabbin+Centre+Dandenong+Road",
+        "detail": {
+          "hours": "Daily 10:00–18:00",
+          "cost": "Free entry (outlet)",
+          "booking": "No",
+          "time": "2–3 hrs",
+          "toddler": "2.5/5",
+          "tip": "If Alyssa gets restless, Moorabbin Airport is 2 min away — plane-spotting viewing area burns energy"
+        }
+      },
+      {
+        "name": "Chadstone Shopping Centre",
+        "leg": "Melbourne",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chadstone+Shopping+Centre+Dandenong+Road",
+        "detail": {
+          "hours": "Mon–Wed 09:00–17:30 · Thu–Sat to 21:00 · Sun 10:00–19:00",
+          "cost": "Free entry · LEGOLAND from AUD 28.80",
+          "booking": "No (LEGOLAND yes)",
+          "time": "3–4 hrs",
+          "toddler": "4.5/5",
+          "tip": "Reserve the free Chadstone Tourist Shuttle from Federation Square online to skip CBD parking"
+        }
+      },
+      {
+        "name": "Polly Woodside",
+        "leg": "Melbourne",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Polly+Woodside+South+Wharf+Melbourne",
+        "detail": {
+          "hours": "⚠ Closed for walk-ins · only 3rd Sunday (Pirate Day) 10:00–13:00",
+          "cost": "Pirate Day: Adult 25 · Child 15",
+          "booking": "Yes — Pirate Day tickets only",
+          "time": "1.5–2 hrs",
+          "toddler": "4.5/5",
+          "tip": "❌ Not available during this trip — neither Pirate Day date falls inside your dates. Noted for a future visit"
+        }
       }
     ],
     "eat": [
